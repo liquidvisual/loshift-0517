@@ -1,0 +1,37 @@
+---
+layout: base__page
+---
+
+{% assign news = site.data.lorem_ipsum %}
+
+<ul class="block-list">
+    {% for item in news limit: 3 %}
+        <li>
+            <div class="media media-entry">
+                <div class="media-left hidden-md-down">
+                    <a href="/about-us/news/news-item/"><img class="media-object" width="130" src="/assets/img/ui/placeholder.png" alt="Thumbnail"></a>
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading card-title h4">
+                        <a href="/about-us/news/news-item/">{{ item.title }}</a>
+                    </h3>
+                    <div class="mb-3">
+                        <date class="text-muted">{{ item.date | date: "%d %B %Y" | upcase }}</date>
+                    </div>
+
+                    <!-- TRUNCATE (410 max chars) -->
+                    <p class="mb-0">{{ item.body | truncate: 410 }}
+                    <a href="/about-us/news/news-item/">Read more <i class="fa fa-angle-right"></i></a></p>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+
+<br>
+
+{% include snippets/pagination.html %}
+
+{% contentfor content_additional %}
+    {% include sections/sponsors.html %}
+{% endcontentfor %}

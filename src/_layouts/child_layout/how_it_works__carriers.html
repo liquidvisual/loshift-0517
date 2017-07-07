@@ -1,0 +1,85 @@
+---
+layout: base__page
+---
+
+{% assign services = site.data.services | sort: "title" %}
+
+{% contentfor hero_caption %}
+	<!-- HERO CAPTION -->
+	<div class="lv-hero-item-caption animated fadeInLeft">
+	    <h1>Get Loads</h1>
+	    <p class="lead mb-4">Loadshift delivers more business into your business.<br> Best of all... ZERO commission.</p>
+	    <a href="/pricing/" class="btn btn-primary">Register</a>
+	    <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
+	    <a href="/pricing/" class="btn btn-primary">Login</a>
+	</div>
+{% endcontentfor %}
+
+{{ content }}
+
+<!-- DEMO GRAPHICS -->
+<div class="row">
+	<div class="col-md-6">
+		<p class="text-center"><img class="animated bounceIn" width="100%" src="/assets/img/content/sms-alert@2x.png" alt="SMS Alert Example"></p>
+	</div>
+	<div class="col-md-5">
+		<p><img width="100%" src="/assets/img/content/load-board@2x.jpg" alt="Load Board"></p>
+	</div>
+</div>
+
+{% contentfor content_additional %}
+
+	<!-- STATEMENT -->
+	<section class="section section-light">
+		<div class="container text-center">
+			<h2 class="mb-0">Build Your Contacts. Build Your Business.</h2>
+		</div>
+	</section>
+
+	<!-- FIND TRUCKS -->
+	<section class="section section-dark inverse">
+		<div class="container" style="max-width: 1000px;">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<h2>Find Trucks</h2>
+					<p>Let potential customers (Shippers) know where you are. Post a listing (advertising) the current or future location of your truck/trailer.</p>
+					<h3 class="text-center">Be Seen.</h3>
+				</div>
+				<div class="col-md-6">
+					<p><img width="100%" src="/assets/img/content/truck-register@2x.jpg" alt="Truck Availability Register"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- REQUESTED SERVICES -->
+	<section class="section section-light">
+		<div class="container text-center" style="max-width: 900px;">
+			<h2 class="mb-4">Requested Services</h2>
+			<ul class="block-grid-xs-2 block-grid-md-3 block-grid-list">
+				{% for item in services %}
+					<li>{{ item.title }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+	{% include sections/test_drive.html %}
+
+	<!-- SIMPLE - TRANSPARENT - JOB LEADS -->
+	<section class="section section">
+		<div class="container">
+			<p>Note: loadshift.com.au is an online business service that specialises in the heavy load transport industry. It simply delivers your quotation request into transport businesses. Loadshift DOES NOT participate in any quotation, nor does it receive commissions. You deal directly with the transport carriers at all times.</p>
+			<p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
+			<br>
+			<div class="container">
+				<ul class="block-grid-xs-1 block-grid-md-3 text-center long-strike-through">
+					<li><span class="h2">SIMPLE</span></li>
+					<li><span class="h2">TRANSPARENT</span></li>
+					<li><span class="h2">JOB LEADS</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+{% endcontentfor %}

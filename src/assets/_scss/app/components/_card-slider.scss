@@ -1,0 +1,77 @@
+/*
+    CARD-SLIDER.CSS
+
+    - Last updated: 03.07.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// CARD SLIDER (TESTIMONIALS)
+//-----------------------------------------------------------------
+
+.card-slider {
+	.slick-slide {
+	    width: rem-calc(500);
+	    height: rem-calc(250);
+	    transition: opacity 400ms ease;
+	    opacity: 0.2;
+	}
+
+	.slick-center {
+	    opacity: 1;
+	}
+}
+
+//=========================================
+// TESTIMONIAL BLOCK
+//=========================================
+
+.testimonial-block {
+	padding: $spacer*2;
+	background: white;
+	font-size: rem-calc(15);
+    box-shadow: 0 3px 8px 3px rgba(0, 0, 0, 0.1);
+
+    @include media-breakpoint-up(md) {
+        margin: $spacer;
+        overflow: hidden;
+        // overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .img {
+        border-radius: 100%;
+    }
+
+    .text {
+    	position: relative;
+
+    	&:after {
+    		display: none;
+	    	content: "❜❜";
+	    	position: absolute;
+	    	top: 100%;
+	    	right: 0;
+	    	line-height: 1;
+	    	font-family: "Times New Roman";
+	    	font-size: rem-calc(80);
+	    	opacity: 0.10;
+	    }
+    }
+
+    .text-muted {
+    	font-weight: normal;
+    }
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

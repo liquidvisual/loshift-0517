@@ -1,0 +1,46 @@
+# GLOBAL SITE SETTINGS
+
+cname: loadshift-2017.yourwebvisual.com
+
+# META
+title: Loadshift
+title_homepage: Loadshift - Australia's Heavy Haulage Transport Marketplace
+company: Loadshift
+description: Loadshift is Australia's Leading Heavy Haulage Transport Marketplace
+abn: 79003633224
+
+# SITE DEFAULTS
+site_tagline:
+
+# DEVELOPER
+allow_robots: false
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/loshift-0517
+github_repo_name:
+jekyll_version: 3.5.0
+
+# OFFICES
+offices:
+  - title: Sydney
+    address: "P.O. Box 349<br>Windsor NSW, 2756"
+    email: contact@loadshift.com.au
+    phone: 1300 562 374
+    sms: (02) 4587 7560
+    fax: (02) 4587 7560
+
+# SOCIAL MEDIA
+facebook: https://www.facebook.com/loadshift/
+linked_in:
+google_plus:
+instagram:
+youtube: https://www.youtube.com/user/terex4066
+
+# GOOGLE
+google_analytics: "UA-XXXXXXXX-X"
+
+# AUTHOR
+author:
+  title: Digital Momentum
+  url: http://digitalmomentum.com.au
+  logo:
+  description: Website by Digital Momentum

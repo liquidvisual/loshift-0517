@@ -1,0 +1,152 @@
+/*
+    SPECIAL.CSS
+
+    - Last updated: 05.07.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// STYLEGUIDE
+//-----------------------------------------------------------------
+
+.styleguide-color-swatch {
+	display: flex;
+	flex-direction: column;
+	height: rem-calc(144);
+	margin-bottom: rem-calc(40);
+	background: #444;
+	color: white;
+	border-radius: 8px;
+	overflow: hidden;
+
+	&.is-brand-primary { background: $brand-primary; }
+	&.is-brand-secondary { background: $brand-secondary; }
+	&.is-brand-tertiary { background: $brand-tertiary; }
+	&.is-brand-quaternary { background: $brand-quaternary; }
+	&.is-brand-quinary { background: $brand-quinary; }
+
+	&.is-gray-dark { background: $gray-dark; }
+	&.is-gray { background: $gray; }
+	&.is-gray-light { background: $gray-light; }
+	&.is-gray-lighter { background: $gray-lighter; }
+	&.is-gray-lightest { background: $gray-lightest; }
+
+	.styleguide-color-swatch-header {
+		margin-top: auto;
+		padding: rem-calc(10);
+		background: #131317;
+		font-size: rem-calc(14);
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+//-----------------------------------------------------------------
+// USED IN FOOTER
+//-----------------------------------------------------------------
+
+.flag-new a:after {
+	content: "NEW";
+	display: inline-block;
+	padding: 0 4px;
+	border: 1px solid $brand-quinary;
+	color: $brand-quinary;
+	transform: rotate(5deg) translatex(5px) translateY(-1px) scale(0.75);
+
+	// Hide for medium only - breaks layout
+	@include media-breakpoint-only(md) {
+	    display: none;
+	}
+}
+
+//=========================================
+// SOON
+//=========================================
+
+.flag-soon a:after {
+	content: "SOON";
+}
+
+//-----------------------------------------------------------------
+// USED IN SHIPPERS
+//-----------------------------------------------------------------
+
+.number-bullet {
+	display: inline-block;
+	background: $brand-primary;
+	width: 35px;
+	min-width: 35px; // flex correction
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: white;
+	border-radius: 100%;
+	font-size: rem-calc(25);
+	font-weight: bold;
+}
+
+//-----------------------------------------------------------------
+// VIDEO EMBED
+//-----------------------------------------------------------------
+
+.video-embed {
+	width: 100%;
+	height: auto;
+
+	@include media-breakpoint-up(sm) {
+	    height: 260px;
+	}
+
+	@include media-breakpoint-up(lg) {
+	    height: 380px;
+	}
+}
+
+//-----------------------------------------------------------------
+// Replace with tinier
+//-----------------------------------------------------------------
+
+.long-strike-through {
+	// z-index: 20;
+	// position: relative;
+	// text-align: center;
+
+	@include media-breakpoint-up(md) {
+	    	&:after {
+	    		content: "";
+	    		position: absolute;
+	    		top: 25px;
+	    		left: 18%;
+	    		width: 60%;
+	    		height: 1px;
+	    		border-top: 1px solid lighten($gray, 20%);
+
+	    		@include media-breakpoint-up(lg) {
+	    		    top: 38px;
+	    		}
+	    	}
+
+	    	li > span {
+				// background: red;
+	    		position: relative;
+	    		padding: rem-calc(0 10);
+	    		background: white;
+				z-index: 1;
+	    	}
+	}
+}
+
+.section-dark .long-strike-through {
+	@include media-breakpoint-up(md) {
+		&:after {
+			border-top: 1px solid  white;
+		}
+
+	    li > span {
+	    	background: $brand-primary;
+	    	color: white;
+	    }
+	}
+}

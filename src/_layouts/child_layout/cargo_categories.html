@@ -1,0 +1,20 @@
+---
+layout: base__page_no_sidebar
+---
+
+{% assign sitemap = site.data.sitemap %}
+{% assign cargo_categories = sitemap[3].children %}
+
+<ul class="block-grid-xs-1 block-grid-md-3 block-grid-condensed">
+	{% for item in cargo_categories %}
+        <li>
+            <a class="btn-tile" href="{{ item.url }}">
+                <img width="100%" src="/assets/img/content/hero/hero-2.jpg" alt="{{ item.title }}">
+                <span class="btn-tile-bg" style="background-image: url(/assets/img/content/hero/hero-2.jpg)"></span>
+                <div class="btn-tile-overlay">
+                    <h2 class="h3 btn-tile-header mb-0">{{ item.title }}</h2>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

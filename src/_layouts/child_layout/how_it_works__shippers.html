@@ -1,0 +1,86 @@
+---
+layout: base__page
+---
+
+{% assign services = site.data.services | sort: "title" %}
+
+{% contentfor hero_caption %}
+	<!-- HERO CAPTION -->
+	<div class="lv-hero-item-caption animated fadeInLeft">
+	    <h1>Get Quotes <br>&amp; Find Trucks</h1>
+	    <p>Find Australia Wode Heavy Haulage transport fast.<br> Get quotes by posting a request or find trucks on the location map.</p>
+	    <a href="/text-page/" class="btn btn-primary">Get Quotes</a>
+	</div>
+{% endcontentfor %}
+
+{% contentfor hero_addition %}
+	<!-- HERO ADDITION -->
+	<div class="hero-addition hidden-sm-down">
+	    <div class="container">
+	        <ul class="block-grid-md-4">
+	            <li>
+	            	<div class="h4 mb-0 d-flex">
+	            		<span class="number-bullet mr-3">1</span>
+	            		<span class="text">Post a Request</span>
+	            	</div>
+	            </li>
+	            <li>
+	            	<div class="h4 mb-0 d-flex">
+	            		<div class="number-bullet mr-3">2</div>
+	            		<span class="text">Request Communicated</span>
+	            	</div>
+	            </li>
+	            <li>
+		            <div class="h4 mb-0 d-flex">
+		            	<span class="number-bullet mr-3">3</span>
+		            	<span class="text">Receive Quotes</span>
+		            </div>
+	            </li>
+	            <li>
+		            <div class="h4 mb-0 d-flex">
+		            	<span class="number-bullet mr-3">4</span>
+		            	<span class="text">Choose Your Carrier</span>
+		            </div>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+{% endcontentfor %}
+
+{% include sections/get_quotes.html title="Shippers" %}
+
+{% contentfor content_additional %}
+	<!-- FIND TRUCKS -->
+	<section class="section section-light">
+		<div class="container" style="max-width: 1000px;">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<h2>Find Trucks</h2>
+					<p class="lead">Click on a map listing to obtain the current or future location of a carrier.
+					Use the nominated contact details to deal directly.</p>
+				</div>
+				<div class="col-md-6">
+					<p><img width="100%" src="/assets/img/content/truck-register@2x.jpg" alt="Truck Availability Register"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include sections/intro_video.html %}
+
+	<!-- SIMPLE - TRANSPARENT - JOB LEADS -->
+	<section class="section section">
+		<div class="container">
+			<p>Note: loadshift.com.au is an online business service that specialises in the heavy load transport industry. It simply delivers your quotation request into transport businesses. Loadshift DOES NOT participate in any quotation, nor does it receive commissions. You deal directly with the transport carriers at all times.</p>
+			<p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
+			<br>
+			<div class="container">
+				<ul class="block-grid-xs-1 block-grid-md-3 text-center long-strike-through">
+					<li><span class="h2">SIMPLE</span></li>
+					<li><span class="h2">QUICK</span></li>
+					<li><span class="h2">FREE QUOTES</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endcontentfor %}

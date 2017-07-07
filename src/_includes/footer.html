@@ -1,0 +1,90 @@
+{% assign settings = site.data.settings %}
+
+{% assign settings = site.data.settings %}
+{% assign sitemap = site.data.sitemap %}
+{% assign cargo_categories = sitemap[3].children %}
+
+<!-- FOOTER BODY -->
+<section class="global-footer-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!-- ** Hardcoded Links ** -->
+                <h4 class="mb-4">Quick Links</h4>
+                <ul class="block-grid-xs-1">
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/how-it-works/shippers/">Shippers</a></li>
+                    <li><a href="/how-it-works/carriers/">Carriers</a></li>
+                    <li><a href="/how-it-works/faq/">FAQ</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/how-it-works/advertising/">Advertising</a></li>
+                    <li><a href="/about-us/news/">News</a></li>
+                    <li><a href="/contact-us/">Contact Us</a></li>
+                </ul>
+
+                <div class="spacer m-b-1 hidden-md-up"></div>
+
+            </div>
+            <div class="col-md-6">
+
+                <h4 class="mb-4">Cargo Categories</h4>
+                <ul class="block-grid-xs-1 block-grid-md-2">
+                    {% for item in cargo_categories %}
+                        <li class="{% if item.flag %}flag-{{item.flag}}{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="/cargo-categories/">And More...</a></li>
+                </ul>
+
+                <div class="spacer m-b-1 hidden-md-up"></div>
+
+            </div>
+            <div class="col-md-3">
+                <h4 class="mb-4">Connect</h4>
+                {% include snippets/social_media.html %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER BOTTOM -->
+<section class="global-footer-bottom">
+    <div class="container">
+        <div class="d-flex py-2 mb-2">
+            <a class="mr-3" data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a>
+            <div class="ml-md-auto">
+                <a href="/terms-and-conditions/">Terms &amp; Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/privacy-policy/">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/docs/">Docs</a>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-md-8">
+				<small>
+                    <p>
+                        &copy; {{ site.time | date: '%Y' }} Loadshift Transport System. All rights reserved.<br>
+                        Use of this website consitutes acceptance of loadshift's policies.
+                    </p>
+				</small>
+			</div>
+		</div>
+    </div>
+</section>
+
+<!-- FOOTER SITEMAP -->
+<section id="sitemap" class="global-footer-sitemap collapse">
+	<div class="container">
+		<ul class="block-grid-xs-2 block-grid-lg-5">
+			{% for item in sitemap offset: 1 %}
+				<li>
+					<h5><a href="{{ item.url }}">{{ item.title }}</a></h5>
+					<ul class="list-unstyled">
+						{% for item in item.children %}
+							<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

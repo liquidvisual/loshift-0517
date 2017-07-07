@@ -1,0 +1,53 @@
+<!-- MODAL LOGIN -->
+<div class="modal modal-login fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title ml-auto" id="exampleModalLabel">MEMBERS LOGIN</h5>
+				<button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body pb-0">
+			<!--  -->
+				<div class="login-panel text-center animated fadeInDown p-3">
+					<form data-toggle="validatorX" class="modal-login">
+
+						<!-- NAME -->
+						<fieldset class="form-group">
+							<label for="name"><i class="fa fa-user"></i> Username</label>
+							<input class="form-control" id="name" type="text" placeholder="" maxlength="255" autocapitalize="off" required>
+							<small class="error" hidden>Your name is required.</small>
+						</fieldset>
+
+						<!-- PASSWORD -->
+						<fieldset class="form-group">
+							<label for="password"><i class="fa fa-key"></i> Password</label>
+							<input class="form-control" id="password" type="password" placeholder="" required>
+							<small class="error" hidden>A valid password is required.</small>
+						</fieldset>
+
+						<!-- FORGOT LOGIN -->
+						<p class="text-right"><a class="forgot-password" href="#password-reset">Forgot login?</a></p>
+
+						<!-- REMEMBER ME -->
+						<div class="remember-me text-left">
+							<input id="remember-me" name="remember-me" type="checkbox">&nbsp; <label for="remember-me">Remember me</label>
+						</div>
+					</form>
+				</div>
+			<!--  -->
+			</div>
+			<div class="modal-footer flex-column">
+				<div class="ml-auto mb-4">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+				<div class="modal-footer-bottom">
+					<h6 class="mb-0">Not a member yet?</h6>
+					<a class="color-success" href="/pricing/">Register here</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

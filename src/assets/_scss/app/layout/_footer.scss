@@ -1,0 +1,147 @@
+/*
+    FOOTER.CSS
+
+    - Last updated: 27.06.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// FOOTER
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// FOOTER BODY
+//-----------------------------------------------------------------
+
+.global-footer-body {
+	background: $gray-lighter;
+	padding: ($spacer-y * 2) 0;
+	font-size: rem-calc(15);
+	border-top: 1px solid $gray-light;
+
+	@include media-breakpoint-up(md) {
+	    padding: ($spacer-y * 3) 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		// text-transform: uppercase;
+		// font-size: rem-calc(16);
+	}
+
+	ul {
+		@include media-breakpoint-down(sm) {
+		    margin-bottom: $spacer*1.5;
+		}
+	}
+
+	ul li { // Reset block-grid
+		padding-top: 0;
+		padding-bottom: 0;
+
+		padding-bottom: rem-calc(10);
+
+		a {
+			color: $body-color;
+
+			&:hover {
+				@include media-breakpoint-up(xl) {
+				    color: #222;
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// FOOTER BOTTOM
+//-----------------------------------------------------------------
+
+.global-footer-bottom {
+	padding: $spacer/2 0;
+	padding-bottom: 0;
+	background: darken($gray-lighter, 5%); //darken($gray, 10%); //#3d3d3d;
+	font-size: rem-calc(14);
+	// color: white;
+
+	small {
+		font-size: 11px;
+		line-height: 1.5;
+	}
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		// color: white;
+		color: #222;
+
+		.fa-angle-up,
+		.fa-angle-down {
+			font-size: rem-calc(22);
+			transition: transform 400ms ease;
+
+			&.is-active {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.author-logo {
+		// color: rgba(white, 0.3);
+		font-size: rem-calc(11);
+	}
+
+	//=========================================
+	// BLEED TO BOTTOM
+	//=========================================
+
+	&:after {
+		content: "";
+		position: fixed;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: inherit;
+		z-index: -1;
+	}
+}
+
+//-----------------------------------------------------------------
+// FOOTER SITEMAP (OPTIONAL)
+//-----------------------------------------------------------------
+
+.global-footer-sitemap {
+	background: darken($gray-light, 20%);
+
+	> .container {
+		padding-top: $spacer-y*2;
+		padding-bottom: $spacer-y*2;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $body-color;
+		margin-bottom: $spacer;
+
+		a {
+			color: #222;
+		}
+	}
+
+	a {
+		color: darken($body-color, 15%);
+
+		&:hover {
+			@include media-breakpoint-up(xl) {
+			    color: #222;
+			}
+		}
+	}
+
+	ul li {
+		padding-bottom: rem-calc(10);
+	}
+}
+
+//=========================================
+//
+//=========================================

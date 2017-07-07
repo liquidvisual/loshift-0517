@@ -1,0 +1,254 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 30.06.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$header-top-sm-height: 40px !default;
+$header-top-md-height: 40px !default;
+$header-top-lg-height: 40px !default;
+
+$header-body-sm-height: 60px !default;
+$header-body-md-height: 90px !default;
+$header-body-lg-height: 100px !default;
+
+$header-bottom-sm-height: 50px !default;
+$header-bottom-md-height: 50px !default;
+$header-bottom-lg-height: 50px !default;
+
+//-----------------------------------------------------------------
+// HEADROOM
+//-----------------------------------------------------------------
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear, background-color 200ms ease;
+}
+
+.headroom--pinned {
+    @include media-breakpoint-down(sm) {
+        transform: translateY(0%);
+    }
+}
+.headroom--unpinned {
+	@include media-breakpoint-down(sm) {
+    	transform: translateY(-100%);
+	}
+}
+
+//**********************************************
+// STYLING SCROLL HEADER
+//**********************************************
+
+.headroom--not-top {
+	&.global-header {
+		@include media-breakpoint-up(md) {
+		    > .global-header-body {
+		    	height: $header-body-md-height;
+		    }
+		}
+
+		.global-header-top {
+			height: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.global-header-body {
+			@include media-breakpoint-up(md) {
+			    height: $header-body-md-height;
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// HEADER
+//-----------------------------------------------------------------
+
+.global-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(#2a83cd,1) 20%,rgba(#1c5695,1) 100%);
+	// box-shadow: 0 0 3px 1px rgba(black, 0.2);
+	z-index: 999;
+}
+
+//-----------------------------------------------------------------
+// HEADER TOP
+//-----------------------------------------------------------------
+
+.global-header-top {
+	display: flex;
+	align-items: center;
+	position: relative;
+	background: $brand-primary;
+	font-size: rem-calc(14);
+	color: white;
+	height: $header-top-lg-height;
+	transition: all ease 100ms;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		color: white;
+		transition: color 200ms ease;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// HEADER BODY (BLUE)
+//-----------------------------------------------------------------
+
+.global-header-body {
+	display: flex;
+	align-items: center;
+	height: $header-body-sm-height;
+	// background: #046ab1;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0077c8+0,003c71+100&0.9+0,0.9+100 */
+	// background: -moz-radial-gradient(center, ellipse cover, rgba(0, 119, 200, 0.9) 0%, rgba(0, 60, 113, 0.9) 100%);
+	// background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 119, 200, 0.9) 0%, rgba(0, 60, 113, 0.9) 100%);
+	// background: radial-gradient(ellipse at center, rgba(0, 119, 200, 0.9) 0%, rgba(0, 60, 113, 0.9) 100%);
+	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e60077c8', endColorstr='#e6003c71', GradientType=1);
+
+	// transition: height 100ms ease;
+
+	@include media-breakpoint-up(md) {
+	    height: $header-body-md-height;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: $header-body-lg-height;
+		border-bottom: 1px solid rgba(white, 0.25);
+	}
+
+	//=========================================
+	// HEADER HEIGHT [LOCKED]
+	//=========================================
+
+	> .container {
+		display: flex;
+		align-items: center;
+
+		@include media-breakpoint-down(xs) {
+		    width: 100%; // fixes mobile glitch?
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// LOGO
+//-----------------------------------------------------------------
+
+.global-header .logo {
+	@include media-breakpoint-up(md) {
+	    // margin: 30px 0 0 0; // adjust the logo here
+	}
+
+	img {
+		width: 150px;
+		padding: rem-calc(5 0);
+		// transition: all 150ms ease;
+
+		@include media-breakpoint-up(md) {
+			width: 260px;
+			padding: rem-calc(15 0);
+		}
+
+		@include media-breakpoint-up(lg) {
+		    width: 300px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding: 0;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// COUNTER
+//-----------------------------------------------------------------
+
+.global-header .counter {
+	color: white;
+	margin: 0 30px 0 auto;
+	font-size: rem-calc(16); // control ems
+
+	.number,
+	.km {
+		font-weight: bold;
+		font-size: em-calc(40);
+	}
+
+	.km {
+		font-weight: 300;
+	}
+
+	.text {
+		display: inline-block;
+		padding-left: 5px;
+		max-width: 140px;
+		font-size: em-calc(12);
+	}
+}
+
+//-----------------------------------------------------------------
+// GLOBAL MENU
+//-----------------------------------------------------------------
+
+.global-menu {
+	text-transform: uppercase;
+	font-size: rem-calc(16);
+
+	@include media-breakpoint-down(md) {
+	    margin-left: auto;
+	}
+
+	.global-menu-btn {
+		display: inline-flex;
+		align-items: center;
+		padding: rem-calc(10 15);
+		margin-left: 5px;
+		border-radius: $border-radius;
+		font-size: em-calc(14);
+		font-weight: 600;
+		color: $brand-primary !important;
+		background: rgba(white, 1);
+		box-shadow: 0 3px 3px 2px rgba(black, 0.06);
+		cursor: pointer;
+
+		i {
+			font-size: rem-calc(20);
+			margin-left: rem-calc(10);
+		}
+
+		&:hover {
+			background: darken(white, 10%);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// HAMBURGER
+//-----------------------------------------------------------------
+
+// .global-header-hamburger {
+// 	margin: auto 0 auto auto;
+
+// 	@include media-breakpoint-up(md) {
+// 	    margin: 30px 0 auto auto;
+// 	}
+// }
+
+//=========================================
+//
+//=========================================

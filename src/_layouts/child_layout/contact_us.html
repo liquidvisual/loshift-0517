@@ -1,0 +1,32 @@
+---
+layout: base__page_no_sidebar
+---
+
+{% assign settings = site.data.settings %}
+{% assign main_office = settings.offices[0] %}
+
+<div class="row">
+	<div class="col-md-7">
+
+		<h2>Thank you for your interest in Loadshift.</h2>
+		<p>To Request information, make a suggestion, ask us a question, or report a problem with the site,
+		please use this form.</p>
+		<br>
+
+		{% include form_contact.html %}
+
+		<div class="spacer mb-4"></div>
+
+	</div>
+	<div class="col-md-4 offset-md-1">
+		<h3 class="mb-4">Contact Details</h3>
+		<p>
+			<b>Loadshift Transport System</b><br>
+			{{ main_office.address }}<br><br>
+			<b>ABN:</b> {{ settings.abn }}<br><br>
+			<b>Phone:</b> {{ main_office.phone }}<br>
+			<b>Fax:</b> {{ main_office.fax }}<br>
+			<b>Text (SMS):</b> {{ main_office.sms }}
+		</p>
+	</div>
+</div>

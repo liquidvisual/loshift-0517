@@ -1,0 +1,278 @@
+/*
+    TOPBAR.CSS
+
+    - Last updated: 30.06.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// TOPBAR
+//-----------------------------------------------------------------
+
+.lv-topbar {
+    // margin: auto -15px auto auto;
+    // transition: margin 300ms ease;
+    margin-left: rem-calc(-15);
+}
+
+//-----------------------------------------------------------------
+// GENERAL UL
+//-----------------------------------------------------------------
+
+.lv-topbar ul {
+    padding: 0; // [RESET]
+    margin: 0; // [RESET]
+    list-style: none; // [RESET]
+    font-family: $font-family-sans-serif;
+    font-size: rem-calc(14);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+//=========================================
+// TOP PARENT UL
+//=========================================
+
+.lv-topbar > ul {
+    display: flex;
+    justify-content: flex-start;
+
+    > li {
+        position: relative; // [LOCKED]
+        margin: 0; // [RESET]
+
+        //=========================================
+        // SEPARATE CTAS
+        //=========================================
+
+        &.is-cta-1 { // Show first one on tablets
+            margin-left: auto;
+            border-left: 1px solid rgba(white, .25);
+        }
+
+        // Only show first CTA on tablets, show all on XL+
+        &.is-cta-2,
+        &.is-cta-3 {
+            display: none;
+
+            @include media-breakpoint-up(xl) {
+                display: block;
+            }
+        }
+
+        // match end buttons with button alignment (incl. more button)
+        &.is-cta-4,
+        &.is-cta-3 {
+            margin-right: rem-calc(-15);
+        }
+
+        // MENU (MORE) BUTTON ON TABLETS
+        &.is-cta-4 {
+            display: none;
+
+            @include media-breakpoint-only(lg) {
+                display: block;
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL ANCHORS (INCL. DROPDOWN CHILDREN)
+//-----------------------------------------------------------------
+
+.lv-topbar a {
+    display: block; // [LOCKED]
+    padding: rem-calc(10 15);
+    color: white; //$body-color;
+}
+
+//-----------------------------------------------------------------
+// TOP PARENT ANCHORS (VISIBLE)
+//-----------------------------------------------------------------
+
+.lv-topbar .top-parent-anchor {
+    display: block; // [LOCKED:SPAN?]
+    padding: rem-calc(0 15);
+    line-height: $header-bottom-lg-height; //rem-calc(50); // know the value
+    color: white; //$body-color;
+    cursor: pointer; // in case span
+    transition: background-color 200ms ease;
+}
+
+//=========================================
+// ACTIVE TOP PARENT ANCHOR (OPTIONAL)
+//=========================================
+
+.lv-topbar .active .top-parent-anchor .text {
+    // border-bottom: $brand-primary;
+    // padding-bottom: 3px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 15px;
+        width: calc(100% - 30px);
+        height: 2px;
+        background: white;
+        transition: all 200ms ease;
+    }
+}
+
+//-----------------------------------------------------------------
+// HOVERS
+//-----------------------------------------------------------------
+
+.lv-topbar .top-parent-anchor:hover,
+.lv-topbar .has-dropdown:hover > .top-parent-anchor {
+    @include media-breakpoint-up(xl) {
+        background-color: rgba(black, 0.13);
+        color: white;
+    }
+}
+
+//=========================================
+// OPTIONAL
+//=========================================
+
+.lv-topbar .top-parent-anchor:hover > .text,
+.lv-topbar .active.has-dropdown:hover > .top-parent-anchor .text {
+    // border-bottom: none !important;
+
+    // Widen active indicator
+    &:after {
+        left: 0;
+        width: 100%;
+    }
+}
+
+//=========================================
+// THIRD LEVEL
+//=========================================
+
+.lv-topbar .has-dropdown:hover > .dropdown {
+    @include media-breakpoint-up(xl) {
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+        visibility: visible;
+    }
+}
+
+//=========================================
+// DROPDOWN
+//=========================================
+
+.lv-topbar .dropdown a:hover {
+    @include media-breakpoint-up(xl) {
+        background-color: rgba(black, 0.1);
+        border-color: transparent;
+    }
+}
+
+//=========================================
+// THIRD LEVEL
+//=========================================
+
+.lv-topbar .dropdown .has-dropdown:hover > .dropdown {
+    @include media-breakpoint-up(xl) {
+        opacity: 1;
+        height: auto;
+        visibility: visible;
+    }
+}
+
+//-----------------------------------------------------------------
+// DROPDOWNS
+//-----------------------------------------------------------------
+
+.lv-topbar .dropdown {
+    display: none; // OPT IN DESIGN
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: rem-calc(240);
+    height: 0; // so hit areas aren't triggered
+    overflow: hidden; // so hit areas aren't triggered
+    background: white;
+    background: rgba(#184b84, 1);
+    // background: $brand-primary;
+    border-left: 1px solid rgba(white, 0.1);
+    border-top: 0;
+    border-right: 0;
+    // background: linear-gradient(to bottom, rgba(#1c5695,1) 0%,rgba(#2a83cd,1) 100%);
+    // border-radius: 0 0 $border-radius-lg $border-radius-lg;
+    // box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    // box-shadow: 0 2px 3px 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease, visibility 200ms ease;
+}
+
+// Prevent far-right dropdown from exceeding page width
+.lv-topbar .has-dropdown-right-aligned .dropdown {
+    right: 0;
+    left: auto;
+}
+
+.lv-topbar .dropdown.is-nav-included {
+    display: block;
+}
+
+//=========================================
+// THIRD LEVEL
+//=========================================
+
+.lv-topbar .dropdown .dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+// Prevent far-right 'nested' dropdown from exceeding page width
+.lv-topbar .has-dropdown-right-aligned .dropdown .dropdown {
+    left: -100%;
+}
+//=========================================
+// DROPDOWN LIST + ANCHORS
+//=========================================
+
+.lv-topbar .dropdown li a {
+    transition: none; // UX decision
+    font-size: rem-calc(13); // opinionated
+    // color: darken(white, 2%); //$body-color;
+    text-transform: none;
+    // padding: rem-calc(15 15);
+}
+//=========================================
+// DROPDOWN ANCHOR BORDERS
+//=========================================
+
+.lv-topbar .dropdown a {
+    // border-bottom: 1px solid rgba(black, 0.2);
+}
+
+.lv-topbar .dropdown li:last-child a {
+    border-bottom: 0;
+}
+
+//-----------------------------------------------------------------
+// MEGA MENU DROPDOWNS
+//-----------------------------------------------------------------
+
+.lv-topbar .has-large-dropdown > .dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    width: rem-calc(650);
+
+    li {
+        width: 33.33%;
+    }
+}
+
+//=========================================
+//
+//=========================================

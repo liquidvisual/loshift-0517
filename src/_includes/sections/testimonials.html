@@ -1,0 +1,45 @@
+{% assign testimonials = site.data.testimonials %}
+
+<!-- TESTIMONIALS -->
+<div class="section section-light">
+    <div class="container">
+
+        <!-- A WORD FROM OUR USERS -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>A Word from Our Users</h2>
+            </div>
+        </div>
+
+        <!-- CARD SLIDER -->
+        <div class="card-slider mb-2">
+            {% for item in testimonials %}
+                <div class="testimonial-block">
+                    <div class="row">
+                        <div class="col-3">
+                            <img width="100%" class="img" src="{{ item.image | default: '/assets/img/ui/no-face.png' }}" alt="Customer Photo">
+                        </div>
+                        <div class="col-9">
+                            <h4 class="mb-2">{{ item.title }}</h4>
+                            <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> {{ item.date }}</h5>
+                            <div class="text">
+                                <!-- TRUNCATE: 140 CHARS -->
+                                {{ item.body | markdownify | truncate: 140 }}
+                            </div>
+                            <h5 class="h6 mb-0">{{ item.vehicle }} | {{ item.destination }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- SLIDER CONTROLS -->
+        <div class="lv-hero-carousel-controls text-center" data-slider-controls>
+            <div class="lv-hero-carousel-btns">
+                <span class="lv-hero-carousel-prev-btn"><i class="fa fa-angle-left"></i></span>
+                <span class="lv-hero-carousel-next-btn"><i class="fa fa-angle-right"></i></span>
+            </div>
+        </div>
+
+    </div>
+</div>

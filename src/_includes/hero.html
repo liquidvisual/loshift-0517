@@ -1,0 +1,66 @@
+{% comment %}
+<!--
+    LIQUIDVISUAL-HERO
+
+    - Updated: 27.06.17
+    - Notes:
+        * .has-height-preset-1 - used for internal pages to set a height
+-->
+{% endcomment %}
+
+{% assign slides = site.data.carousel_slides %}
+
+<!-- HERO WRAPPER -->
+<div class="lv-hero-wrapper">
+
+    <!-- HERO -->
+    <div class="lv-hero is-fullscreenX">
+
+        <!-- HERO ITEMS -->
+        {% for item in slides %}
+            <div class="lv-hero-item" style="background-image: url('{{ item.image }}')">
+
+                <!-- HERO ITEM CAPTION -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-7">
+                            <div class="lv-hero-item-caption">
+                                <h1>{{ item.title }}</h1>
+                                <p>{{ item.body }}</p>
+
+                                {% if item.link[0].title %}
+                                    <a class="btn btn-primary" href="{{ item.link[0]url }}">{{ item.link[0].title }}</a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+
+    </div> <!-- /.lv-hero -->
+
+    <!-- CAROUSEL CONTROLS -->
+    <div class="lv-hero-carousel-controls" data-hero-carousel-controls>
+        <div class="container">
+            <div class="lv-hero-carousel-btns">
+                <span class="lv-hero-carousel-prev-btn"><i class="fa fa-angle-left"></i></span>
+                <span class="lv-hero-carousel-next-btn"><i class="fa fa-angle-right"></i></span>
+            </div>
+        </div>
+    </div>
+
+    {% comment %}
+    <!-- CAROUSEL BULLETS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="lv-hero-carousel-bullets"></div>
+            </div>
+        </div>
+    </div>
+    {% endcomment %}
+
+</div> <!-- /.lv-hero-wrapper -->

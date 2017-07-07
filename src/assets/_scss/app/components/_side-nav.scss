@@ -1,0 +1,124 @@
+/*
+    SIDE-NAV.CSS
+
+    - Last updated: 03.07.17
+      Basic Output:
+
+        <ul class="side-nav">
+            <li>
+                <a href="/about/">Text</a>
+                <ul>
+                    <li class="active">
+                        <a href="/404/">Text</a>
+                        <ul>
+                            <li class="nested active">
+                                <a href="/404/">Text</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+.side-nav {
+    @include media-breakpoint-down(md) {
+        background: $gray-light;
+        padding: $spacer*1.5 !important;
+        border-radius: $border-radius-lg;
+    }
+}
+
+//-----------------------------------------------------------------
+// UL
+//-----------------------------------------------------------------
+
+.side-nav,
+.side-nav ul {
+    list-style: none; // [RESET]
+    padding: 0; // [RESET]
+}
+
+//-----------------------------------------------------------------
+// INSET UL
+//-----------------------------------------------------------------
+
+.side-nav li > ul {
+    margin-left: $spacer;
+}
+
+//-----------------------------------------------------------------
+// INSET UL CHILD LI
+//-----------------------------------------------------------------
+
+.side-nav li li {
+    border-left: 2px solid #e9e9e9;
+    padding-left: 15px;
+    padding-top: 15px;
+    line-height: 1;
+
+    &:first-child {
+        padding-top: 0;
+    }
+}
+
+//-----------------------------------------------------------------
+// SELECTED ANCHOR
+//-----------------------------------------------------------------
+
+.side-nav li > ul > li.active > a {
+    font-weight: 600;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -17px;
+        width: 2px;
+        height: 100%;
+        background: $brand-quinary;
+    }
+}
+
+//-----------------------------------------------------------------
+// TOP MOST PARENT
+//-----------------------------------------------------------------
+
+.side-nav > li:first-child > a {
+    color: #222;
+    font-weight: 600;
+    padding-bottom: $spacer;
+
+    &:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        background: $brand-quinary;
+        border-radius: 100%;
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL ANCHORS
+//-----------------------------------------------------------------
+
+.side-nav a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #828282;
+    transition: all 200ms ease;
+
+    &:hover {
+        // background: rgba($brand-primary, 0.05);
+        padding-left: 5px;
+    }
+}
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,47 @@
+---
+layout: base__page_no_sidebar
+---
+
+{% contentfor hero_caption %}
+	<!-- HERO CAPTION -->
+	<div class="lv-hero-item-caption animated fadeInLeft">
+	    <h1 class="mb-4">Access Loadshift<br> from Less Than<br> $2 per Day!</h1>
+	    <a href="/register/" class="btn btn-primary">Register Now</a>
+	    <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
+	    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-login">Login</a>
+	    <div class="spacer mb-3"></div>
+	    <small>* NOTE: If your only requirement is to get quotes for transport,<br> then no membership is required</small>
+	</div>
+{% endcontentfor %}
+
+<!-- SUBSCRIPTION OPTIONS -->
+<div class="col-lg-8 mx-auto text-center">
+	<h2>Membership Pricing</h2>
+	<p class="lead">Transport Carrier may obtain access to the LoadBoard (Get Loads). Truck availability register (incl. trucks) &amp; other resources by purchasing one of the following.</p>
+</div>
+
+{% contentfor content_additional %}
+	{% include pricing_table_2.html %}
+
+	<!-- CARDS ACCEPTED -->
+	<section class="section">
+		<div class="container">
+			<p>(Includes GST &amp; all SMS)<br>
+			Payments are accepted over 256-bit SSL encryption.<br>
+			Visa &amp; MasterCard Accepted.</p>
+			<p><img width="100" src="/assets/img/content/visa-mastercard.svg" alt="We Accept Visa and Mastercard"></p>
+			<p>Please contact Loadshift if an alternative payment method is desired. <br> <i>(Sorry, no accounts)</i></p>
+		</div>
+	</section>
+
+	{% include sections/testimonials.html %}
+
+	{% include sections/test_drive.html %}
+
+	<!-- STATEMENT -->
+	<section class="section is-large has-image-bg has-fixed-bg section-light inverse" style="background-image: url(/assets/img/content/hero/blur-3.jpg);">
+	    <div class="container text-center">
+	        <h3 class="mb-0">Loadshift, where transport does business.</h3>
+	    </div>
+	</section>
+{% endcontentfor %}

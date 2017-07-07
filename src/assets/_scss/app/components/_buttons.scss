@@ -1,0 +1,132 @@
+/*
+    BUTTONS.CSS
+
+    - Last updated: 05.07.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// BTN SPONSOR
+//-----------------------------------------------------------------
+
+.btn-sponsor {
+	display: block;
+	transition: transform 300ms ease;
+
+	&:hover {
+		@include media-breakpoint-up(xl) {
+			transform: scale(1.1);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// BUTTONS
+//-----------------------------------------------------------------
+
+.btn-tile {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	@include media-breakpoint-down(sm) {
+	    height: 150px;
+	}
+
+	//=========================================
+	//
+	//=========================================
+
+	&.is-slim {
+		height: 250px;
+	}
+
+	//=========================================
+	//
+	//=========================================
+
+	.btn-tile-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: none;
+		transition: transform 300ms ease;
+	}
+
+	.btn-tile-overlay {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: rem-calc(30);
+		background: rgba(black, 0.5);
+		transition: opacity 300ms ease, background-color 300ms ease;
+
+		.btn-tile-header {
+			color: white;
+		}
+	}
+
+	//=========================================
+	// TINTED (CTA Footer)
+	//=========================================
+
+	&.is-brand-primary-tinted-1 .btn-tile-overlay {
+		background: lighten(rgba($brand-primary, 1), 2%);
+		// background: linear-gradient(to bottom, rgba(#2a83cd,1) 20%,rgba(#1c5695,1) 100%);
+		// opacity: 0.9;
+	}
+
+	&.is-brand-primary-tinted-2 .btn-tile-overlay {
+		background: lighten(rgba($brand-primary, 1), 4%);
+		// background: linear-gradient(to bottom, rgba(#2a83cd,1) 20%,rgba(#1c5695,1) 100%);
+		// opacity: 0.9;
+	}
+
+	&.is-brand-primary-tinted-3 .btn-tile-overlay {
+		background: lighten(rgba($brand-primary, 1), 8%);
+		// background: linear-gradient(to bottom, rgba(#2a83cd,1) 20%,rgba(#1c5695,1) 100%);
+		// opacity: 0.9;
+	}
+
+	&.is-brand-primary-tinted-1,
+	&.is-brand-primary-tinted-2,
+	&.is-brand-primary-tinted-3 {
+		height: rem-calc(200);
+
+		&:hover {
+			@include media-breakpoint-up(xl) {
+			    .btn-tile-overlay {
+			    	background: lighten(rgba($brand-primary, 0.92), 1%);
+			    }
+			}
+		}
+	}
+
+	&:hover {
+		@include media-breakpoint-up(xl) {
+		    .btn-tile-bg {
+		    	transform: scale(1.05);
+		    }
+		    .btn-tile-overlay {
+		    	// opacity: 1;
+		    	background: rgba(black, 0.1);
+		    }
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================

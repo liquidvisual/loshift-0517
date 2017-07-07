@@ -1,0 +1,93 @@
+# A Typical Sitemap structure
+
+- title: Home
+  url: /
+
+- title: About Us
+  url: /about-us/
+  include_children_in_nav: true
+  children:
+    - title: History
+      url: /about-us/history/
+
+    - title: Our Philosophy
+      url: /about-us/our-philosophy/
+
+    - title: News
+      url: /about-us/news/
+
+- title: How It Works
+  url: /how-it-works/
+  include_children_in_nav: true
+  children:
+    - title: Advertising
+      url: /how-it-works/advertising/
+
+    - title: Escrow Pay Service
+      url: /how-it-works/escrow-pay-service/
+
+    - title: FAQ
+      url: /how-it-works/faq/
+
+    - title: Carriers
+      url: /how-it-works/carriers/
+
+    - title: Shippers
+      url: /how-it-works/shippers/
+
+- title: Cargo Categories
+  url: /cargo-categories/
+  include_children_in_nav: true
+  children:
+    - title: Boat Transport
+      url: /cargo-categories/cargo-item/
+    - title: Bulk Tipper Transport
+      url: /cargo-categories/cargo-item/
+    - title: Car Transport
+      url: /cargo-categories/cargo-item/
+    - title: Container Transport
+      url: /cargo-categories/cargo-item/
+    - title: Furniture Removal
+      url: /cargo-categories/cargo-item/
+      flag: new
+    - title: General Freight
+      url: /cargo-categories/cargo-item/
+    - title: Grain Transport
+      url: /cargo-categories/cargo-item/
+    - title: Hay Transport
+      url: /cargo-categories/cargo-item/
+    - title: Heavy Haulage
+      url: /cargo-categories/cargo-item/
+    - title: Livestock Transport
+      url: /cargo-categories/cargo-item/
+    - title: Machinery Transport
+      url: /cargo-categories/cargo-item/
+    - title: Palletised Freight
+      url: /cargo-categories/cargo-item/
+    - title: Portable Buildings
+      url: /cargo-categories/cargo-item/
+    - title: Trailer Transport
+      url: /cargo-categories/cargo-item/
+    - title: Truck Transport
+      url: /cargo-categories/cargo-item/
+
+- title: Pricing
+  url: /pricing/
+
+- title: Contact Us
+  url: /contact-us/
+
+- title: Get Quotes
+  url: /get-quotes/
+  icon: fa fa-clone
+  cta: is-cta-1
+
+- title: Find Trucks
+  url: /find-trucks/
+  icon: fa fa-truck
+  cta: is-cta-2
+
+- title: Get Loads
+  url: /get-loads/
+  icon: fa fa-road
+  cta: is-cta-3

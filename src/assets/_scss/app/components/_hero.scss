@@ -1,0 +1,260 @@
+/*
+    HERO.CSS
+
+    - Updated: 27.06.17
+    - Notes:
+        * liquidvisual recommends bxSlider for hero carousels
+        * fixed overflow problem when removing JS
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$hero-sm-height:            rem-calc(440); // IMPORTANT: if carousel slides, you need a fixed height
+$hero-md-height:            rem-calc(500);
+$hero-lg-height:            rem-calc(540);
+$hero-xl-height:            rem-calc(540); //
+// $hero-xxl-height:           rem-calc(834);
+
+$hero-sm-height-preset-1:   rem-calc(200); // Appears on product landing
+$hero-md-height-preset-1:   rem-calc(300);
+$hero-lg-height-preset-1:   rem-calc(300);
+
+//-----------------------------------------------------------------
+// HERO WRAPPER
+// Used to align the controls relative to the container
+//-----------------------------------------------------------------
+
+.lv-hero-wrapper {
+    position: relative;
+}
+
+//-----------------------------------------------------------------
+// HERO
+//-----------------------------------------------------------------
+
+.lv-hero {
+    overflow: hidden; // causes problems without JS
+    height: $hero-sm-height;
+
+    @include media-breakpoint-up(md) {
+        height: $hero-md-height;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: $hero-lg-height;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: $hero-xl-height;
+    }
+
+    //=========================================
+    // HAS HEIGHT PRESET 1
+    //=========================================
+
+    &.has-height-preset-1 {
+        height: $hero-sm-height-preset-1;
+
+        @include media-breakpoint-up(md) {
+            height: $hero-md-height-preset-1;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: $hero-lg-height-preset-1;
+        }
+    }
+
+    //=========================================
+    // IS FULLSCREEN
+    //=========================================
+
+    &.is-fullscreen {
+        @include media-breakpoint-up(xl) {
+            height: calc(100vh - #{$header-top-lg-height + $header-body-lg-height + $header-bottom-lg-height});
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO ITEM (Slides)
+//-----------------------------------------------------------------
+
+.lv-hero-item {
+    display: flex;
+    align-items: center;
+    width: 100%; // need
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    > .container {
+        @include media-breakpoint-down(xs) {
+            margin-left: 0;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(black, 0.4);
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO ITEM CAPTION
+//-----------------------------------------------------------------
+
+.lv-hero-item-caption {
+    position: relative;
+    padding: $spacer * 1.5 0;
+    // margin-bottom: $spacer*3;
+    color: white;
+    z-index: 10;
+
+    @include media-breakpoint-up(md) {
+        padding: rem-calc(0 0 60 0); // shift the caption up a bit
+        font-size: rem-calc(16);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        color: white;
+        margin-bottom: $spacer*0.5;
+    }
+
+    p, a {
+        font-size: em-calc(20);
+    }
+
+    .btn {
+        background: transparent;
+        color: darken(white, 10%);
+        border: 2px solid darken(white, 10%);
+        border-radius: $border-radius;
+
+        &:hover {
+            background: rgba(black, 0.2);
+            color: white;
+            border-color: white;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// IS ALTERNATE (INNER PAGES)
+//-----------------------------------------------------------------
+
+.has-height-preset-1 .lv-hero-item {
+    align-items: flex-end;
+
+    .lv-hero-item-caption h1 {
+        margin-bottom: 0;
+    }
+}
+
+//-----------------------------------------------------------------
+// IS FULLSCREEN
+//-----------------------------------------------------------------
+
+.is-fullscreen .lv-hero-item {
+
+    .lv-hero-item-caption {
+        margin-bottom: rem-calc(100); // magic
+    }
+}
+
+//-----------------------------------------------------------------
+// CAROUSEL CONTROLS (APPLIES TO HERO ONLY)
+//-----------------------------------------------------------------
+
+.lv-hero-wrapper .lv-hero-carousel-controls {
+    position: absolute;
+    left: 0;
+    bottom: $spacer*4;
+    width: 100%;
+    height: 0;
+    z-index: 100;
+}
+
+//=========================================
+// NEXT / PREV BUTTONS
+//=========================================
+
+.lv-hero-carousel-controls {
+
+    //=========================================
+    // BUTTONS
+    //=========================================
+
+    .lv-hero-carousel-btns {
+        display: inline-flex;
+        border: 1px solid rgba(white, 0.3);
+        border-radius: $border-radius-lg;
+        background: rgba(black, 0.2);
+        overflow: hidden;
+    }
+
+    //=========================================
+    // NEXT / PREV
+    //=========================================
+
+    .lv-hero-carousel-prev-btn,
+    .lv-hero-carousel-next-btn {
+        display: none;
+        position: relative;
+        width: rem-calc(40);
+        height: rem-calc(40);
+        font-size: rem-calc(40);
+        color: white;
+        cursor: pointer;
+        transition: background-color 200ms ease;
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                background: rgba(black, 0.3);
+            }
+        }
+
+        // @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        // }
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO ADDITION
+//-----------------------------------------------------------------
+
+.hero-addition {
+    @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        min-height: $header-body-lg-height + $header-bottom-lg-height;
+        background: $gray-lightest; //rgba(white, 0.8);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
