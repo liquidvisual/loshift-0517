@@ -91,3 +91,7 @@
   url: /get-loads/
   icon: fa fa-road
   cta: is-cta-3
+
+- title: Base
+  url: /base/
+  cta: is-cta-4

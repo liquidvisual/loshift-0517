@@ -1,0 +1,130 @@
+/*
+    SIDE-NAV.CSS
+
+    - Last updated: 03.07.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// SIDE NAV UL
+//-----------------------------------------------------------------
+
+.side-nav {
+    list-style: none; // [RESET]
+    padding: 0; // [RESET]
+    background: $gray-lighter;
+    margin-bottom: $spacer*1.5;
+
+    //-----------------------------------------------------------------
+    // UL
+    //-----------------------------------------------------------------
+
+    ul {
+        list-style: none; // [RESET]
+        padding: 0; // [RESET]
+        margin: 0; // [RESET]
+    }
+
+    //-----------------------------------------------------------------
+    // NESTED
+    //-----------------------------------------------------------------
+
+    ul ul {
+        display: none;
+    }
+
+    .active ul,
+    .active-parent ul {
+        display: block;
+    }
+
+    //-----------------------------------------------------------------
+    // LI
+    //-----------------------------------------------------------------
+
+    li {
+        padding: 0;
+        border-top: 1px solid white; //rgba(black, 0.1);
+    }
+
+    > li:first-child {
+        border: 0;
+    }
+
+    ul ul li {
+        border-top: 1px solid rgba(white, 0.15);
+    }
+
+    > li:last-child {
+        border-bottom: 1px solid rgba(white, 0.1);
+    }
+
+    //-----------------------------------------------------------------
+    // ANCHORS
+    //-----------------------------------------------------------------
+
+    li > a {
+        padding: rem-calc(10 20);
+        // font-size: rem-calc(14);
+    }
+
+    ul ul > li > a {
+        padding: rem-calc(15 25);
+        background: aqua;
+    }
+
+    //-----------------------------------------------------------------
+    // ACTIVE ANCHORS
+    //-----------------------------------------------------------------
+
+    .active > a {
+        background: darken($gray-lighter, 10%);
+    }
+
+    .active-parent > a {
+        background: red;
+    }
+
+    //=========================================
+    // ARROWS
+    //=========================================
+
+    .active {
+        position: relative;
+        background: $gray-lighter;
+
+        &:after {
+            content: "\f105";
+            position: absolute;
+            top: rem-calc(5);
+            right: rem-calc(15);
+            font-family: "FontAwesome";
+            font-size: rem-calc(30);
+            font-weight: 600;
+            color: darken($gray-lighter, 40%);
+        }
+    }
+
+    //=========================================
+    // GENERAL ACTIVE ANCHORS
+    //=========================================
+
+    a {
+        display: flex;
+        // font-weight: 600;
+        color: $body-color;
+        transition: background ease 200ms;
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                background: rgba(black, 0.03);
+            }
+        }
+    }
+}
+
+//=========================================
+//
+//=========================================

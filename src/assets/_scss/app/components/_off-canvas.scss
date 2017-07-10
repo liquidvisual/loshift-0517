@@ -70,7 +70,7 @@ $hamburger-slit-height: 3px;
 //-----------------------------------------------------------------
 
 .lv-off-canvas {
-	ul:not(.is-special ul) {
+	ul {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -145,9 +145,14 @@ $hamburger-slit-height: 3px;
 	li.is-special {
 		border: 0;
 
-		li {
-			margin-left: 0;
-			border: 0;
+		ul {
+			position: static;
+			padding: 0;
+
+			li {
+				margin-left: 0;
+				border: 0;
+			}
 		}
 	}
 
