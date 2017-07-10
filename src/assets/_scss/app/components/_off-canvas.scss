@@ -1,7 +1,7 @@
 /*
     OFF-CANVAS.CSS
 
-    - Last updated: 27.06.17
+    - Last updated: 09.07.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -70,7 +70,7 @@ $hamburger-slit-height: 3px;
 //-----------------------------------------------------------------
 
 .lv-off-canvas {
-	ul {
+	ul:not(.is-special ul) {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -139,6 +139,15 @@ $hamburger-slit-height: 3px;
 
 		&.is-cta-4 {
 			display: none;
+		}
+	}
+
+	li.is-special {
+		border: 0;
+
+		li {
+			margin-left: 0;
+			border: 0;
 		}
 	}
 

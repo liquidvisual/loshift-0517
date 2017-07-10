@@ -80,15 +80,27 @@
     {% endfor %}
 
     <!-- CUSTOM HAMBURGER FOR LG ONLY -->
-    <li class="is-cta-4">
+    <li class="is-cta-4 is-special">
         <span class="top-parent-anchor" data-menu-toggle>
             <i class="fa fa-navicon"></i>&nbsp;
             <span class="text">More</span>
         </span>
     </li>
 
+    <!-- SOCIAL MEDIA -->
+    <li class="hidden-topbar is-special py-3">
+        {% include snippets/social_media.html %}
+    </li>
+
+    <!-- MEMBERS LOGIN -->
+    <li class="hidden-topbar is-special">
+        <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+            <span>Members Login</span><i class="fa fa fa-user"></i>
+        </a>
+    </li>
+
     <!-- SEARCH -->
-    <li class="lv-off-canvas-search">
+    <li class="lv-off-canvas-search hidden-topbar is-special">
         {% include snippets/search.html %}
     </li>
 

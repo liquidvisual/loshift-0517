@@ -12,14 +12,14 @@
         </div>
 
         <!-- CARD SLIDER -->
-        <div class="card-slider mb-2">
+        <a class="card-slider mb-2" href="/testimonials/">
             {% for item in testimonials %}
                 <div class="testimonial-block">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-md-3 hidden-sm-down">
                             <img width="100%" class="img" src="{{ item.image | default: '/assets/img/ui/no-face.png' }}" alt="Customer Photo">
                         </div>
-                        <div class="col-9">
+                        <div class="col-md-9">
                             <h4 class="mb-2">{{ item.title }}</h4>
                             <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> {{ item.date }}</h5>
                             <div class="text">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             {% endfor %}
-        </div>
+        </a>
 
         <!-- SLIDER CONTROLS -->
         <div class="lv-hero-carousel-controls text-center" data-slider-controls>

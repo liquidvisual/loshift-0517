@@ -207,33 +207,10 @@ $header-bottom-lg-height: 50px !default;
 
 .global-menu {
 	text-transform: uppercase;
-	font-size: rem-calc(16);
+	// font-size: rem-calc(16);
 
 	@include media-breakpoint-down(md) {
 	    margin-left: auto;
-	}
-
-	.global-menu-btn {
-		display: inline-flex;
-		align-items: center;
-		padding: rem-calc(10 15);
-		margin-left: 5px;
-		border-radius: $border-radius;
-		font-size: em-calc(14);
-		font-weight: 600;
-		color: $brand-primary !important;
-		background: rgba(white, 1);
-		box-shadow: 0 3px 3px 2px rgba(black, 0.06);
-		cursor: pointer;
-
-		i {
-			font-size: rem-calc(20);
-			margin-left: rem-calc(10);
-		}
-
-		&:hover {
-			background: darken(white, 10%);
-		}
 	}
 }
 

@@ -1,29 +1,74 @@
-- title: Flat Top
+- title: B Double
+- title: Bobtail Prime Mover
+- title: Car Carrier
 - title: Crane Truck
 - title: Curtainsider
-- title: Low Loader
-- title: Skel
+- title: Depot Facilities
 - title: Dog Trailer
-- title: Side Tipper
-- title: Pole Junker
-- title: Tipper
-- title: Trade Plates
 - title: Drop Deck
-- title: Tilt Tray
-- title: B Double
-- title: Fridge Van
-- title: Tilt Deck
 - title: Extendable
+- title: Flat Top
+- title: Fridge Van
+# - title: Hotshot
+- title: Logging
+- title: Low Loader
+- title: Pilot
+- title: Platform
+- title: Pole Junker
+- title: Rigid Truck
+- title: Road Train
+- title: Side Loader
+- title: Side Tipper
+- title: Skel
 - title: Stock Trailer
 - title: Tanker
-- title: Hotshot
-- title: Pilot
-- title: Car Carrier
-- title: Bobtail Prime Mover
-- title: Rigid Truck
-- title: Side Loader
-- title: Road Train
-- title: Platform
-- title: Logging
+- title: Tilt Deck
+- title: Tilt Tray
+- title: Tipper
+- title: Trade Plates
 - title: Walking Floor
-- title: Depot Facilities
+
+# New set
+- title: Boat
+- title: Boat (with trailer)
+- title: Bulk Material (tipper)
+- title: Car
+- title: Dangerous Goods
+- title: Earthmoving Equipment
+- title: Furniture Removal (full house)
+- title: Furniture Removal (part house)
+- title: Freight Contract Tender
+- title: General (full load)
+- title: General (less than a load)
+- title: General (small)
+- title: Grain (tipper)
+- title: Hay
+- title: Hotshot
+- title: Liquid (tanker)
+- title: Livestock
+- title: Machinery (mobile)
+- title: Machinery (stationary)
+- title: Motorbike
+- title: Pallets (full load)
+- title: Pallets (less than a load)
+- title: Pallet (1 only)
+- title: Portable Building
+- title: Refrigerated
+- title: Shipping Container
+- title: Trailer (to be carried)
+- title: Trailer (towed by truck)
+- title: Trailer (towed by car)
+- title: Trailer (caravan/camper)
+- title: Truck
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 ---
-layout: base__page
+layout: base__page_sidebar
 title: Escrow Pay Service
 permalink: /how-it-works/escrow-pay-service/
 hero: /assets/img/content/hero/hero-3.jpg

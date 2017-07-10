@@ -23,16 +23,55 @@
 }
 
 //-----------------------------------------------------------------
+// MENU BUTTON (MEMBERS LOGIN)
+//-----------------------------------------------------------------
+
+.global-menu-btn {
+	display: inline-flex;
+	align-items: center;
+	padding: rem-calc(10 15);
+	margin-left: 5px;
+	border-radius: $border-radius;
+	font-size: rem-calc(14);
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $brand-primary !important;
+	background: rgba(white, 1);
+	box-shadow: 0 3px 3px 2px rgba(black, 0.06);
+	cursor: pointer;
+
+	i {
+		font-size: rem-calc(20);
+		margin-left: rem-calc(10);
+	}
+
+	&:hover {
+		background: darken(white, 10%);
+	}
+}
+
+//=========================================
+// CONTEXT
+//=========================================
+
+.lv-off-canvas .global-menu-btn {
+	margin: rem-calc(0 15 15 0);
+	text-align: center;
+	padding-right: 0;
+}
+
+//-----------------------------------------------------------------
 // BUTTONS
 //-----------------------------------------------------------------
 
 .btn-tile {
 	display: block;
 	position: relative;
+	height: rem-calc(150);
 	overflow: hidden;
 
-	@include media-breakpoint-down(sm) {
-	    height: 150px;
+	@include media-breakpoint-up(md) {
+	    height: auto;
 	}
 
 	//=========================================
@@ -40,7 +79,11 @@
 	//=========================================
 
 	&.is-slim {
-		height: 250px;
+		height: rem-calc(100);
+
+		@include media-breakpoint-up(md) {
+		    height: rem-calc(220);
+		}
 	}
 
 	//=========================================
@@ -103,7 +146,7 @@
 	&.is-brand-primary-tinted-1,
 	&.is-brand-primary-tinted-2,
 	&.is-brand-primary-tinted-3 {
-		height: rem-calc(200);
+		// height: rem-calc(200);
 
 		&:hover {
 			@include media-breakpoint-up(xl) {

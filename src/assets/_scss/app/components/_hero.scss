@@ -85,6 +85,7 @@ $hero-lg-height-preset-1:   rem-calc(300);
     align-items: center;
     width: 100%; // need
     height: 100%;
+    padding-bottom: rem-calc(100); // prevent button clash
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -118,7 +119,7 @@ $hero-lg-height-preset-1:   rem-calc(300);
     z-index: 10;
 
     @include media-breakpoint-up(md) {
-        padding: rem-calc(0 0 60 0); // shift the caption up a bit
+        // padding: rem-calc(0 0 60 0); // shift the caption up a bit
         font-size: rem-calc(16);
     }
 
@@ -152,6 +153,7 @@ $hero-lg-height-preset-1:   rem-calc(300);
 
 .has-height-preset-1 .lv-hero-item {
     align-items: flex-end;
+    padding-bottom: 0; // since there's no carousel next/prev
 
     .lv-hero-item-caption h1 {
         margin-bottom: 0;

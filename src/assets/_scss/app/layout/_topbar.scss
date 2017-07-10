@@ -1,7 +1,7 @@
 /*
     TOPBAR.CSS
 
-    - Last updated: 30.06.17
+    - Last updated: 09.07.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -15,6 +15,14 @@
     // margin: auto -15px auto auto;
     // transition: margin 300ms ease;
     margin-left: rem-calc(-15);
+}
+
+//-----------------------------------------------------------------
+// HIDDEN FOR TOPBAR
+//-----------------------------------------------------------------
+
+.lv-topbar .hidden-topbar {
+    display: none !important;
 }
 
 //-----------------------------------------------------------------

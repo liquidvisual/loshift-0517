@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+{% assign hero = page.hero | default: "/assets/img/content/hero/hero-1-placeholder.png" %}
+{% assign supporting_image = page.supporting_image %}
+
+{% include hero_secondary.html %}
+
+{% include snippets/breadcrumb.html %}
+
+<!-- CONTENT -->
+<main class="content">
+
+    <section class="section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-9 push-lg-3">
+                    {{ content }}
+                </div>
+                <div class="col-lg-3 pull-lg-9">
+                    <aside class="sidebar">
+
+                        {% contentblock sidebar no-convert %}
+                        {% ifnothascontent sidebar %}
+                            {% include snippets/side_nav.html %}
+                        {% endifnothascontent %}
+
+                        <!-- ADDITIONAL ASIDE -->
+                        {% if supporting_image %}
+                            <p class="py-4"><img width="90%" src="{{ supporting_image }}"></p>
+                        {% endif %}
+
+                        {% contentblock sidebar_additional no-convert %}
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% contentblock content_additional no-convert %}
+</main>

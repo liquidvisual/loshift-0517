@@ -1,5 +1,5 @@
 ---
-layout: base__page_no_sidebar
+layout: base__page
 title: Register Today
 permalink: /register/
 hero: /assets/img/content/hero/hero-1-placeholder.png

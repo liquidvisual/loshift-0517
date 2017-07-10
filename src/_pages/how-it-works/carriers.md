@@ -4,7 +4,7 @@ title: Carriers
 permalink: /how-it-works/carriers/
 hero: /assets/img/content/hero/iStock_32547428_LARGE_CatLoaderOnTruckDirtRoad-2-extended.jpg
 side_nav_id: 2
-hero_classes: is-default
+hero_classes: is-fullscreen
 ---
 
 ## Carriers

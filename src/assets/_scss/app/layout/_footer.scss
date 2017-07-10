@@ -17,7 +17,7 @@
 .global-footer-body {
 	background: $gray-lighter;
 	padding: ($spacer-y * 2) 0;
-	font-size: rem-calc(15);
+	font-size: rem-calc(14);
 	border-top: 1px solid $gray-light;
 
 	@include media-breakpoint-up(md) {
@@ -25,8 +25,8 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		// text-transform: uppercase;
-		// font-size: rem-calc(16);
+		text-transform: uppercase;
+		font-size: rem-calc(16);
 	}
 
 	ul {
@@ -111,7 +111,8 @@
 //-----------------------------------------------------------------
 
 .global-footer-sitemap {
-	background: darken($gray-light, 20%);
+	background: darken($gray-light, 8%);
+	font-size: rem-calc(13);
 
 	> .container {
 		padding-top: $spacer-y*2;
@@ -119,8 +120,10 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: $body-color;
 		margin-bottom: $spacer;
+		font-size: rem-calc(15);
+		color: $body-color;
+		text-transform: uppercase;
 
 		a {
 			color: #222;
