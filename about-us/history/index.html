@@ -8,13 +8,13 @@
     <title>History - Loadshift</title>
 
     <!-- CDN -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura:600,700|Roboto:400,400i,500,500i,700,700i,900">
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY SCRIPTS -->
+    <!-- PRIORITY CDN -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
 <body class="">
 
@@ -34,7 +34,7 @@
     // Limit to 3+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
-    }, 3100);
+    }, 2000);
     </script>
     <div class="lv-page">
 
@@ -282,15 +282,44 @@
                             </li>
 
                             <!-- CUSTOM HAMBURGER FOR LG ONLY -->
-                            <li class="is-cta-4">
+                            <li class="is-cta-4 is-special">
                                 <span class="top-parent-anchor" data-menu-toggle>
                                     <i class="fa fa-navicon"></i>&nbsp;
                                     <span class="text">More</span>
                                 </span>
                             </li>
 
+                            <!-- SOCIAL MEDIA -->
+                            <li class="hidden-topbar is-special py-3">
+                                <ul class="social-media">
+                                    <li>
+                                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="youtube" href="">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- MEMBERS LOGIN -->
+                            <li class="hidden-topbar is-special">
+                                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                                    <span>Members Login</span>
+                                    <i class="fa fa fa-user"></i>
+                                </a>
+                            </li>
+
                             <!-- SEARCH -->
-                            <li class="lv-off-canvas-search">
+                            <li class="lv-off-canvas-search hidden-topbar is-special">
                                 <div class="global-search is-hidden" data-search>
                                     <div class="container text-right">
                                         <div class="global-search-form-wrapper">
@@ -354,49 +383,17 @@
         <main class="content">
             <section class="section">
                 <div class="container">
-                    <div class="row no-gutters">
-                        <div class="col-lg-9 push-lg-3">
-                            <h2 id="loadshift-traces-its-origins-back-to-the-earthmoving-industry">Loadshift traces its origins back to the earthmoving industry.</h2>
-                            <p>Founder of Loadshift
-                                <strong>Philip Callaghan</strong> spent many years buying and selling earthmoving parts &amp; equipment around Australia.</p>
-                            <p>On one occasion having purchased a Bulldozer south of Perth in Western Australia, Philip spent a couple of weeks trying to find the right transport to bring the machine home to Sydney.</p>
-                            <p>Shortly after having the bulldozer delivered, a Transport Carrier contacted Philip and said “I’m in Perth, would you have anything that I could bring over to the East Coast for you?” To which Philip replied “Sorry Mate, but I wish I had known about you a week ago.”</p>
-                            <p>This interaction triggered the thought…</p>
-                            <blockquote class="blockquote">
-                                <p>"There must be another way."</p>
-                            </blockquote>
-                            <p>Birthed during 2006, Loadshift officially went live early 2007.</p>
-                            <p>From Day One, Loadshift has strived to provide a fair transparent system… with ZERO Commission… and NO third party involvement. Just Cargo Owners and Transport Providers networking and doign business directly with each other.</p>
-                        </div>
-                        <div class="col-lg-3 pull-lg-9">
-                            <aside class="sidebar">
-                                <ul class="side-nav">
-                                    <li class="">
-                                        <a href="/about-us/" class="">About Us</a>
-                                        <ul>
-                                            <li class="active">
-                                                <a href="/about-us/history/">History</a>
-                                                <ul></ul>
-                                            </li>
-                                            <li class="">
-                                                <a href="/about-us/our-philosophy/">Our Philosophy</a>
-                                                <ul></ul>
-                                            </li>
-                                            <li class="">
-                                                <a href="/about-us/news/">News</a>
-                                                <ul></ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!-- ADDITIONAL ASIDE -->
-                                <p class="py-4">
-                                    <img width="90%" src="/assets/img/content/history.jpg">
-                                </p>
-                            </aside>
-                        </div>
-                    </div>
+                    <h2 id="loadshift-traces-its-origins-back-to-the-earthmoving-industry">Loadshift traces its origins back to the earthmoving industry.</h2>
+                    <p>Founder of Loadshift
+                        <strong>Philip Callaghan</strong> spent many years buying and selling earthmoving parts &amp; equipment around Australia.</p>
+                    <p>On one occasion having purchased a Bulldozer south of Perth in Western Australia, Philip spent a couple of weeks trying to find the right transport to bring the machine home to Sydney.</p>
+                    <p>Shortly after having the bulldozer delivered, a Transport Carrier contacted Philip and said “I’m in Perth, would you have anything that I could bring over to the East Coast for you?” To which Philip replied “Sorry Mate, but I wish I had known about you a week ago.”</p>
+                    <p>This interaction triggered the thought…</p>
+                    <blockquote class="blockquote">
+                        <p>"There must be another way."</p>
+                    </blockquote>
+                    <p>Birthed during 2006, Loadshift officially went live early 2007.</p>
+                    <p>From Day One, Loadshift has strived to provide a fair transparent system… with ZERO Commission… and NO third party involvement. Just Cargo Owners and Transport Providers networking and doign business directly with each other.</p>
                 </div>
             </section>
         </main>
@@ -440,7 +437,7 @@
                             </ul>
                             <div class="spacer m-b-1 hidden-md-up"></div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 hidden-sm-down">
                             <h4 class="mb-4">Cargo Categories</h4>
                             <ul class="block-grid-xs-1 block-grid-md-2">
                                 <li class="">
@@ -547,7 +544,7 @@
                 <div class="container">
                     <ul class="block-grid-xs-2 block-grid-lg-5">
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/about-us/">About Us</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -563,7 +560,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/how-it-works/">How It Works</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -585,7 +582,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/cargo-categories/">Cargo Categories</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -637,31 +634,31 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/pricing/">Pricing</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/contact-us/">Contact Us</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/get-quotes/">Get Quotes</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
@@ -847,15 +844,44 @@
             </li>
 
             <!-- CUSTOM HAMBURGER FOR LG ONLY -->
-            <li class="is-cta-4">
+            <li class="is-cta-4 is-special">
                 <span class="top-parent-anchor" data-menu-toggle>
                     <i class="fa fa-navicon"></i>&nbsp;
                     <span class="text">More</span>
                 </span>
             </li>
 
+            <!-- SOCIAL MEDIA -->
+            <li class="hidden-topbar is-special py-3">
+                <ul class="social-media">
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- MEMBERS LOGIN -->
+            <li class="hidden-topbar is-special">
+                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                    <span>Members Login</span>
+                    <i class="fa fa fa-user"></i>
+                </a>
+            </li>
+
             <!-- SEARCH -->
-            <li class="lv-off-canvas-search">
+            <li class="lv-off-canvas-search hidden-topbar is-special">
                 <div class="global-search is-hidden" data-search>
                     <div class="container text-right">
                         <div class="global-search-form-wrapper">
@@ -971,8 +997,6 @@
     <![endif]-->
 
     <!-- **** JAVASCRIPT **** -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="/assets/scripts/minified.js"></script>
 
     <!-- NO JAVASCRIPT WARNING -->

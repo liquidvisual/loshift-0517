@@ -8,13 +8,13 @@
     <title>Heavy Haulage - Loadshift</title>
 
     <!-- CDN -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura:600,700|Roboto:400,400i,500,500i,700,700i,900">
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY SCRIPTS -->
+    <!-- PRIORITY CDN -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
 <body class="">
 
@@ -34,7 +34,7 @@
     // Limit to 3+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
-    }, 3100);
+    }, 2000);
     </script>
     <div class="lv-page">
 
@@ -282,15 +282,44 @@
                             </li>
 
                             <!-- CUSTOM HAMBURGER FOR LG ONLY -->
-                            <li class="is-cta-4">
+                            <li class="is-cta-4 is-special">
                                 <span class="top-parent-anchor" data-menu-toggle>
                                     <i class="fa fa-navicon"></i>&nbsp;
                                     <span class="text">More</span>
                                 </span>
                             </li>
 
+                            <!-- SOCIAL MEDIA -->
+                            <li class="hidden-topbar is-special py-3">
+                                <ul class="social-media">
+                                    <li>
+                                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="youtube" href="">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- MEMBERS LOGIN -->
+                            <li class="hidden-topbar is-special">
+                                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                                    <span>Members Login</span>
+                                    <i class="fa fa fa-user"></i>
+                                </a>
+                            </li>
+
                             <!-- SEARCH -->
-                            <li class="lv-off-canvas-search">
+                            <li class="lv-off-canvas-search hidden-topbar is-special">
                                 <div class="global-search is-hidden" data-search>
                                     <div class="container text-right">
                                         <div class="global-search-form-wrapper">
@@ -572,13 +601,13 @@
                     </div>
 
                     <!-- CARD SLIDER -->
-                    <div class="card-slider mb-2">
+                    <a class="card-slider mb-2" href="/testimonials/">
                         <div class="testimonial-block">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-md-3 hidden-sm-down">
                                     <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
                                 </div>
-                                <div class="col-9">
+                                <div class="col-md-9">
                                     <h4 class="mb-2">Jonno</h4>
                                     <h5 class="h6 mb-2 text-muted">
                                         <i class="fa fa-clock-o"></i> 19/05/16</h5>
@@ -593,10 +622,10 @@
                         </div>
                         <div class="testimonial-block">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-md-3 hidden-sm-down">
                                     <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
                                 </div>
-                                <div class="col-9">
+                                <div class="col-md-9">
                                     <h4 class="mb-2">Mark</h4>
                                     <h5 class="h6 mb-2 text-muted">
                                         <i class="fa fa-clock-o"></i> 19/05/15</h5>
@@ -611,10 +640,10 @@
                         </div>
                         <div class="testimonial-block">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-md-3 hidden-sm-down">
                                     <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
                                 </div>
-                                <div class="col-9">
+                                <div class="col-md-9">
                                     <h4 class="mb-2">Hannah</h4>
                                     <h5 class="h6 mb-2 text-muted">
                                         <i class="fa fa-clock-o"></i> 19/05/16</h5>
@@ -629,10 +658,10 @@
                         </div>
                         <div class="testimonial-block">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-md-3 hidden-sm-down">
                                     <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
                                 </div>
-                                <div class="col-9">
+                                <div class="col-md-9">
                                     <h4 class="mb-2">Hannah</h4>
                                     <h5 class="h6 mb-2 text-muted">
                                         <i class="fa fa-clock-o"></i> 19/05/17</h5>
@@ -645,7 +674,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- SLIDER CONTROLS -->
                     <div class="lv-hero-carousel-controls text-center" data-slider-controls>
@@ -723,7 +752,7 @@
                             </ul>
                             <div class="spacer m-b-1 hidden-md-up"></div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 hidden-sm-down">
                             <h4 class="mb-4">Cargo Categories</h4>
                             <ul class="block-grid-xs-1 block-grid-md-2">
                                 <li class="">
@@ -830,7 +859,7 @@
                 <div class="container">
                     <ul class="block-grid-xs-2 block-grid-lg-5">
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/about-us/">About Us</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -846,7 +875,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/how-it-works/">How It Works</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -868,7 +897,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/cargo-categories/">Cargo Categories</a>
                             </h5>
                             <ul class="list-unstyled">
@@ -920,31 +949,31 @@
                             </ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/pricing/">Pricing</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/contact-us/">Contact Us</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/get-quotes/">Get Quotes</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
-                            <h5>
+                            <h5 class="mb-4">
                                 <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
@@ -1130,15 +1159,44 @@
             </li>
 
             <!-- CUSTOM HAMBURGER FOR LG ONLY -->
-            <li class="is-cta-4">
+            <li class="is-cta-4 is-special">
                 <span class="top-parent-anchor" data-menu-toggle>
                     <i class="fa fa-navicon"></i>&nbsp;
                     <span class="text">More</span>
                 </span>
             </li>
 
+            <!-- SOCIAL MEDIA -->
+            <li class="hidden-topbar is-special py-3">
+                <ul class="social-media">
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- MEMBERS LOGIN -->
+            <li class="hidden-topbar is-special">
+                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                    <span>Members Login</span>
+                    <i class="fa fa fa-user"></i>
+                </a>
+            </li>
+
             <!-- SEARCH -->
-            <li class="lv-off-canvas-search">
+            <li class="lv-off-canvas-search hidden-topbar is-special">
                 <div class="global-search is-hidden" data-search>
                     <div class="container text-right">
                         <div class="global-search-form-wrapper">
@@ -1254,8 +1312,6 @@
     <![endif]-->
 
     <!-- **** JAVASCRIPT **** -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="/assets/scripts/minified.js"></script>
 
     <!-- NO JAVASCRIPT WARNING -->
