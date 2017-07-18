@@ -1,0 +1,15 @@
+- title: Post a Request
+  body: Post a transport quote request (FREE).
+  icon: fa fa-pencil-square-o
+
+- title: Request Communicated
+  body: Your request is communicated to a marketplace of transporters.
+  icon: fa fa-bullhorn
+
+- title: Receive Quotes
+  body: Transporters respond to you with quotation.
+  icon: fa fa-comments-o
+
+- title: Choose Your Transporter
+  body: You deal directly with the transporter that you choose.
+  icon: fa fa-handshake-o

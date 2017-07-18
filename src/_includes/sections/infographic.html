@@ -1,0 +1,22 @@
+{% assign infographic = site.data.infographic %}
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<ul class="block-grid-xs-1 block-grid-md-4 list-infographic">
+				{% for item in infographic %}
+				    <li>
+				    	<h4 class="d-flex list-infographic-header">
+				    		<span class="number-bullet mr-3">{{ forloop.index }}</span>
+				    		<span class="text">{{ item.title }}</span>
+				    	</h4>
+				    	<div class="list-infographic-icon h1 mr-3">
+				    		<i class="{{ item.icon }}"></i>
+				    	</div>
+						<p class="mb-0">{{ item.body }}</p>
+				    </li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

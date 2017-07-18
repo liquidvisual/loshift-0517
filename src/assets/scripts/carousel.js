@@ -29,7 +29,7 @@ function launchCarousel() {
     // RANDOMIZE SLIDES
     //==================================================
 
-    $('.lv-hero').randomize('.lv-hero-item');
+    //$('.lv-hero').randomize('.lv-hero-item');
 
     //==================================================
     // BX SLIDER

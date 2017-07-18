@@ -35,6 +35,16 @@
 	}
 }
 
+.container-condensed {
+	@include media-breakpoint-up(lg) {
+	    padding: rem-calc(0 100);
+	}
+
+	@include media-breakpoint-up(xl) {
+	    padding: rem-calc(0 200);
+	}
+}
+
 //=========================================
 //
 //=========================================

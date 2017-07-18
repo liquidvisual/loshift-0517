@@ -98,10 +98,11 @@
     function pollFixedTop() {
         intervalId = setInterval(function(){
             if ($('.has-open-menu').length) {
-
-                $('.global-header').css({ top: $(window).scrollTop()+'px' });
+                // $('.lv-off-canvas .dropdown').css({ top: $(window).scrollTop()+'px' });
+                // $('.global-header').css({ top: $(window).scrollTop()+'px' });
             } else {
-                $('.global-header').removeAttr('style');
+                // $('.lv-off-canvas .dropdown').css({ top: $(window).scrollTop()+'px' });
+                // $('.global-header').removeAttr('style');
                 clearInterval(intervalId);
             }
         }, 100);

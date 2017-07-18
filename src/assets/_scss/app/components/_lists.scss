@@ -62,7 +62,7 @@
 }
 
 //-----------------------------------------------------------------
-// LIST MASONRY
+// MASONRY
 //-----------------------------------------------------------------
 
 .list-masonry {
@@ -81,7 +81,7 @@
 }
 
 //-----------------------------------------------------------------
-// LIST FEATURE ICONS (USED BOTTOM OF HERO)
+// FEATURE ICONS (USED BOTTOM OF HERO)
 //-----------------------------------------------------------------
 
 .list-feature-icons img {
@@ -93,13 +93,62 @@
 }
 
 //-----------------------------------------------------------------
-// LIST SPONSORS
+// SPONSORS
 //-----------------------------------------------------------------
 
 .list-sponsors {
 	@include media-breakpoint-only(md) {
 	    // max-width: rem-calc(500);
 	    padding: rem-calc(0 130);
+	}
+}
+
+//-----------------------------------------------------------------
+// LIST INFOGRAPHIC
+//-----------------------------------------------------------------
+
+.list-infographic {
+
+	// li:nth-child(1) .list-infographic-icon i { background: lighten($brand-quaternary, 26%); }
+
+	li:last-child .list-infographic-icon:after {
+		display: none;
+	}
+
+	.list-infographic-header {
+		@include media-breakpoint-up(md) {
+		    min-height: rem-calc(60);
+		}
+	}
+
+	.list-infographic-icon {
+		display: flex;
+		justify-content: center;
+		position: relative;
+
+		&:after {
+			@include media-breakpoint-up(md) {
+			    content: '\f105';
+			    font-family: 'FontAwesome';
+			    position: absolute;
+			    top: 50%;
+			    right: rem-calc(-25);
+			    line-height: 0;
+			    color: $gray-light;
+			}
+		}
+
+		i {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: rem-calc(100);
+			height: rem-calc(100);
+			border-radius: 100%;
+			border: 3px solid $brand-quaternary; //lighten($brand-quaternary, 35%);
+			// background-color: lighten($brand-quaternary, 35%);
+			color: $brand-quaternary;//#222;
+		}
 	}
 }
 

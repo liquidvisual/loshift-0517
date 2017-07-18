@@ -5,20 +5,34 @@
     - title:
       url:
 
-- title: Get Loads
-  link_title:
-  body: Loadshift delivers more business into your business.<br>Best of all ZERO commission.
-  image: /assets/img/content/hero/iStock_18138110_LARGE_SpeedingBlueTruckRural.jpg
+- title: Get Quotes
+  body: Find Australia wide Heavy Haulage transport fast. Get Quotes by posting a request or find trucks on the location map.
+  image: /assets/img/content/hero/hero-5.jpg
   link:
-    - title: Find out more
-      url: /get-loads/
+    - title: Get Quotes
+      url: /get-quotes/
+
+#- title: Get Quotes & Find Trucks
+  # body: Find Australia wide Heavy Haulage transport fast. Get Quotes by posting a request or find trucks on the location map.
+  # image: /assets/img/content/hero/hero-5.jpg
+  # link:
+  #   - title: Get Quotes
+  #     url: /get-quotes/
 
 - title: Find Trucks
   body: The Truck Availability Register is the place where Transport Providers list the future Location, Trailer Type and Date Available of their trucks.
-  image: /assets/img/content/hero/hero-3.jpg
+  image: /assets/img/content/hero/iStock_18138110_LARGE_SpeedingBlueTruckRural.jpg
   link:
     - title: Find out more
       url: /find-trucks/
+
+- title: Get Loads
+  link_title:
+  body: Loadshift delivers more business into your business.<br>Best of all ZERO commission.
+  image: /assets/img/content/hero/iStock_32547428_LARGE_CatLoaderOnTruckDirtRoad.jpg
+  link:
+    - title: Find out more
+      url: /get-loads/
 
 - title: Celebrating a<br> Decade of Success
   link_title:
