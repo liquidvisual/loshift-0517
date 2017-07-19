@@ -9,7 +9,7 @@
 //-----------------------------------------------------------------
 
 $('.card-slider').slick({
-	autoplay: false,
+	autoplay: true,
 	centerMode: true,
 	slidesToShow: 3,
 	variableWidth: true,

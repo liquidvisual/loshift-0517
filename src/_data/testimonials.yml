@@ -1,23 +1,398 @@
-- title: Jonno
-  date: 19/05/16
-  vehicle: Tractor
-  destination: VIC to QLD
-  body: One great site! A real credit to you. I was referred to it, got my $14000 tractor delivered to my door.
+- title: Kelly
+  date: 04/07/17
+  vehicle: Bobcat
+  destination: Rockhampton to Airlie Beach
+  body: I will tell all my friends. Your website is great.
+  featured: false
 
-- title: Mark
+- title: Matthew
+  date: 13/06/17
+  vehicle: Inter Tractor
+  destination: Nowra to Moonbi
+  body: Thank you very much. Very efficient.
+  featured: false
+
+- title: Graham
+  date: 30/05/17
+  vehicle: Isuzu Truck
+  destination: Perth to Mackay
+  body: Sensational.
+  featured: false
+
+- title: Daz
+  date: 24/05/17
+  vehicle: Dozer
+  destination: Yandina to Griffith
+  body: Got that CAT D5 Dozer sorted. Thanks for the great service.
+  featured: false
+
+- title: Steve
+  date: 18/05/17
+  vehicle: Chrysler Car
+  destination: Moranbah to Point Vernon
+  body: Awesome website. Thanks.
+  featured: false
+
+- title: Tony
+  date: 18/05/17
+  vehicle: Volvo Loader
+  destination: Newcastle to Chinchilla
+  body: Bloody great thing.
+  featured: false
+
+- title: Graham
+  date: 16/05/17
+  vehicle: Fencing Panels
+  destination: Toowoomba to Mackay
+  body: Works Good.
+  featured: false
+
+- title: Martin
+  date: 20/04/17
+  vehicle: Carrier
+  destination:
+  body: Life changing service. it's 100% of my work and I get call backs.
+  featured: true
+
+- title: Marica
+  date: 05/05/17
+  vehicle: Positrack
+  destination: Brisbane to Townsville
+  body: Service was quick, sensational.
+  featured: false
+
+- title: David
+  date: 15/03/17
+  vehicle: JD Tractors
+  destination: Geelong to Warwick
+  body: Blood great site.
+  featured: false
+
+- title: Wayne
+  date: 13/03/17
+  vehicle: Carrier
+  destination:
+  body: Congratulations on a truly helpful service, we use it everyday.
+  featured: true
+
+- title: Shane
+  date: 08/03/17
+  vehicle: Komatsu Loader
+  destination: Kempsey to Bendigo
+  body: Great service.
+  featured: false
+
+- title: Brett
+  date: 06/03/17
+  vehicle: Shipper
+  destination:
+  body: Most reliable service and upfront out of all of them.
+  featured: true
+
+- title: Craig
+  date: 23/02/17
+  vehicle: Skip Bins
+  destination:
+  body: Loadshift has been really good for us.
+  featured: false
+
+- title: Max
+  date: 21/02/17
+  vehicle:
+  destination:
+  body: Brilliant service! Have used it for a couple of years now. Always refer it to others. So easy to use.
+  featured: true
+
+- title: Lewie
+  date: 07/02/17
+  vehicle: 14tn Roller
+  destination: Mudgeeraba to Grafton
+  body: A driver rang me quote quickly. He was nearby… So he’s loading it right now. Pretty good eh!
+  featured: true
+
+- title: Don
+  date: 20/04/16
+  vehicle: Kubota Tractor
+  destination: Sydney to Murwillumbah
+  body: Had been trying to find transport over the last 3 weeks. Found it within 1hr on Loadshift! Thanks.
+  featured: false
+
+- title: Glen
+  date: 24/10/16
+  vehicle: Shipper
+  destination:
+  body: We spend $40,000 to $50,000 per year on transport through Loadshift. It’s easy to use.
+  featured: true
+
+- title: Tony
+  date: 02/09/16
+  vehicle: Kubota Excavator
+  destination: Summer to Somersby
+  body: Great service you guys offer.
+  featured: false
+
+- title: Craig
+  date: 12/08/16
+  vehicle: Carrier
+  destination:
+  body: Pretty much made all my money from Loadshift. Joined 6 months ago when things were quiet.
+  featured: true
+
+- title: John
+  date: 11/08/16
+  vehicle: Carrier
+  destination:
+  body: Can’t go without my Loadshift. Doing 2 jobs this weekend.
+  featured: true
+
+- title: Rob
+  date: 29/07/2016
+  vehicle: Header Front
+  destination: Deniliquin to Mackay
+  body: Brilliant concept. I’ve been told to use it by a few people. Everyone is talking about it.
+  featured: true
+
+- title: Derrick
+  date: 17/06/16
+  vehicle: Carrier
+  destination:
+  body: We have made thousands out of it. Have won a handful of continuing customers.
+  featured: false
+
+- title: Robert
+  date: 10/06/16
+  vehicle: Excavator
+  destination: Lowood to Keilor Park
+  body: Found Transport within 3 minutes of listing.
+  featured: true
+
+- title: Rob
+  date: 04/02/16
+  vehicle: Bobcat
+  destination: Port Macquarie to Campbelltown
+  body: Thank you, we use Loadshift all the time.
+  featured: false
+
+- title: John
+  date: 22/01/16
+  vehicle: 2x Tractors
+  destination: Freemans Reach
+  body: Magic.
+  featured: false
+
+- title: Jeff
+  date: 20/07/15
+  vehicle: Piping
+  destination: VIC to QLD
+  body: Useful service.
+  featured: false
+
+- title: Danny
+  date: 02/07/15
+  vehicle:
+  destination:
+  body: Your site makes it so easy to get equipment home. Thank you.
+  featured: false
+
+- title: Andrew
+  date: 25/03/15
+  vehicle:
+  destination:
+  body: Loved the service.
+  featured: false
+
+- title: Keith
+  date: 17/06/15
+  vehicle: 20ft Container
+  destination: VIC to VIC
+  body: Thank you for your help. It’s a great service.
+  featured: false
+
+- title: Darren
+  date: 16/06/15
+  vehicle: Carrier
+  destination: VIC to VIC
+  body: "We would be stuffed without Loadshift. Have secured a half dozen repeat customers.  Loadshift is a special tool to us."
+  featured: true
+
+- title: Trent
+  date: 01/06/15
+  vehicle: 45ft Trailer
+  destination: QLD to NSW
+  body: Incredible system.
+  featured: false
+
+- title: Jonno
   date: 19/05/15
   vehicle: Tractor
   destination: VIC to QLD
-  body: Possit inermis nominati ex eos, vis idque salutatus percipitur ne. Nihil commune no sit, mel id ornatus euripidis, et cetero legimus quo. No suas essent voluptatum usu. Duo altera essent maluisset ex, putant consectetuer nec et. Meis ponderum accusamus ne mei, ea pro nisl accumsan. Ut odio sanctus vis, mel in tritani interpre.
+  body: Great Site! A real credit to you. I was referred to it. Got my $140,000 tractor delivered to my door.
+  featured: false
 
-- title: Hannah
-  date: 19/05/16
-  vehicle: Tractor
+- title: Mark
+  date: 14/05/15
+  vehicle: Wheel Loader
+  destination:
+  body: Thank you, Great Site.
+  featured: false
+
+- title: Michael
+  date: 13/05/15
+  vehicle: Dog Trailer
+  destination: VIC to NSW
+  body: This is great. Works very quickly.
+  featured: false
+
+- title: Leon
+  date: 30/04/15
+  vehicle: B Double Tipper Set
   destination: QLD to SA
-  body: One great site! A real credit to you. I was referred to it, got my $14000 tractor delivered to my door.
+  body: Great site, worked very well.
+  featured: false
 
-- title: Hannah
-  date: 19/05/17
+- title: Suzie
+  date: 28/04/15
+  vehicle: 40ft Container
+  destination:
+  body: Your system is amazing. It worked so quick.
+  featured: false
+
+- title: Ian
+  date: 20/04/15
+  vehicle: Carrrier
+  destination:
+  body: Great system… It evens out the playing field between us little guys & the bigger transport companys. We are getting access to jobs now, that only the bigger guys would get.
+  featured: true
+
+- title: Adam
+  date: 02/02/15
+  vehicle: Mini Bus
+  destination: QLD to NSW
+  body: Amazing system. Had been trying to find transport for the pass month. Listed a request and found transport in 5 minutes.
+  featured: true
+
+- title: John
+  date: 27/01/15
+  vehicle: JD Tractor
+  destination: VIC to QLD
+  body: What a fantastic service.
+  featured: false
+
+- title: Michael
+  date: 08/12/14
   vehicle: Tractor
-  destination: NSW to QLD
-  body: One great site! A real credit to you. I was referred to it, got my $14000 tractor delivered to my door.
+  destination:
+  body: Works great. Found transport in 3 mintues.
+  featured: false
+
+- title: Ray
+  date: 21/11/14
+  vehicle: TriAxle Tanker Trailer
+  destination: VIC to QLD
+  body: Blood brilliant.
+  featured: false
+
+- title: Boris
+  date: 10/11/14
+  vehicle: Fire Truck
+  destination: QLD to VIC
+  body: Never seen anything like this before. Very pleased. You’re the best.
+  featured: true
+
+- title: Paul
+  date: 07/08/14
+  vehicle: Carrier
+  destination:
+  body: A friend needed a Pilot. I looked on the Truck Availability Register & found one. We rang him and the Pilot was only 5 minutes around the corner. Great!
+  featured: true
+
+- title: Joe
+  date: 06/08/14
+  vehicle: Trike Motorcycle
+  destination: QLD to QLD
+  body: Great Service.
+  featured: false
+
+- title: Kevin
+  date: 04/08/14
+  vehicle: Large Hay Bales
+  destination: QLD to QLD
+  body: I’ll be keeping your phone number handy. I had been looking for transport for 3 weeks. After posting a listing on Loadshift, I immediately got quotes. Ended up finding a truck in Cairns waiting to leave.
+  featured: true
+
+- title: Elesha
+  date: 24/07/14
+  vehicle: Backhoe
+  destination:
+  body: Your site is amazing. I was receiving quotes after 10 minutes of posting a listing.
+  featured: true
+
+- title: Pat
+  date: 09/07/14
+  vehicle:
+  destination: VIC
+  body: I love this Loadshift! Works bloody fantastic.
+  featured: true
+
+- title: Greg
+  date: 27/06/14
+  vehicle: Carrier
+  destination:
+  body: Brilliant idea. I commend you.
+  featured: false
+
+- title: Tony
+  date: 13/06/14
+  vehicle: Skidsteer
+  destination: QLD to QLD
+  body: Great system.
+  featured: false
+
+- title: Les
+  date: 05/05/14
+  vehicle: Carrier
+  destination:
+  body: Loadshift has made the difference between surviving & not. Particularly when it’s quiet.
+  featured: true
+
+- title: Peter
+  date: 14/03/14
+  vehicle: Carrier
+  destination:
+  body: Great system… I would not normally join something like this, but I made the change.
+  featured: true
+
+- title: Graeme
+  date: 26/02/14
+  vehicle: Dozer
+  destination:
+  body: Can’t believe it… the response was great.
+  featured: false
+
+- title: Wally
+  date: 21/02/14
+  vehicle: Carrier
+  destination:
+  body: It’s better than the other sites that I’ve tried.
+  featured: false
+
+- title: Peter
+  date: 05/02/14
+  vehicle: Carrier
+  destination:
+  body: Predominately my work is becoming Loadshift work. 9 out of 10 jobs I do are from Loadshift.
+  featured: true
+
+- title: Mark
+  date: 21/01/14
+  vehicle: Carrier
+  destination:
+  body: Thank you for Loadshift.
+  featured: false
+
+- title: Ian
+  date: 08/01/14
+  vehicle:
+  destination:
+  body: Great site. I think whoever has set up this site is kicking goals… Easy to use.
+  featured: true

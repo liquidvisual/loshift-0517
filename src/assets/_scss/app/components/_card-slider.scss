@@ -36,7 +36,7 @@
 	padding: $spacer*2;
 	margin: rem-calc(10); // looks best on mobile
 	background: white;
-	font-size: rem-calc(15);
+	// font-size: rem-calc(17);
 	color: $body-color;
     box-shadow: 0 3px 8px 3px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -60,6 +60,8 @@
 	    	opacity: 0.10;
 	    }
     }
+
+
 
     .text-muted {
     	font-weight: normal;

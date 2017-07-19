@@ -1,4 +1,4 @@
-{% assign testimonials = site.data.testimonials %}
+{% assign testimonials = site.data.testimonials | where: "featured", true %}
 
 <!-- TESTIMONIALS -->
 <div class="section section-light">
@@ -7,13 +7,13 @@
         <!-- A WORD FROM OUR USERS -->
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-                <h2>A Word from Our Users</h2>
+                <h2>What People Are Saying</h2>
             </div>
         </div>
 
         <!-- CARD SLIDER -->
         <a class="card-slider mb-2" href="/testimonials/">
-            {% for item in testimonials %}
+            {% for item in testimonials limit: 20 %}
                 <div class="testimonial-block">
                     <div class="row">
                         <div class="col-md-3 hidden-sm-down">
@@ -21,12 +21,19 @@
                         </div>
                         <div class="col-md-9">
                             <h4 class="mb-2">{{ item.title }}</h4>
-                            <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> {{ item.date }}</h5>
+                            <p>
+                                <strong>{{ item.vehicle }}</strong>
+                                {% if item.vehicle and item.destination %}
+                                    &nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+                                {% endif %}
+                                <strong>{{ item.destination }}</strong>
+                            </p>
+                            <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                             <div class="text">
                                 <!-- TRUNCATE: 140 CHARS -->
-                                {{ item.body | markdownify | truncate: 140 }}
+                                {{ item.body | prepend: '"' | append: '"' | markdownify | truncate: 140 }}
                             </div>
-                            <h5 class="h6 mb-0">{{ item.vehicle }} | {{ item.destination }}</h5>
+
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,41 @@
+---
+layout: base__page
+---
+
+{% assign testimonials = site.data.testimonials %}
+
+<h2 class="text-center mb-0">What People Are Saying</h2>
+
+{% contentfor content_additional %}
+	<section class="section section-light">
+		<div class="container">
+			<ul class="list-masonry">
+				<li>
+					{% for item in testimonials %}
+					    <div class="testimonial-block mb-3">
+					        <div class="row">
+					            <div class="col-md-3 hidden-sm-down">
+					                <p><img width="100%" class="img" src="{{ item.image | default: '/assets/img/ui/no-face.png' }}" alt="Customer Photo"></p>
+					            </div>
+					            <div class="col-md-9">
+					                <h5 class="mb-2">{{ item.title }}</h5>
+					                <p>
+					                    <strong>{{ item.vehicle }}</strong>
+					                    {% if item.vehicle and item.destination %}
+					                        &nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+					                    {% endif %}
+					                    <strong>{{ item.destination }}</strong>
+					                </p>
+					                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+					            </div>
+					        </div>
+					       	<div class="text">
+					       	    {{ item.body | prepend: '"' | append: '"' | markdownify }}
+					       	</div>
+					    </div>
+					{% endfor %}
+				</li>
+			</ul>
+		</div>
+	</section>
+{% endcontentfor %}

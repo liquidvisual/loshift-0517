@@ -1,5 +1,5 @@
 ---
-layout: base__page
+layout: base__page_sidebar
 title: Our Philosophy
 permalink: /about-us/our-philosophy/
 hero: /assets/img/content/hero/hero-2.jpg

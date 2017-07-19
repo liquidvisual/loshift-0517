@@ -1,5 +1,5 @@
 ---
-layout: base__page
+layout: base__page_sidebar
 title: History
 permalink: /about-us/history/
 hero: /assets/img/content/hero/iStock_11752432_LARGE_CountryTripleRoadTrain.jpg
