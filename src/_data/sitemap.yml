@@ -43,144 +43,144 @@
   include_children_in_nav: true
   children:
     - title: Boat Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/boat-transport/
       include_children_in_nav: false
       children:
         - title: Boat
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/boat-transport/boat/
         - title: Boat (with trailer)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/boat-transport/boat-with-trailer/
 
     - title: Bulk Tipper Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/bulk-tipper-transport/
       include_children_in_nav: false
       children:
         - title: Bulk Material (tipper)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/bulk-tipper-transport/bulk-material-tipper/
 
     - title: Car Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/car-transport/
       include_children_in_nav: false
       children:
         - title: Car
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/car-transport/car/
         - title: Motorbike
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/car-transport/motorbike/
 
     - title: Container Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/container-transport/
       include_children_in_nav: false
       children:
         - title: Shipping Container
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/container-transport/shipping-container/
 
     - title: Furniture Removal
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/furniture-removal/
       flag: new
       include_children_in_nav: false
       children:
         - title: Furniture Removal (full house)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/furniture-removal/furniture-removal-full-house/
         - title: Furniture Removal (part house)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/furniture-removal/furniture-removal-part-house/
 
     - title: General Freight
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/general-freight/
       include_children_in_nav: false
       children:
         - title: General (full load)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/general-full-load/
         - title: General (less than a load)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/general-less-than-a-load/
         - title: General (small)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/general-small/
         - title: Freight Contract Tender
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/freight-contract-tender/
         - title: Refrigerated Goods
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/refrigerated-goods/
         - title: Dangerous Goods
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/general-freight/dangerous-goods/
 
     - title: Grain Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/grain-transport/
       include_children_in_nav: false
       children:
         - title: Grain (tipper)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/grain-transport/grain-tipper/
 
     - title: Hay Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/hay-transport/
       include_children_in_nav: false
       children:
         - title: Hay
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/hay-transport/hay/
 
     - title: Heavy Haulage
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/heavy-haulage/
       include_children_in_nav: false
       children:
         - title: Earthmoving Equipment
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/heavy-haulage/earthmoving-equipment/
         - title: Liquid (tanker)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/heavy-haulage/liquid-tanker/
         - title: Pipe
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/heavy-haulage/pipe/
 
     - title: Livestock Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/livestock-transport/
       include_children_in_nav: false
       children:
         - title: Livestock
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/livestock-transport/livestock/
 
     - title: Machinery Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/machinery-transport/
       include_children_in_nav: false
       children:
         - title: Machinery (mobile)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/machinery-transport/machinery-mobile/
         - title: Machinery (stationary)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/machinery-transport/machinery-stationary/
 
     - title: Palletised Freight
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/palletised-freight/
       include_children_in_nav: false
       children:
         - title: Pallets (full load)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/palletised-freight/pallets-full-load/
         - title: Pallets (less than a load)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/palletised-freight/pallets-less-than-a-load/
         - title: Pallet (single)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/palletised-freight/pallet-single/
 
     - title: Portable Buildings
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/portable-buildings/
       include_children_in_nav: false
       children:
         - title: Portable Building
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/portable-buildings/portable-building/
 
     - title: Trailer Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/trailer-transport/
       include_children_in_nav: false
       children:
         - title: Trailer (to be carried)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/trailer-transport/trailer-to-be-carried/
         - title: Trailer (towed by truck)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/trailer-transport/trailer-towed-by-truck/
         - title: Trailer (towed by car)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/trailer-transport/trailer-towed-by-car/
         - title: Trailer (caravan/camper)
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/trailer-transport/trailer-caravan-camper/
 
     - title: Truck Transport
-      url: /cargo-categories/cargo-item/
+      url: /cargo-categories/truck-transport/
       include_children_in_nav: false
       children:
         - title: Truck
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/truck-transport/truck/
         - title: Hotshot
-          url: /cargo-categories/cargo-item/
+          url: /cargo-categories/truck-transport/hotshot/
 
 - title: Pricing
   url: /pricing/

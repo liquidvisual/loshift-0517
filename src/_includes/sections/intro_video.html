@@ -1,13 +1,18 @@
+{% assign title = include.title %}
+
 <!-- VIDEO SECTION -->
 <section class="section section-dark inverse">
 	<div class="container">
 		<div class="row align-items-center text-center">
 			<div class="col-md-5 col-lg-5">
-				<h2>Loadshift</h2>
-				<h3 class="subheader">The Place Where Transport Does Business!</h3>
-				<div class="spacer mb-4 hidden-md-up"></div>
+				{% if title %}
+					<h2>{{ title }}</h2>
+				{% else %}
+					<h2>Loadshift</h2>
+					<h3 class="subheader">The Place Where Transport Does Business!</h3>
+				{% endif %}
 			</div>
-			<div class="col-md-7 col-lg-7">
+			<div class="col-md-7 col-lg-7 pl-lg-5">
 				<iframe class="video-embed"
 				        width="100%"
 				        frameborder="0"

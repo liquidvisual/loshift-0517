@@ -1,0 +1,55 @@
+---
+layout: base__page
+---
+
+{% contentfor hero_caption %}
+	<!-- HERO CAPTION -->
+	<div class="lv-hero-item-caption animated fadeInLeft">
+	    <h1>{{ page.title }} Quotes</h1>
+	    <p class="lead">Receive quotations for {{ page.title }} services</p>
+	    <a href="/get-quotes/" class="btn btn-primary btn-lg">Try It Free</a>
+	</div>
+{% endcontentfor %}
+
+{% contentfor hero_addition %}
+	<!-- HERO ADDITION -->
+    <div class="hero-addition py-2">
+        <div class="container">
+
+            <!-- FEATURE ICONS -->
+            <ul class="list-feature-icons block-grid-xs-3 block-grid-md-5 text-center">
+            	<li><img src="/assets/img/content/icon-feature-1@2x.png" alt="Find Transport &amp; Loads Fast"></li>
+            	<li><img src="/assets/img/content/icon-feature-2@2x.png" alt="Australia Wide Coverage"></li>
+            	<li><img src="/assets/img/content/icon-feature-3@2x.png" alt="0% Commission"></li>
+            	<li><img src="/assets/img/content/icon-feature-4@2x.png" alt="Cut out the Middleman"></li>
+            	<li><img src="/assets/img/content/icon-feature-5a@2x.png" alt="Easy to Do"></li>
+            </ul>
+        </div>
+    </div>
+{% endcontentfor %}
+
+{% include sections/get_quotes.html %}
+
+{% contentfor content_additional %}
+	{% include sections/intro_video.html title="Find out how Sam received multiple quotes" %}
+
+	{% include sections/infographic.html %}
+
+	{% include sections/testimonials.html %}
+
+	<!-- SIMPLE - TRANSPARENT - JOB LEADS -->
+	<section class="section section-dark inverse">
+		<div class="container">
+			<p>Note: loadshift.com.au is an online business service that specialises in the heavy load transport industry. It simply delivers your quotation request into transport businesses. Loadshift DOES NOT participate in any quotation, nor does it receive commissions. You deal directly with the transport carriers at all times.</p>
+			<p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
+			<br>
+			<div class="container">
+				<ul class="block-grid-xs-1 block-grid-md-3 long-strike-through">
+					<li><span class="h2">SIMPLE</span></li>
+					<li><span class="h2">QUICK</span></li>
+					<li><span class="h2">FREE QUOTES</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endcontentfor %}

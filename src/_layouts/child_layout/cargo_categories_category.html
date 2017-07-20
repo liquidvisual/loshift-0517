@@ -5,8 +5,8 @@ layout: base__page
 {% contentfor hero_caption %}
 	<!-- HERO CAPTION -->
 	<div class="lv-hero-item-caption animated fadeInLeft">
-	    <h1>Heavy Haulage Quotes</h1>
-	    <p class="lead">Receive quotations for transport services</p>
+	    <h1>{{ page.title }} Quotes</h1>
+	    <p class="lead">Receive quotations for {{ page.title }} services</p>
 	    <a href="/get-quotes/" class="btn btn-primary btn-lg">Try It Free</a>
 	</div>
 {% endcontentfor %}
@@ -31,7 +31,7 @@ layout: base__page
 {% include sections/get_quotes.html %}
 
 {% contentfor content_additional %}
-	{% include sections/intro_video.html %}
+	{% include sections/intro_video.html title="Find out how Sam received multiple quotes" %}
 
 	{% include sections/infographic.html %}
 
@@ -44,7 +44,7 @@ layout: base__page
 			<p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
 			<br>
 			<div class="container">
-				<ul class="block-grid-xs-1 block-grid-md-3 text-xs-center long-strike-through">
+				<ul class="list-trio-strike-through">
 					<li><span class="h2">SIMPLE</span></li>
 					<li><span class="h2">QUICK</span></li>
 					<li><span class="h2">FREE QUOTES</span></li>

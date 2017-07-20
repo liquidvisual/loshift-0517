@@ -46,8 +46,16 @@
 // INSET UL
 //-----------------------------------------------------------------
 
-.side-nav li > ul {
+.side-nav > li > ul {
     margin-left: $spacer;
+}
+
+//-----------------------------------------------------------------
+// NESTED UL
+//-----------------------------------------------------------------
+
+.side-nav ul ul {
+    display: none;
 }
 
 //-----------------------------------------------------------------
@@ -69,17 +77,23 @@
 // SELECTED ANCHOR
 //-----------------------------------------------------------------
 
-.side-nav li > ul > li.active > a {
-    font-weight: 600;
+.side-nav li > ul > li.active {
+    ul {
+        display: block;
+    }
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -17px;
-        width: 2px;
-        height: 100%;
-        background: $brand-quinary;
+    > a {
+        font-weight: 600;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -17px;
+            width: 2px;
+            height: 100%;
+            background: $brand-quinary;
+        }
     }
 }
 

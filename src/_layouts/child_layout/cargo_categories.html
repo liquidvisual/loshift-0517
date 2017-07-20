@@ -3,8 +3,27 @@ layout: base__page
 ---
 
 {% assign sitemap = site.data.sitemap %}
-{% assign cargo_categories = sitemap[3].children %}
+<!-- { % assign cargo_categories = sitemap[3].children %} -->
 
+{% assign cargo_categories = site.pages | where: "content_type", 'cargo_category' %}
+
+<ul class="block-grid-xs-1 block-grid-md-3 block-grid-condensed">
+    {% for item in cargo_categories %}
+        {% assign image = '//images.weserv.nl/?url=loadshift-2017.yourwebvisual.com' | append: item.hero | append: '&w=600&q=70' %}
+
+        <li>
+            <a class="btn-tile" href="{{ item.url }}">
+                <img width="100%" src="{{ image }}" alt="{{ item.title }}">
+                <span class="btn-tile-bg" style="background-image: url({{ image }})"></span>
+                <div class="btn-tile-overlay">
+                    <h2 class="h3 btn-tile-header mb-0">{{ item.title }}</h2>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% comment %}
 <ul class="block-grid-xs-1 block-grid-md-3 block-grid-condensed">
 	{% for item in cargo_categories %}
         <li>
@@ -18,3 +37,6 @@ layout: base__page
         </li>
     {% endfor %}
 </ul>
+{% endcomment %}
+
+<!-- //images.weserv.nl/?url=liquidvisual.net/theweddingwarren.com/gallery/photo-5.jpg&w=300&q=60 -->

@@ -145,9 +145,9 @@
 			width: rem-calc(100);
 			height: rem-calc(100);
 			border-radius: 100%;
-			border: 3px solid $brand-quaternary; //lighten($brand-quaternary, 35%);
+			border: 3px solid lighten($brand-quaternary, 15%);
 			// background-color: lighten($brand-quaternary, 35%);
-			color: $brand-quaternary;//#222;
+			color: lighten($brand-quaternary, 15%);
 		}
 	}
 }
