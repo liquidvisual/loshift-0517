@@ -33,6 +33,7 @@
 
 .testimonial-block {
 	display: inline-block; // help css masonry
+	// min-width: 95%;
 	padding: $spacer*2;
 	margin: rem-calc(10); // looks best on mobile
 	background: white;

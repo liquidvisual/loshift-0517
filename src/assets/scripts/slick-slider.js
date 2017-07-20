@@ -8,6 +8,16 @@
 // TESTIMONIAL SLIDER
 //-----------------------------------------------------------------
 
+//==================================================
+// RANDOMIZE SLIDES
+//==================================================
+
+$('.card-slider').randomize('.testimonial-block');
+
+//==================================================
+//
+//==================================================
+
 $('.card-slider').slick({
 	autoplay: true,
 	centerMode: true,
@@ -46,6 +56,22 @@ $('.card-slider').slick({
 		}
 	}]
 });
+
+//-----------------------------------------------------------------
+// RANDOMIZE
+// https://stackoverflow.com/questions/1533910/randomize-a-sequence-of-div-elements-with-jquery#11766418
+// Usage: $('.member').randomize('li');
+// OR     $('.member li').randomize();
+//-----------------------------------------------------------------
+
+$.fn.randomize = function(selector){
+    (selector ? this.find(selector) : this).parent().each(function(){
+        $(this).children(selector).sort(function(){
+            return Math.random() - 0.5;
+        }).detach().appendTo(this);
+    });
+    return this;
+};
 
 //-----------------------------------------------------------------
 // Gallery Slider (Fonzie)

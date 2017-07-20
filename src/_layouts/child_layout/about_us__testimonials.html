@@ -39,3 +39,33 @@ layout: base__page
 		</div>
 	</section>
 {% endcontentfor %}
+
+{% comment %}
+{% contentfor content_additional %}
+	<section class="section section-light">
+		<div class="container">
+			<ul class="list-masonry">
+				<li>
+					{% for item in testimonials %}
+					    <div class="testimonial-block mb-3">
+			                <h5 class="mb-2">{{ item.title }}</h5>
+			                <p>
+			                    <strong>{{ item.vehicle }}</strong>
+			                    {% if item.vehicle and item.destination %}
+			                        &nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+			                    {% endif %}
+			                    <strong>{{ item.destination }}</strong>
+			                </p>
+			                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+					       	<div class="text">
+					       	    {{ item.body | prepend: '"' | append: '"' | markdownify }}
+					       	    .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.
+					       	</div>
+					    </div>
+					{% endfor %}
+				</li>
+			</ul>
+		</div>
+	</section>
+{% endcontentfor %}
+{% endcomment %}
