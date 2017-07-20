@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <title>Machinery (stationary) - Loadshift</title>
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
+    <link rel="stylesheet" href="/assets/css/minified.css">
+
+    <!-- PRIORITY CDN -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+</head>
+<body class="">
+
+    <!-- PAGE LOADER -->
+    <div id="lv-page-loader" class="lv-page-loader">
+        <div class="lv-page-loader-spinner">
+            <div class="bounce-1"></div>
+            <div class="bounce-2"></div>
+            <div class="bounce-3"></div>
+        </div>
+    </div>
+
+    <!-- WON'T SHOW IF JAVASCRIPT IS DISABLED -->
+    <script>
+    var loader = document.getElementById('lv-page-loader');
+    loader.style.display = 'flex';
+    // Limit to 3+ seconds of waiting time
+    setTimeout(function() {
+        loader.className += ' force-finish';
+    }, 2000);
+    </script>
+    <div class="lv-page">
+
+        <!-- HEADER -->
+        <header class="global-header fixed-top">
+
+            <!-- HEADER TOP -->
+            <div class="global-header-top hidden-sm-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="tel:1300 562 374">
+                                <i class="fa fa-phone"></i>&nbsp;
+                                <span class="text hidden-sm-down">1300 562 374</span>
+                            </a>
+                            <span class="spacer mr-3 hidden-sm-down"></span>
+                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#search" data-search-trigger>
+                                <i class="fa fa-search"></i>&nbsp;
+                                <span class="text hidden-sm-down">&nbsp;Search</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEADER BODY -->
+            <div class="global-header-body">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <a class="logo" href="/" title="Loadshift - Australia's Heavy Haulage Transport Marketplace" itemprop="url">
+                        <img src="/assets/img/content/logo-white.svg" alt="Loadshift" itemprop="logo">
+                    </a>
+
+                    <!-- COUNTER -->
+                    <div class="counter hidden-md-down">
+                        <span class="number" id="dynamic-counter"></span>
+                        <span class="km">km</span>
+                        <span class="text">of requested transport added in the last 24hrs.</span>
+                    </div>
+
+                    <!-- ALL OTHER PAGES -->
+                    <script>
+                    $(window).on('load', function() {
+                        $.fn.digits = function() {
+                            return this.each(function() {
+                                $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+                            })
+                        }
+                        $('#dynamic-counter').text(291655).digits();
+                    });
+                    </script>
+
+                    <!-- MENU -->
+                    <div class="global-menu">
+                        <a class="global-menu-btn hidden-xs-down" data-toggle="modal" data-target="#modal-login">
+                            <span>Members Login</span>
+                            <i class="fa fa fa-user"></i>
+                        </a>
+                        <a class="global-menu-btn hidden-lg-up" data-menu-toggle>
+                            <span>Menu</span>
+                            <i class="fa fa fa-navicon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEADER BOTTOM -->
+            <div class="global-header-bottom">
+                <div class="container">
+                    <nav class="lv-topbar hidden-md-down">
+                        <ul>
+                            <li class="">
+                                <a class="top-parent-anchor" href="/">
+                                    <span class="text">Home</span>
+                                </a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a class="top-parent-anchor" href="/about-us/">
+                                    <span class="text">About Us</span>
+                                </a>
+                                <ul class="dropdown is-nav-included" data-parent="About Us">
+                                    <li class="">
+                                        <a href="/about-us/history/">
+                                            <span class="text">History</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-us/our-philosophy/">
+                                            <span class="text">Our Philosophy</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-us/testimonials/">
+                                            <span class="text">Testimonials</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-us/news/">
+                                            <span class="text">News</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a class="top-parent-anchor" href="/how-it-works/">
+                                    <span class="text">How It Works</span>
+                                </a>
+                                <ul class="dropdown is-nav-included" data-parent="How It Works">
+                                    <li class="">
+                                        <a href="/how-it-works/advertising/">
+                                            <span class="text">Advertising</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/how-it-works/escrow-pay-service/">
+                                            <span class="text">Escrow Pay Service</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/how-it-works/faq/">
+                                            <span class="text">FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/how-it-works/carriers/">
+                                            <span class="text">Carriers</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/how-it-works/shippers/">
+                                            <span class="text">Shippers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active has-dropdown has-large-dropdown">
+                                <a class="top-parent-anchor" href="/cargo-categories/">
+                                    <span class="text">Cargo Categories</span>
+                                </a>
+                                <ul class="dropdown is-nav-included" data-parent="Cargo Categories">
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/boat-transport/">
+                                            <span class="text">Boat Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Boat Transport">
+                                            <li>
+                                                <a href="/cargo-categories/boat-transport/boat/">
+                                                    <span class="text">Boat</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/boat-transport/boat-with-trailer/">
+                                                    <span class="text">Boat (with trailer)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/bulk-tipper-transport/">
+                                            <span class="text">Bulk Tipper Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Bulk Tipper Transport">
+                                            <li>
+                                                <a href="/cargo-categories/bulk-tipper-transport/bulk-material-tipper/">
+                                                    <span class="text">Bulk Material (tipper)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/car-transport/">
+                                            <span class="text">Car Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Car Transport">
+                                            <li>
+                                                <a href="/cargo-categories/car-transport/car/">
+                                                    <span class="text">Car</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/car-transport/motorbike/">
+                                                    <span class="text">Motorbike</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/container-transport/">
+                                            <span class="text">Container Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Container Transport">
+                                            <li>
+                                                <a href="/cargo-categories/container-transport/shipping-container/">
+                                                    <span class="text">Shipping Container</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/furniture-removal/">
+                                            <span class="text">Furniture Removal</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Furniture Removal">
+                                            <li>
+                                                <a href="/cargo-categories/furniture-removal/furniture-removal-full-house/">
+                                                    <span class="text">Furniture Removal (full house)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/furniture-removal/furniture-removal-part-house/">
+                                                    <span class="text">Furniture Removal (part house)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/general-freight/">
+                                            <span class="text">General Freight</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="General Freight">
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/general-full-load/">
+                                                    <span class="text">General (full load)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/general-less-than-a-load/">
+                                                    <span class="text">General (less than a load)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/general-small/">
+                                                    <span class="text">General (small)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/freight-contract-tender/">
+                                                    <span class="text">Freight Contract Tender</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/refrigerated-goods/">
+                                                    <span class="text">Refrigerated Goods</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/general-freight/dangerous-goods/">
+                                                    <span class="text">Dangerous Goods</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/grain-transport/">
+                                            <span class="text">Grain Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Grain Transport">
+                                            <li>
+                                                <a href="/cargo-categories/grain-transport/grain-tipper/">
+                                                    <span class="text">Grain (tipper)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/hay-transport/">
+                                            <span class="text">Hay Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Hay Transport">
+                                            <li>
+                                                <a href="/cargo-categories/hay-transport/hay/">
+                                                    <span class="text">Hay</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/heavy-haulage/">
+                                            <span class="text">Heavy Haulage</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Heavy Haulage">
+                                            <li>
+                                                <a href="/cargo-categories/heavy-haulage/earthmoving-equipment/">
+                                                    <span class="text">Earthmoving Equipment</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/heavy-haulage/liquid-tanker/">
+                                                    <span class="text">Liquid (tanker)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/heavy-haulage/pipe/">
+                                                    <span class="text">Pipe</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/livestock-transport/">
+                                            <span class="text">Livestock Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Livestock Transport">
+                                            <li>
+                                                <a href="/cargo-categories/livestock-transport/livestock/">
+                                                    <span class="text">Livestock</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/machinery-transport/">
+                                            <span class="text">Machinery Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Machinery Transport">
+                                            <li>
+                                                <a href="/cargo-categories/machinery-transport/machinery-mobile/">
+                                                    <span class="text">Machinery (mobile)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/machinery-transport/machinery-stationary/">
+                                                    <span class="text">Machinery (stationary)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/palletised-freight/">
+                                            <span class="text">Palletised Freight</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Palletised Freight">
+                                            <li>
+                                                <a href="/cargo-categories/palletised-freight/pallets-full-load/">
+                                                    <span class="text">Pallets (full load)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/palletised-freight/pallets-less-than-a-load/">
+                                                    <span class="text">Pallets (less than a load)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/palletised-freight/pallet-single/">
+                                                    <span class="text">Pallet (single)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/portable-buildings/">
+                                            <span class="text">Portable Buildings</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Portable Buildings">
+                                            <li>
+                                                <a href="/cargo-categories/portable-buildings/portable-building/">
+                                                    <span class="text">Portable Building</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/trailer-transport/">
+                                            <span class="text">Trailer Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Trailer Transport">
+                                            <li>
+                                                <a href="/cargo-categories/trailer-transport/trailer-to-be-carried/">
+                                                    <span class="text">Trailer (to be carried)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/trailer-transport/trailer-towed-by-truck/">
+                                                    <span class="text">Trailer (towed by truck)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/trailer-transport/trailer-towed-by-car/">
+                                                    <span class="text">Trailer (towed by car)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/trailer-transport/trailer-caravan-camper/">
+                                                    <span class="text">Trailer (caravan/camper)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="/cargo-categories/truck-transport/">
+                                            <span class="text">Truck Transport</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="Truck Transport">
+                                            <li>
+                                                <a href="/cargo-categories/truck-transport/truck/">
+                                                    <span class="text">Truck</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cargo-categories/truck-transport/hotshot/">
+                                                    <span class="text">Hotshot</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="top-parent-anchor" href="/pricing/">
+                                    <span class="text">Pricing</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="top-parent-anchor" href="/contact-us/">
+                                    <span class="text">Contact Us</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-1">
+                                <a class="top-parent-anchor" href="/get-quotes/">
+                                    <i class="fa fa-clone mr-1"></i>
+                                    <span class="text">Get Quotes</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-2">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/get-loads/">
+                                    <i class="fa fa-road mr-1"></i>
+                                    <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+
+                            <!-- CUSTOM HAMBURGER FOR LG ONLY -->
+                            <li class="is-cta-4 is-special">
+                                <span class="top-parent-anchor" data-menu-toggle>
+                                    <i class="fa fa-navicon"></i>&nbsp;
+                                    <span class="text">More</span>
+                                </span>
+                            </li>
+
+                            <!-- SOCIAL MEDIA -->
+                            <li class="hidden-topbar is-special py-3">
+                                <ul class="social-media">
+                                    <li>
+                                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="youtube" href="">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- MEMBERS LOGIN -->
+                            <li class="hidden-topbar is-special">
+                                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                                    <span>Members Login</span>
+                                    <i class="fa fa fa-user"></i>
+                                </a>
+                            </li>
+
+                            <!-- SEARCH -->
+                            <li class="lv-off-canvas-search hidden-topbar is-special">
+                                <div class="global-search is-hidden" data-search>
+                                    <div class="container text-right">
+                                        <div class="global-search-form-wrapper">
+                                            <button type="btn" class="close" data-dismiss="alert" aria-label="Close" title="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <form class="global-search-form" action="/search/" method="get" novalidate>
+                                                <div class="input-group">
+                                                    <input id="global-search" type="text" class="form-control" name="q" placeholder="Search">
+                                                    <span class="input-group-btn">
+                                                        <button type="submit" class="btn">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO WRAPPER -->
+        <div class="lv-hero-wrapper">
+
+            <!-- HERO -->
+            <div class="lv-hero is-fullscreen">
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-1-placeholder.png')">
+
+                    <!-- HERO CAPTION -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-8">
+
+                                <!-- HERO CAPTION -->
+                                <div class="lv-hero-item-caption animated fadeInLeft">
+                                    <h1>Machinery (stationary) Quotes</h1>
+                                    <p class="lead">Receive quotations for Machinery (stationary) services</p>
+                                    <a href="/get-quotes/" class="btn btn-primary btn-lg">Try It Free</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.lv-hero -->
+            
+<!-- HERO ADDITION --><div class="hero-addition py-2">
+                <div class="container">
+
+                    <!-- FEATURE ICONS -->
+                    <ul class="list-feature-icons block-grid-xs-3 block-grid-md-5 text-center">
+                        <li>
+                            <img src="/assets/img/content/icon-feature-1@2x.png" alt="Find Transport &amp; Loads Fast">
+                        </li>
+                        <li>
+                            <img src="/assets/img/content/icon-feature-2@2x.png" alt="Australia Wide Coverage">
+                        </li>
+                        <li>
+                            <img src="/assets/img/content/icon-feature-3@2x.png" alt="0% Commission">
+                        </li>
+                        <li>
+                            <img src="/assets/img/content/icon-feature-4@2x.png" alt="Cut out the Middleman">
+                        </li>
+                        <li>
+                            <img src="/assets/img/content/icon-feature-5a@2x.png" alt="Easy to Do">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.lv-hero-wrapper -->
+        
+<!-- BREADCRUMB --><nav class="breadcrumb">
+            <div class="container">
+                <a class="breadcrumb-item" href="/">Home</a>
+                <a class="breadcrumb-item" href="/cargo-categories/">Cargo categories</a>
+                <a class="breadcrumb-item" href="/cargo-categories/machinery-transport/">Machinery transport</a>
+                <span class="breadcrumb-item">Machinery stationary</span>
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <main class="content">
+            <section class="section">
+                <div class="container">
+
+                    <!-- GET QUOTES -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Get Quotes</h2>
+                            <p>Receive quotations for transport services by posting your request for quotation.</p>
+                            <p>It's as easy as:</p>
+                            <p class="h4">
+                                <span class="number-bullet">1</span>&nbsp; Phoning
+                                <a href="tel:1300562374">1300 56 23 74</a>
+                            </p>
+                            <p class="h4 ml-4">
+                                <b>OR</b>
+                            </p>
+                            <p class="h4">
+                                <span class="number-bullet">2</span>&nbsp; Completing our simple online form</p>
+                            <br>
+                            <p>Once your quote request has been posted, It is added to the "Loadboard" and then alerted to the loadshift community.</p>
+                            <p>Thoes carriers that may be of assistance respond directly to you with quotation (Varing price &amp; Avaliability).</p>
+                            <br>
+                            <h3>You deal with whomever you choose.</h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4 text-center">Try It Free</h3>
+
+                            <!-- IF SUCCESS -->
+                            <div class="alert alert-success" hidden>
+                                <h4>Success!</h4>
+                                <p>Your form has been submitted.</p>
+                            </div>
+
+                            <!-- IF FAILURE -->
+                            <div class="alert alert-danger alert-dismissible fade in" role="alert" hidden>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4>Oops!</h4>
+                                <p>Something went wrong. Please check your details.</p>
+                            </div>
+                            <form class="form-quote form-quote-outlined" data-toggle="validator">
+                                <fieldset>
+
+                                    <!-- PICKUP SUBURB -->
+                                    <div class="form-group row">
+                                        <label for="pickup-suburb" class="col-lg-4 form-control-label">Pickup Suburb</label>
+                                        <div class="col-lg-5">
+                                            <input class="form-control" id="pickup-suburb" name="pickup-suburb" type="text" placeholder="" required>
+                                        </div>
+
+                                        <!-- STATE -->
+                                        <div class="col-lg-3 end">
+                                            <select class="form-control custom-select" name="pickup-state" id="pickup-state">
+                                                <option selected>ACT</option>
+                                                <option>NSW</option>
+                                                <option>QLD</option>
+                                                <option>SA</option>
+                                                <option>TAS</option>
+                                                <option>VIC</option>
+                                                <option>WA</option>
+                                            </select>
+                                        </div>
+                                        <small class="error">Pickup suburb is required.</small>
+                                    </div>
+
+                                    <!-- DELIVERY SUBURB -->
+                                    <div class="form-group row">
+                                        <label for="delivery-suburb" class="col-lg-4 form-control-label">Delivery Suburb</label>
+                                        <div class="col-lg-5">
+                                            <input class="form-control" id="delivery-suburb" name="delivery-suburb" type="text" placeholder="" required>
+                                        </div>
+
+                                        <!-- STATE -->
+                                        <div class="col-lg-3 end">
+                                            <select class="form-control custom-select" id="delivery-state" name="delivery-state">
+                                                <option selected>ACT</option>
+                                                <option>NSW</option>
+                                                <option>QLD</option>
+                                                <option>SA</option>
+                                                <option>TAS</option>
+                                                <option>VIC</option>
+                                                <option>WA</option>
+                                            </select>
+                                        </div>
+                                        <small class="error">Delivery suburb is required.</small>
+                                    </div>
+
+                                    <!-- CARGO DESC -->
+                                    <div class="form-group row">
+                                        <label for="cargo-desc" class="col-lg-5 form-control-label">Cargo Description*</label>
+                                        <div class="col-lg-7">
+                                            <input class="form-control" id="cargo-desc" name="cargo-desc" type="text" placeholder="" required>
+                                        </div>
+                                        <small class="error">Your cargo description is required.</small>
+                                    </div>
+
+                                    <!-- CARGO CATEGORY -->
+                                    <div class="form-group row">
+                                        <label for="cargo-category" class="col-lg-5 form-control-label">Cargo Category*</label>
+                                        <div class="col-lg-7">
+                                            <select class="form-control custom-select" id="cargo-category" name="cargo-category">
+                                                <option disabled selected>Please Select</option>
+                                                <option value="1">Machinery / Equipment</option>
+                                                <option value="32">Vehicles</option>
+                                                <option value="64">Trucks</option>
+                                                <option value="8192">Trailers (to be carried)</option>
+                                                <option value="16384">Trailers (to be towed)</option>
+                                                <option value="4">Bulk Product (tipper)</option>
+                                                <option value="8">General (full load)</option>
+                                                <option value="4096">General (part load)</option>
+                                                <option value="16">Boat</option>
+                                                <option value="128">Livestock</option>
+                                                <option value="256">Shipping Containers</option>
+                                                <option value="512">hotshot</option>
+                                                <option value="1024">Pilot / Escort</option>
+                                                <option value="2048">Portable Building</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- NAME -->
+                                    <div class="form-group row">
+                                        <label for="name" class="col-lg-4 form-control-label">Name*</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" id="name" name="name" type="text" placeholder="" required>
+                                        </div>
+                                        <small class="error">Your name is required.</small>
+                                    </div>
+
+                                    <!-- EMAIL -->
+                                    <div class="form-group row">
+                                        <label for="email" class="col-lg-4 form-control-label">Email*</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" id="email" name="email" type="email" placeholder="" required>
+                                        </div>
+                                        <small class="error">A valid email is required.</small>
+                                    </div>
+
+                                    <!-- PHONE -->
+                                    <div class="form-group row">
+                                        <label for="phone" class="col-lg-4 form-control-label">Phone*</label>
+                                        <div class="col-lg-8">
+                                            <input class="form-control" id="phone" name="phone" type="text" placeholder="" required>
+                                        </div>
+                                        <small class="error">A valid phone number is required.</small>
+                                    </div>
+
+                                    <!-- SUBMIT -->
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO SECTION -->
+            <section class="section section-dark inverse">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-5 col-lg-5">
+                            <h2>Find out how Sam received multiple quotes</h2>
+                        </div>
+                        <div class="col-md-7 col-lg-7 pl-lg-5">
+                            <iframe class="video-embed" width="100%" frameborder="0" src="https://www.youtube.com/embed/TkqLAkNK1vA?rel=0&amp;controls=0&amp;showinfo=1"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <ul class="block-grid-xs-1 block-grid-md-4 list-infographic">
+                            <li>
+                                <h4 class="d-flex list-infographic-header">
+                                    <span class="number-bullet mr-3">1</span>
+                                    <span class="text">Post a Request</span>
+                                </h4>
+                                <div class="list-infographic-icon h1 mr-3">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </div>
+                                <p class="mb-0">Post a transport quote request (FREE).</p>
+                            </li>
+                            <li>
+                                <h4 class="d-flex list-infographic-header">
+                                    <span class="number-bullet mr-3">2</span>
+                                    <span class="text">Request Communicated</span>
+                                </h4>
+                                <div class="list-infographic-icon h1 mr-3">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <p class="mb-0">Your request is communicated to a marketplace of transporters.</p>
+                            </li>
+                            <li>
+                                <h4 class="d-flex list-infographic-header">
+                                    <span class="number-bullet mr-3">3</span>
+                                    <span class="text">Receive Quotes</span>
+                                </h4>
+                                <div class="list-infographic-icon h1 mr-3">
+                                    <i class="fa fa-comments-o"></i>
+                                </div>
+                                <p class="mb-0">Transporters respond to you with quotation.</p>
+                            </li>
+                            <li>
+                                <h4 class="d-flex list-infographic-header">
+                                    <span class="number-bullet mr-3">4</span>
+                                    <span class="text">Choose Your Transporter</span>
+                                </h4>
+                                <div class="list-infographic-icon h1 mr-3">
+                                    <i class="fa fa-handshake-o"></i>
+                                </div>
+                                <p class="mb-0">You deal directly with the transporter that you choose.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <div class="section section-light">
+                <div class="container">
+
+                    <!-- A WORD FROM OUR USERS -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2>What People Are Saying</h2>
+                        </div>
+                    </div>
+
+                    <!-- CARD SLIDER -->
+                    <a class="card-slider mb-2" href="/about-us/testimonials/">
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Martin</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Life changing service. it’s 100% of my work and I get call backs.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Wayne</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Congratulations on a truly helpful service, we use it everyday.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Brett</h4>
+                                    <p>
+                                        <strong>Shipper</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Most reliable service and upfront out of all of them.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Max</h4>
+                                    <p>
+                                        <strong></strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Brilliant service! Have used it for a couple of years now. Always refer it to others. So easy to use.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Lewie</h4>
+                                    <p>
+                                        <strong>14tn Roller</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>Mudgeeraba to Grafton</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“A driver rang me quote quickly. He was nearby… So he’s loading it right now. Pretty good eh!”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Glen</h4>
+                                    <p>
+                                        <strong>Shipper</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“We spend $40,000 to $50,000 per year on transport through Loadshift. It’s easy to use.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Craig</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Pretty much made all my money from Loadshift. Joined 6 months ago when things were quiet.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">John</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Can’t go without my Loadshift. Doing 2 jobs this weekend.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Rob</h4>
+                                    <p>
+                                        <strong>Header Front</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>Deniliquin to Mackay</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Brilliant concept. I’ve been told to use it by a few people. Everyone is talking about it.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Robert</h4>
+                                    <p>
+                                        <strong>Excavator</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>Lowood to Keilor Park</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Found Transport within 3 minutes of listing.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Darren</h4>
+                                    <p>
+                                        <strong>Carrier</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>VIC to VIC</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“We would be stuffed without Loadshift. Have secured a half dozen repeat customers. Loadshift is a special tool to us.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Ian</h4>
+                                    <p>
+                                        <strong>Carrrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Great system… It evens out the playing field between us little guys &amp; the bigger transport companys. We are getting access to job...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Adam</h4>
+                                    <p>
+                                        <strong>Mini Bus</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>QLD to NSW</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Amazing system. Had been trying to find transport for the pass month. Listed a request and found transport in 5 minutes.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Boris</h4>
+                                    <p>
+                                        <strong>Fire Truck</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>QLD to VIC</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Never seen anything like this before. Very pleased. You’re the best.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Paul</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“A friend needed a Pilot. I looked on the Truck Availability Register &amp; found one. We rang him and the Pilot was only 5 minutes ar...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Kevin</h4>
+                                    <p>
+                                        <strong>Large Hay Bales</strong> &nbsp;
+                                        <i class="fa fa-angle-right"></i>&nbsp;
+                                        <strong>QLD to QLD</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“I’ll be keeping your phone number handy. I had been looking for transport for 3 weeks. After posting a listing on Loadshift, I immedi...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Elesha</h4>
+                                    <p>
+                                        <strong>Backhoe</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Your site is amazing. I was receiving quotes after 10 minutes of posting a listing.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Pat</h4>
+                                    <p>
+                                        <strong></strong>
+                                        <strong>VIC</strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“I love this Loadshift! Works bloody fantastic.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Les</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Loadshift has made the difference between surviving &amp; not. Particularly when it’s quiet.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block">
+                            <div class="row">
+                                <div class="col-md-3 hidden-sm-down">
+                                    <img width="100%" class="img" src="/assets/img/ui/no-face.png" alt="Customer Photo">
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="mb-2">Peter</h4>
+                                    <p>
+                                        <strong>Carrier</strong>
+                                        <strong></strong>
+                                    </p>
+
+                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
+                                    <div class="text">
+
+                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <p>“Great system… I would not normally join something like this, but I made the change.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- SLIDER CONTROLS -->
+                    <div class="lv-hero-carousel-controls text-center" data-slider-controls>
+                        <div class="lv-hero-carousel-btns">
+                            <span class="lv-hero-carousel-prev-btn">
+                                <i class="fa fa-angle-left"></i>
+                            </span>
+                            <span class="lv-hero-carousel-next-btn">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIMPLE - TRANSPARENT - JOB LEADS -->
+            <section class="section section-dark inverse">
+                <div class="container">
+                    <p>Note: loadshift.com.au is an online business service that specialises in the heavy load transport industry. It simply delivers your quotation request into transport businesses. Loadshift DOES NOT participate in any quotation, nor does it receive commissions. You deal directly with the transport carriers at all times.</p>
+                    <p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
+                    <br>
+                    <div class="container">
+                        <ul class="block-grid-xs-1 block-grid-md-3 long-strike-through">
+                            <li>
+                                <span class="h2">SIMPLE</span>
+                            </li>
+                            <li>
+                                <span class="h2">QUICK</span>
+                            </li>
+                            <li>
+                                <span class="h2">FREE QUOTES</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="global-footer">
+
+            <!-- FOOTER BODY -->
+            <section class="global-footer-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <!-- ** Hardcoded Links ** -->
+                            <h4 class="mb-4">Quick Links</h4>
+                            <ul class="block-grid-xs-1">
+                                <li>
+                                    <a href="/about-us/">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/shippers/">Shippers</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/carriers/">Carriers</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/faq/">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/pricing/">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/advertising/">Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="/about-us/news/">News</a>
+                                </li>
+                                <li>
+                                    <a href="/contact-us/">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="spacer m-b-1 hidden-md-up"></div>
+                        </div>
+                        <div class="col-md-6 hidden-sm-down">
+                            <h4 class="mb-4">Cargo Categories</h4>
+                            <ul class="block-grid-xs-1 block-grid-md-2">
+                                <li class="">
+                                    <a href="/cargo-categories/boat-transport/">Boat Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/bulk-tipper-transport/">Bulk Tipper Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/car-transport/">Car Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/container-transport/">Container Transport</a>
+                                </li>
+                                <li class="flag-new">
+                                    <a href="/cargo-categories/furniture-removal/">Furniture Removal</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/general-freight/">General Freight</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/grain-transport/">Grain Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/hay-transport/">Hay Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/heavy-haulage/">Heavy Haulage</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/livestock-transport/">Livestock Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/machinery-transport/">Machinery Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/palletised-freight/">Palletised Freight</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/portable-buildings/">Portable Buildings</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/trailer-transport/">Trailer Transport</a>
+                                </li>
+                                <li class="">
+                                    <a href="/cargo-categories/truck-transport/">Truck Transport</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="collapse" href="#sitemap">And More...</a>
+                                </li>
+                            </ul>
+                            <div class="spacer m-b-1 hidden-md-up"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="mb-4">Connect</h4>
+                            <ul class="social-media">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/loadshift/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER BOTTOM -->
+            <section class="global-footer-bottom">
+                <div class="container">
+                    <div class="d-flex py-2 mb-2">
+                        <a class="mr-3" data-toggle="collapse" href="#sitemap">Site Map&nbsp;
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="ml-md-auto">
+                            <a href="/terms-and-conditions/">Terms &amp; Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/privacy-policy/">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/docs/">Docs</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <small>
+                                <p>&copy; 2017 Loadshift Transport System. All rights reserved.
+                                    <br>Use of this website consitutes acceptance of loadshift's policies.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER SITEMAP -->
+            <section id="sitemap" class="global-footer-sitemap collapse">
+                <div class="container">
+
+                    <!-- TOP LEVEL (excl. Cargo Categories) -->
+                    <ul class="block-grid-xs-2 block-grid-md-3 block-grid-lg-7">
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/about-us/">About Us</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/about-us/history/">History</a>
+                                </li>
+                                <li>
+                                    <a href="/about-us/our-philosophy/">Our Philosophy</a>
+                                </li>
+                                <li>
+                                    <a href="/about-us/testimonials/">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="/about-us/news/">News</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/how-it-works/">How It Works</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/how-it-works/advertising/">Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/escrow-pay-service/">Escrow Pay Service</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/faq/">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/carriers/">Carriers</a>
+                                </li>
+                                <li>
+                                    <a href="/how-it-works/shippers/">Shippers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/pricing/">Pricing</a>
+                            </h5>
+                            <ul class="list-unstyled"></ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/contact-us/">Contact Us</a>
+                            </h5>
+                            <ul class="list-unstyled"></ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/get-quotes/">Get Quotes</a>
+                            </h5>
+                            <ul class="list-unstyled"></ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/find-trucks/">Find Trucks</a>
+                            </h5>
+                            <ul class="list-unstyled"></ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/get-loads/">Get Loads</a>
+                            </h5>
+                            <ul class="list-unstyled"></ul>
+                        </li>
+                    </ul>
+                    <hr>
+
+                    <!-- CARGO CATEGORIES -->
+                    <ul class="block-grid-xs-2 block-grid-md-3 block-grid-lg-5">
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/bulk-tipper-transport/">Bulk Tipper Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/bulk-tipper-transport/bulk-material-tipper/">Bulk Material (tipper)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/car-transport/">Car Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/car-transport/car/">Car</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/car-transport/motorbike/">Motorbike</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/container-transport/">Container Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/container-transport/shipping-container/">Shipping Container</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/furniture-removal/">Furniture Removal</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/furniture-removal/furniture-removal-full-house/">Furniture Removal (full house)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/furniture-removal/furniture-removal-part-house/">Furniture Removal (part house)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/general-freight/">General Freight</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/general-freight/general-full-load/">General (full load)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/general-freight/general-less-than-a-load/">General (less than a load)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/general-freight/general-small/">General (small)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/general-freight/freight-contract-tender/">Freight Contract Tender</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/general-freight/refrigerated-goods/">Refrigerated Goods</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/general-freight/dangerous-goods/">Dangerous Goods</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/grain-transport/">Grain Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/grain-transport/grain-tipper/">Grain (tipper)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/hay-transport/">Hay Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/hay-transport/hay/">Hay</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/heavy-haulage/">Heavy Haulage</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/heavy-haulage/earthmoving-equipment/">Earthmoving Equipment</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/heavy-haulage/liquid-tanker/">Liquid (tanker)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/heavy-haulage/pipe/">Pipe</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/livestock-transport/">Livestock Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/livestock-transport/livestock/">Livestock</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/machinery-transport/">Machinery Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/machinery-transport/machinery-mobile/">Machinery (mobile)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/machinery-transport/machinery-stationary/">Machinery (stationary)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/palletised-freight/">Palletised Freight</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/palletised-freight/pallets-full-load/">Pallets (full load)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/palletised-freight/pallets-less-than-a-load/">Pallets (less than a load)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/palletised-freight/pallet-single/">Pallet (single)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/portable-buildings/">Portable Buildings</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/portable-buildings/portable-building/">Portable Building</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/trailer-transport/">Trailer Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/trailer-transport/trailer-to-be-carried/">Trailer (to be carried)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/trailer-transport/trailer-towed-by-truck/">Trailer (towed by truck)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/trailer-transport/trailer-towed-by-car/">Trailer (towed by car)</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/trailer-transport/trailer-caravan-camper/">Trailer (caravan/camper)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4">
+                                <a href="/cargo-categories/truck-transport/">Truck Transport</a>
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/cargo-categories/truck-transport/truck/">Truck</a>
+                                </li>
+                                <li>
+                                    <a href="/cargo-categories/truck-transport/hotshot/">Hotshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- /.lv-page -->
+    
+<!-- OFF-CANVAS MENU --><nav class="lv-off-canvas" data-off-canvas-menu aria-hidden="true">
+        <ul>
+            <li class="">
+                <a class="top-parent-anchor" href="/">
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="has-dropdown">
+                <a class="top-parent-anchor" href="/about-us/">
+                    <span class="text">About Us</span>
+                </a>
+                <ul class="dropdown is-nav-included" data-parent="About Us">
+                    <li class="">
+                        <a href="/about-us/history/">
+                            <span class="text">History</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/about-us/our-philosophy/">
+                            <span class="text">Our Philosophy</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/about-us/testimonials/">
+                            <span class="text">Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/about-us/news/">
+                            <span class="text">News</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a class="top-parent-anchor" href="/how-it-works/">
+                    <span class="text">How It Works</span>
+                </a>
+                <ul class="dropdown is-nav-included" data-parent="How It Works">
+                    <li class="">
+                        <a href="/how-it-works/advertising/">
+                            <span class="text">Advertising</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/how-it-works/escrow-pay-service/">
+                            <span class="text">Escrow Pay Service</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/how-it-works/faq/">
+                            <span class="text">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/how-it-works/carriers/">
+                            <span class="text">Carriers</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/how-it-works/shippers/">
+                            <span class="text">Shippers</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active has-dropdown has-large-dropdown">
+                <a class="top-parent-anchor" href="/cargo-categories/">
+                    <span class="text">Cargo Categories</span>
+                </a>
+                <ul class="dropdown is-nav-included" data-parent="Cargo Categories">
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/boat-transport/">
+                            <span class="text">Boat Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Boat Transport">
+                            <li>
+                                <a href="/cargo-categories/boat-transport/boat/">
+                                    <span class="text">Boat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/boat-transport/boat-with-trailer/">
+                                    <span class="text">Boat (with trailer)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/bulk-tipper-transport/">
+                            <span class="text">Bulk Tipper Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Bulk Tipper Transport">
+                            <li>
+                                <a href="/cargo-categories/bulk-tipper-transport/bulk-material-tipper/">
+                                    <span class="text">Bulk Material (tipper)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/car-transport/">
+                            <span class="text">Car Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Car Transport">
+                            <li>
+                                <a href="/cargo-categories/car-transport/car/">
+                                    <span class="text">Car</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/car-transport/motorbike/">
+                                    <span class="text">Motorbike</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/container-transport/">
+                            <span class="text">Container Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Container Transport">
+                            <li>
+                                <a href="/cargo-categories/container-transport/shipping-container/">
+                                    <span class="text">Shipping Container</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/furniture-removal/">
+                            <span class="text">Furniture Removal</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Furniture Removal">
+                            <li>
+                                <a href="/cargo-categories/furniture-removal/furniture-removal-full-house/">
+                                    <span class="text">Furniture Removal (full house)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/furniture-removal/furniture-removal-part-house/">
+                                    <span class="text">Furniture Removal (part house)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/general-freight/">
+                            <span class="text">General Freight</span>
+                        </a>
+                        <ul class="dropdown" data-parent="General Freight">
+                            <li>
+                                <a href="/cargo-categories/general-freight/general-full-load/">
+                                    <span class="text">General (full load)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/general-freight/general-less-than-a-load/">
+                                    <span class="text">General (less than a load)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/general-freight/general-small/">
+                                    <span class="text">General (small)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/general-freight/freight-contract-tender/">
+                                    <span class="text">Freight Contract Tender</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/general-freight/refrigerated-goods/">
+                                    <span class="text">Refrigerated Goods</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/general-freight/dangerous-goods/">
+                                    <span class="text">Dangerous Goods</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/grain-transport/">
+                            <span class="text">Grain Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Grain Transport">
+                            <li>
+                                <a href="/cargo-categories/grain-transport/grain-tipper/">
+                                    <span class="text">Grain (tipper)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/hay-transport/">
+                            <span class="text">Hay Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Hay Transport">
+                            <li>
+                                <a href="/cargo-categories/hay-transport/hay/">
+                                    <span class="text">Hay</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/heavy-haulage/">
+                            <span class="text">Heavy Haulage</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Heavy Haulage">
+                            <li>
+                                <a href="/cargo-categories/heavy-haulage/earthmoving-equipment/">
+                                    <span class="text">Earthmoving Equipment</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/heavy-haulage/liquid-tanker/">
+                                    <span class="text">Liquid (tanker)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/heavy-haulage/pipe/">
+                                    <span class="text">Pipe</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/livestock-transport/">
+                            <span class="text">Livestock Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Livestock Transport">
+                            <li>
+                                <a href="/cargo-categories/livestock-transport/livestock/">
+                                    <span class="text">Livestock</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/machinery-transport/">
+                            <span class="text">Machinery Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Machinery Transport">
+                            <li>
+                                <a href="/cargo-categories/machinery-transport/machinery-mobile/">
+                                    <span class="text">Machinery (mobile)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/machinery-transport/machinery-stationary/">
+                                    <span class="text">Machinery (stationary)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/palletised-freight/">
+                            <span class="text">Palletised Freight</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Palletised Freight">
+                            <li>
+                                <a href="/cargo-categories/palletised-freight/pallets-full-load/">
+                                    <span class="text">Pallets (full load)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/palletised-freight/pallets-less-than-a-load/">
+                                    <span class="text">Pallets (less than a load)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/palletised-freight/pallet-single/">
+                                    <span class="text">Pallet (single)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/portable-buildings/">
+                            <span class="text">Portable Buildings</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Portable Buildings">
+                            <li>
+                                <a href="/cargo-categories/portable-buildings/portable-building/">
+                                    <span class="text">Portable Building</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/trailer-transport/">
+                            <span class="text">Trailer Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Trailer Transport">
+                            <li>
+                                <a href="/cargo-categories/trailer-transport/trailer-to-be-carried/">
+                                    <span class="text">Trailer (to be carried)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/trailer-transport/trailer-towed-by-truck/">
+                                    <span class="text">Trailer (towed by truck)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/trailer-transport/trailer-towed-by-car/">
+                                    <span class="text">Trailer (towed by car)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/trailer-transport/trailer-caravan-camper/">
+                                    <span class="text">Trailer (caravan/camper)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/cargo-categories/truck-transport/">
+                            <span class="text">Truck Transport</span>
+                        </a>
+                        <ul class="dropdown" data-parent="Truck Transport">
+                            <li>
+                                <a href="/cargo-categories/truck-transport/truck/">
+                                    <span class="text">Truck</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cargo-categories/truck-transport/hotshot/">
+                                    <span class="text">Hotshot</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a class="top-parent-anchor" href="/pricing/">
+                    <span class="text">Pricing</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="top-parent-anchor" href="/contact-us/">
+                    <span class="text">Contact Us</span>
+                </a>
+            </li>
+            <li class="is-cta-1">
+                <a class="top-parent-anchor" href="/get-quotes/">
+                    <i class="fa fa-clone mr-1"></i>
+                    <span class="text">Get Quotes</span>
+                </a>
+            </li>
+            <li class="is-cta-2">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/get-loads/">
+                    <i class="fa fa-road mr-1"></i>
+                    <span class="text">Get Loads</span>
+                </a>
+            </li>
+
+            <!-- CUSTOM HAMBURGER FOR LG ONLY -->
+            <li class="is-cta-4 is-special">
+                <span class="top-parent-anchor" data-menu-toggle>
+                    <i class="fa fa-navicon"></i>&nbsp;
+                    <span class="text">More</span>
+                </span>
+            </li>
+
+            <!-- SOCIAL MEDIA -->
+            <li class="hidden-topbar is-special py-3">
+                <ul class="social-media">
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/loadshift/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- MEMBERS LOGIN -->
+            <li class="hidden-topbar is-special">
+                <a class="global-menu-btn" data-toggle="modal" data-target="#modal-login">
+                    <span>Members Login</span>
+                    <i class="fa fa fa-user"></i>
+                </a>
+            </li>
+
+            <!-- SEARCH -->
+            <li class="lv-off-canvas-search hidden-topbar is-special">
+                <div class="global-search is-hidden" data-search>
+                    <div class="container text-right">
+                        <div class="global-search-form-wrapper">
+                            <button type="btn" class="close" data-dismiss="alert" aria-label="Close" title="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <form class="global-search-form" action="/search/" method="get" novalidate>
+                                <div class="input-group">
+                                    <input id="global-search" type="text" class="form-control" name="q" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- SEARCH -->
+    <div class="global-search is-hidden" data-search>
+        <div class="container text-right">
+            <div class="global-search-form-wrapper">
+                <button type="btn" class="close" data-dismiss="alert" aria-label="Close" title="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form class="global-search-form" action="/search/" method="get" novalidate>
+                    <div class="input-group">
+                        <input id="global-search" type="text" class="form-control" name="q" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    
+<!-- MODAL LOGIN --><div class="modal modal-login fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title ml-auto" id="exampleModalLabel">MEMBERS LOGIN</h5>
+                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-0">
+
+                    <!--  -->
+                    <div class="login-panel text-center animated fadeInDown p-3">
+                        <form data-toggle="validatorX" class="modal-login">
+
+                            <!-- NAME -->
+                            <fieldset class="form-group">
+                                <label for="name">
+                                    <i class="fa fa-user"></i> Username</label>
+                                <input class="form-control" id="name" type="text" placeholder="" maxlength="255" autocapitalize="off" required>
+                                <small class="error" hidden>Your name is required.</small>
+                            </fieldset>
+
+                            <!-- PASSWORD -->
+                            <fieldset class="form-group">
+                                <label for="password">
+                                    <i class="fa fa-key"></i> Password</label>
+                                <input class="form-control" id="password" type="password" placeholder="" required>
+                                <small class="error" hidden>A valid password is required.</small>
+                            </fieldset>
+
+                            <!-- FORGOT LOGIN -->
+                            <p class="text-right">
+                                <a class="forgot-password" href="#password-reset">Forgot login?</a>
+                            </p>
+
+                            <!-- REMEMBER ME -->
+                            <div class="remember-me text-left">
+                                <input id="remember-me" name="remember-me" type="checkbox">&nbsp;
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--  -->
+                    </div>
+                <div class="modal-footer flex-column">
+                    <div class="ml-auto mb-4">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="modal-footer-bottom">
+                        <h6 class="mb-0">Not a member yet?</h6>
+                        <a class="color-success" href="/pricing/">Register here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lte IE 9]>
+    <div class="lv-alert-bar">
+        <p>You're using an outdated browser. Please <a title="Click me, you know you want to." href="http://outdatedbrowser.com">upgrade your browser</a> to improve your experience.</p>
+        <span class="lv-alert-bar-close-btn">&times;</span>
+        <div class="lv-blackout"></div>
+    </div>
+    <![endif]-->
+
+    <!-- **** JAVASCRIPT **** -->
+    <script src="/assets/scripts/minified.js"></script>
+
+    <!-- NO JAVASCRIPT WARNING -->
+    <noscript>
+        <div class="lv-alert-bar">
+            <p>Your browser has Javascript disabled. Some features may be limited.</p>
+        </div>
+    </noscript>
+</body>
+</html>
