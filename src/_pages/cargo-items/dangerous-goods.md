@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Dangerous Goods
 permalink: /cargo-categories/general-freight/dangerous-goods/
 hero: /assets/img/content/hero/fullsize/dangerous-goods-2.jpg

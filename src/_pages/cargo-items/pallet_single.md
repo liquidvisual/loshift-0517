@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Pallet (single)
 permalink: /cargo-categories/palletised-freight/pallet-single/
 hero: /assets/img/content/hero/fullsize/pallet_single.jpg

@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Pallets (full load)
 permalink: /cargo-categories/palletised-freight/pallets-full-load/
 hero: /assets/img/content/hero/fullsize/pallets_full-load.jpg

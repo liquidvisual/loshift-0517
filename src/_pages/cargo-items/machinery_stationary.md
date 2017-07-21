@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Machinery (stationary)
 permalink: /cargo-categories/machinery-transport/machinery-stationary/
 hero:

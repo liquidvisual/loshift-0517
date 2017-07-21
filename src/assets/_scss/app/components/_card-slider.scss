@@ -1,7 +1,7 @@
 /*
     CARD-SLIDER.CSS
 
-    - Last updated: 03.07.17
+    - Last updated: 21.07.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -14,16 +14,20 @@
 .card-slider {
 	.slick-slide {
 	    width: rem-calc(500);
+	    height: rem-calc(250);
 	    opacity: 0.2;
-	    transition: opacity 400ms ease;
-
-	    @include media-breakpoint-up(md) {
-	        height: rem-calc(250);
-	    }
+	    transition: opacity 400ms ease, box-shadow 200ms ease;
 	}
 
 	.slick-center {
 	    opacity: 1;
+	    margin-bottom: rem-calc(15);
+
+	    &.testimonial-block:hover {
+	    	@include media-breakpoint-up(xl) {
+				box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.12);
+	    	}
+	    }
 	}
 }
 
@@ -37,7 +41,6 @@
 	padding: $spacer*2;
 	margin: rem-calc(10); // looks best on mobile
 	background: white;
-	// font-size: rem-calc(17);
 	color: $body-color;
     box-shadow: 0 3px 8px 3px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -61,8 +64,6 @@
 	    	opacity: 0.10;
 	    }
     }
-
-
 
     .text-muted {
     	font-weight: normal;

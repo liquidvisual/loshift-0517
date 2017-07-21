@@ -71,6 +71,13 @@
     margin: 0;
     list-style: none;
 
+    .testimonial-block {
+    	@include media-breakpoint-down(sm) {
+    	    display: block;
+    	    margin: 0;
+    	}
+    }
+
     @include media-breakpoint-up(md) {
         column-count: 2;
     }
@@ -150,6 +157,65 @@
 			color: lighten($brand-quaternary, 15%);
 		}
 	}
+}
+
+//-----------------------------------------------------------------
+// USED IN CARGO ITEMS
+//-----------------------------------------------------------------
+
+.list-trio-strike-through {
+	text-align: center;
+	list-style: none;
+	padding: 0; // [RESET]
+	margin: 0; // [RESET]
+
+	@include media-breakpoint-up(sm) {
+	    display: flex;
+	    justify-content: space-around;
+	}
+
+	&:after {
+		@include media-breakpoint-up(md) {
+		    content: "";
+		    position: absolute;
+		    top: 20px;
+		    left: 18%;
+		    width: 60%;
+		    height: 1px;
+		    border-top: 1px solid lighten($gray, 20%);
+		}
+	}
+
+	li > span {
+		@include media-breakpoint-up(md) {
+		    position: relative;
+			padding: rem-calc(0 10);
+			background: white;
+			z-index: 1;
+		}
+	}
+}
+
+//=========================================
+// CONTEXT
+//=========================================
+
+.section-dark .list-trio-strike-through {
+	&:after {
+		@include media-breakpoint-up(md) {
+		    border-top: 1px solid  rgba(white, 0.3);
+		}
+	}
+
+    li > span {
+		padding: rem-calc(0 20);
+	    background: $brand-primary;
+	    color: white;
+
+    	@include media-breakpoint-up(lg) {
+    	    padding: rem-calc(0 40);
+    	}
+    }
 }
 
 //=========================================

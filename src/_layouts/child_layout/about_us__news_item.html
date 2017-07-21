@@ -15,7 +15,7 @@ layout: base__page_sidebar
 {% contentfor sidebar %}
     <h3 class="mb-4">Previous News</h3>
     <div class="mr-md-3">
-        {% for item in news | limit: 3 %}
+        {% for item in news limit: 3 %}
             <a href="/news/news-item/">
                 <h4 class="h6 mb-0 text-capitalize">{{ item.title }}</h4>
                 <small><date class="text-uppercase text-muted">{{ item.date }}</date></small>

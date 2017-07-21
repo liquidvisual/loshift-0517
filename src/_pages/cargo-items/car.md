@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Car
 permalink: /cargo-categories/car-transport/car/
 hero: /assets/img/content/hero/fullsize/car.jpg

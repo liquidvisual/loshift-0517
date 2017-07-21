@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Motorbike
 permalink: /cargo-categories/car-transport/motorbike/
 hero: /assets/img/content/hero/fullsize/motorbike.jpg

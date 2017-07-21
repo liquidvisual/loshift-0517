@@ -2,7 +2,7 @@
 layout: child_layout/how_it_works__carriers
 title: Carriers
 permalink: /how-it-works/carriers/
-hero: /assets/img/content/hero/iStock_32547428_LARGE_CatLoaderOnTruckDirtRoad-2-extended.jpg
+hero: /assets/img/content/hero/fullsize/32547428.jpg
 side_nav_id: 2
 hero_classes: is-fullscreen
 ---

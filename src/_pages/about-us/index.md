@@ -2,7 +2,7 @@
 layout: child_layout/about_us
 title: About Us
 permalink: /about-us/
-hero: /assets/img/content/hero/Loadshift_Big_Pipe_Mass_Energy_1.jpg
+hero: /assets/img/content/hero/fullsize/pipe.jpg
 supporting_image: /assets/img/content/stamp-10-years.jpg
 side_nav_id: 1
 ---

@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Trailer (to be carried)
 permalink: /cargo-categories/trailer-transport/trailer-to-be-carried/
 hero:

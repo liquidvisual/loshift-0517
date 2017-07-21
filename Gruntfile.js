@@ -235,7 +235,7 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= yeoman.dist %>/assets/css/minified.css': '<%= yeoman.dist %>/assets/css/minified.css',
-          '<%= yeoman.dist %>/assets/webvisual/assets/css/minified.css': '<%= yeoman.dist %>/assets/webvisual/assets/css/minified.css'
+          //'<%= yeoman.dist %>/assets/webvisual/assets/css/minified.css': '<%= yeoman.dist %>/assets/webvisual/assets/css/minified.css'
         }
       }
     },

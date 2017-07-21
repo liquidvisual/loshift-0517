@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Grain (tipper)
 permalink: /cargo-categories/grain-transport/grain-tipper/
 hero: /assets/img/content/hero/fullsize/grain_tipper.jpg

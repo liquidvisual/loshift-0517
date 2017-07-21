@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Bulk Material (tipper)
 permalink: /cargo-categories/bulk-tipper-transport/bulk-material-tipper/
 hero: /assets/img/content/hero/fullsize/bulk-material_tipper.jpg

@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Livestock
 permalink: /cargo-categories/livestock-transport/livestock/
 hero: /assets/img/content/hero/fullsize/livestock.jpg

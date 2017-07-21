@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Trailer (caravan/camper)
 permalink: /cargo-categories/trailer-transport/trailer-caravan-camper/
 hero: /assets/img/content/hero/fullsize/trailer_caravan-camper.jpg

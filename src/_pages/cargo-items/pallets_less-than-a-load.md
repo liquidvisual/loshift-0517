@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Pallets (less than a load)
 permalink: /cargo-categories/palletised-freight/pallets-less-than-a-load/
 hero: /assets/img/content/hero/fullsize/pallets_less-than-a-load.jpg

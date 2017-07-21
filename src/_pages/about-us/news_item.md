@@ -4,7 +4,7 @@ title: That's Pie Country. They Do a Lot of Baking Up There.
 title_override: News
 permalink: /about-us/news/news-item/
 back_breadcrumb: /news/
-hero: /assets/img/content/hero/iStock_11752432_LARGE_CountryTripleRoadTrain.jpg
+hero: /assets/img/content/hero/fullsize/11752432.jpg
 side_nav_id: 1
 ---
 

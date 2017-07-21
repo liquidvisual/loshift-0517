@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Shipping Container
 permalink: /cargo-categories/container-transport/shipping-container/
 hero: /assets/img/content/hero/fullsize/shipping-container.jpg

@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Refrigerated Goods
 permalink: /cargo-categories/general-freight/refrigerated-goods/
 hero:

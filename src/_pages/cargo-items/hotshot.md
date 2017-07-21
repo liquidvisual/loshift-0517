@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Hotshot
 permalink: /cargo-categories/truck-transport/hotshot/
 hero:

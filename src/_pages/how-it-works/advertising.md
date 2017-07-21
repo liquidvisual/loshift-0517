@@ -2,7 +2,7 @@
 layout: child_layout/how_it_works__advertising
 title: Advertising
 permalink: /how-it-works/advertising/
-hero: /assets/img/content/hero/hero-3.jpg
+hero: /assets/img/content/hero/fullsize/hero-3.jpg
 side_nav_id: 2
 ---
 

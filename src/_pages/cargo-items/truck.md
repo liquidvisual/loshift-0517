@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Truck
 permalink: /cargo-categories/truck-transport/truck/
 hero: /assets/img/content/hero/fullsize/truck.jpg

@@ -11,60 +11,56 @@
 // IMAGE ALIGNMENT
 //-----------------------------------------------------------------
 
-.img-left {
+.img-left,
+.img-right {
 	margin-bottom: $spacer;
+	width: 100%;
+}
 
-	@include media-breakpoint-down(sm) {
-	    width: 100%;
-	}
-
+.img-left {
 	@include media-breakpoint-up(md) {
+		width: auto;
 	    float: left;
 	    margin: $spacer $spacer 0 0;
 	}
 }
 
 .img-right {
-	margin-bottom: $spacer;
-
-	@include media-breakpoint-down(sm) {
-	    width: 100%;
-	}
-
 	@include media-breakpoint-up(md) {
+		width: auto;
 	    float: right;
 	    margin: 0 0 $spacer $spacer;
 	}
 }
 
-//-----------------------------------------------------------------
-// STYLED LISTS
-//-----------------------------------------------------------------
+// //-----------------------------------------------------------------
+// // STYLED LISTS
+// //-----------------------------------------------------------------
 
-.styled-list {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+// .styled-list {
+// 	list-style: none;
+// 	margin-left: 0;
+// 	padding-left: 0;
 
-	li {
-		padding-left: rem-calc(8);
-		margin-bottom: rem-calc(5);
+// 	li {
+// 		padding-left: rem-calc(8);
+// 		margin-bottom: rem-calc(5);
 
-		a:before {
-			// content: "\f0da";
-			content: "\f04b";
-			font-family: "FontAwesome";
-			position: relative;
-			top: 1px;
-			left: -5px;
-			color: $primary-color;
-		}
-	}
+// 		a:before {
+// 			// content: "\f0da";
+// 			content: "\f04b";
+// 			font-family: "FontAwesome";
+// 			position: relative;
+// 			top: 1px;
+// 			left: -5px;
+// 			color: $primary-color;
+// 		}
+// 	}
 
-	&[class*='block-grid'] li {
-		padding-bottom: 0; // Let list items set their own inner padding
-	}
-}
+// 	&[class*='block-grid'] li {
+// 		padding-bottom: 0; // Let list items set their own inner padding
+// 	}
+// }
 
 //-----------------------------------------------------------------
 // FONT FAMILY

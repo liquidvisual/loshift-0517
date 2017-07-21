@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Earthmoving Equipment
 permalink: /cargo-categories/heavy-haulage/earthmoving-equipment/
 hero: /assets/img/content/hero/fullsize/earthmoving-equipment.jpg

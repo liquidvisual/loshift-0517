@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: General (less than a load)
 permalink: /cargo-categories/general-freight/general-less-than-a-load/
 hero: /assets/img/content/hero/fullsize/general_less-than-a-load.jpg

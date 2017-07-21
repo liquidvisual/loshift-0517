@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Pipe
 permalink: /cargo-categories/heavy-haulage/pipe/
 hero: /assets/img/content/hero/fullsize/pipe.jpg

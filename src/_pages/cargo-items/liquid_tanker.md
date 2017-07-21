@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Liquid (tanker)
 permalink: /cargo-categories/heavy-haulage/liquid-tanker/
 hero: /assets/img/content/hero/fullsize/liquid_tanker.jpg

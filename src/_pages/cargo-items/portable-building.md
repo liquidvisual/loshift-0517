@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Portable Building
 permalink: /cargo-categories/portable-buildings/portable-building/
 hero:

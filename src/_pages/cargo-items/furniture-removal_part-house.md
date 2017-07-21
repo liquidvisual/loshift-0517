@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Furniture Removal (part house)
 permalink: /cargo-categories/furniture-removal/furniture-removal-part-house/
 hero: /assets/img/content/hero/fullsize/furniture-removal-full-house.jpg

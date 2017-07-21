@@ -2,7 +2,7 @@
 layout: child_layout/text_page
 title: Basic Text Page
 permalink: /text-page/
-hero: /assets/img/content/hero/Loadshift_Big_Pipe_Mass_Energy_1.jpg
+hero: /assets/img/content/hero/fullsize/pipe.jpg
 ---
 
 ## Heading 2

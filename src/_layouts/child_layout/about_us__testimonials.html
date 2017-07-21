@@ -26,12 +26,12 @@ layout: base__page
 					                    {% endif %}
 					                    <strong>{{ item.destination }}</strong>
 					                </p>
-					                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
 					            </div>
 					        </div>
 					       	<div class="text">
 					       	    {{ item.body | prepend: '"' | append: '"' | markdownify }}
 					       	</div>
+					       	<p class="text-right mb-0"><strong class="mb-2 text-muted"><i class="fa fa-clock-o"></i> {{ item.date }}</strong></p>
 					    </div>
 					{% endfor %}
 				</li>

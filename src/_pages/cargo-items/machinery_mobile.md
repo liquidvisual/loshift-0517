@@ -1,5 +1,5 @@
 ---
-layout: child_layout/cargo_categories_category_item
+layout: child_layout/cargo_categories_category
 title: Machinery (mobile)
 permalink: /cargo-categories/machinery-transport/machinery-mobile/
 hero: /assets/img/content/hero/fullsize/machinery_mobile.jpg
