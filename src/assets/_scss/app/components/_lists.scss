@@ -116,13 +116,25 @@
 
 .list-infographic {
 
-	// li:nth-child(1) .list-infographic-icon i { background: lighten($brand-quaternary, 26%); }
+	li:nth-child(2) .list-infographic-icon:after {
+		@include media-breakpoint-only(md) {
+		    display: none;
+		}
+	}
 
 	li:last-child .list-infographic-icon:after {
 		display: none;
 	}
 
+	li {
+		text-align: center;
+	}
+
 	.list-infographic-header {
+		display: inline-flex;
+		align-items: center;
+		text-align: left;
+
 		@include media-breakpoint-up(md) {
 		    min-height: rem-calc(60);
 		}
@@ -152,9 +164,9 @@
 			width: rem-calc(100);
 			height: rem-calc(100);
 			border-radius: 100%;
-			border: 3px solid lighten($brand-quaternary, 15%);
-			// background-color: lighten($brand-quaternary, 35%);
-			color: lighten($brand-quaternary, 15%);
+			border: 3px solid $brand-quaternary;
+			// background-color: lighten(#009b72, 35%);
+			color: $brand-quaternary;
 		}
 	}
 }
@@ -189,7 +201,7 @@
 	li > span {
 		@include media-breakpoint-up(md) {
 		    position: relative;
-			padding: rem-calc(0 10);
+			padding: rem-calc(0 20);
 			background: white;
 			z-index: 1;
 		}

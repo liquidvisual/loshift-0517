@@ -1,0 +1,156 @@
+---
+layout: base__page
+title: Cargo Pages Overview
+permalink: /cargo-pages/
+hero:
+---
+
+{% assign static_files = site.static_files | sort: 'path' %}
+
+<style>
+    .icon-font {
+        background: white;
+        height: 150px;
+        line-height: 200px;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .asset {
+        position: relative;
+        background: white;
+        padding-bottom: 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .asset-title {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .asset-thumbnail {
+        display: block;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+</style>
+
+
+
+
+{% assign sitemap = site.data.sitemap %}
+{% assign side_nav_id = page.side_nav_id | default: 3 %}
+{% assign include_top_level = include.exclude_top_level | default: true %}
+{% assign top_level = sitemap[3] %}
+{% assign cargo_categories = site.pages | where: "content_type", 'cargo_category' %}
+{% assign cargo_item = site.pages | where: "content_type", 'cargo_item' %}
+
+<h2>Cargo Category Pages</h2>
+<p>These cargo category pages have had their hero pages assigned based on inference. Please let me know if any do not suit.</p>
+<div class="spacer mb-4"></div>
+
+<ul class="block-grid-xs-1 block-grid-md-3 block-grid-lg-4 block-grid-condensed">
+    {% for item in cargo_categories %}
+        {% assign hero = item.hero | default: '/assets/img/content/hero/placeholder.png' %}
+        {% assign image = '//images.weserv.nl/?url=loadshift-2017.yourwebvisual.com' | append: hero | append: '&w=400&q=70' %}
+
+        <li>
+            <a class="btn-tile" href="{{ item.url }}">
+                <img width="100%" src="{{ image }}" alt="{{ item.title }}">
+                <span class="btn-tile-bg" style="background-image: url({{ image }})"></span>
+                <div class="btn-tile-overlay flex-column">
+                    <h4 class="h6 btn-tile-header mb-0">{{ item.title }}</h4>
+                    <p style="color: white;">{{ item.hero | remove: '/assets/img/content/hero/fullsize' | default: 'No Image' }}</p>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2>Cargo Item Pages</h2>
+<p>These are the child pages of the Cargo Categories above. You can review the heirarchy by clicking the 'Site Map' in the footer.</p>
+<p>Most of these pages have their hero images filled in (based on the previous emails). Although some are blank - due to not having been sent the stock image or the image not having been decided in the email.</p>
+<div class="spacer mb-4"></div>
+
+<ul class="block-grid-xs-1 block-grid-md-3 block-grid-lg-4 block-grid-condensed">
+    {% for item in cargo_item %}
+        {% assign hero = item.hero | default: '/assets/img/content/hero/placeholder.png' %}
+        {% assign image = '//images.weserv.nl/?url=loadshift-2017.yourwebvisual.com' | append: hero | append: '&w=400&q=70' %}
+
+        <li>
+            <a class="btn-tile" href="{{ item.url }}">
+                <img width="100%" src="{{ image }}" alt="{{ item.title }}">
+                <span class="btn-tile-bg" style="background-image: url({{ image }})"></span>
+                <div class="btn-tile-overlay flex-column">
+                    <h4 class="h6 btn-tile-header mb-0">{{ item.title }}</h4>
+                    <p style="color: white;">{{ item.hero | remove: '/assets/img/content/hero/fullsize' | default: 'No Image' }}</p>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+
+{% comment %}
+<ul>
+    <li>
+        <a href="{{ top_level.url }}">{{ top_level.title }}</a>
+        <ul>
+            {% for item in sitemap[side_nav_id].children %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                    <img width="150" src="{{ item.hero }}" alt="Hero Thumb">
+                    {% if item.children %}
+                        <ul>
+                            {% for item in item.children %}
+                                <li class="{% if item.url == page.url %} active {% endif %}">
+                                    <a href="{{ item.url }}">&nbsp;&nbsp;- {{ item.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
+{% endcomment %}
+
+{% contentfor content_additional %}
+    <section class="section section-light">
+        <div class="container">
+            <h2>All Site Images</h2>
+            <p>This is a collection of all the images that have been sent through. They have been optimised and mostly renamed. If you have want to use or any of these for the Cargo Categories or the Cargo Items - please take note of their file name.</p>
+            <div class="spacer mb-4"></div>
+
+            <ul class="block-grid-xs-2 block-grid-md-3 block-grid-xl-4 mobile-grid">
+                {% for item in static_files %}
+                    {% if item.extname == '.jpg' or
+                          item.extname == '.jpeg' %}
+                        <li>
+                            <div class="asset">
+                                <a target="_blank" href="{{ item.path }}" class="asset-thumbnail" style="background-image: url({{ item.path }})"></a>
+                                <p class="asset-title">
+                                    <small><b>{% assign path = item.path | split: '/' %}{{ path.last }}</b></small>
+                                    <br>
+                                </p>
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endcontentfor %}

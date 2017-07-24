@@ -4,3 +4,6 @@ title: Contact Us
 permalink: /contact-us/
 hero: /assets/img/content/hero/fullsize/hero-2.jpg
 ---
+
+To Request information, make a suggestion, ask us a question, or report a problem with the site,
+please use this form.

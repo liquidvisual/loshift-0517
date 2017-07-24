@@ -258,6 +258,8 @@ $hero-lg-height-preset-1:   rem-calc(300);
 //-----------------------------------------------------------------
 
 .hero-addition {
+    background: $gray-lightest;
+
     @include media-breakpoint-up(xl) {
         display: flex;
         align-items: center;
@@ -265,7 +267,6 @@ $hero-lg-height-preset-1:   rem-calc(300);
         bottom: 0;
         width: 100%;
         min-height: $header-body-lg-height + $header-bottom-lg-height;
-        background: $gray-lightest; //rgba(white, 0.8);
         // -webkit-backdrop-filter: blur(5px);
         // backdrop-filter: blur(5px);
     }

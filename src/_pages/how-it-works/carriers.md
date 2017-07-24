@@ -11,5 +11,3 @@ hero_classes: is-fullscreen
 
 Receive and access unlimited transport job loads (monthly). Login to our online load board and start quoting.
 Don't have internet or smartphone access? No problem... receive your job loads by SMS.
-
-<br>

@@ -2,7 +2,9 @@
 layout: base__page_sidebar
 ---
 
-{{ content }}
+<div class="wysiwyg mb-4">
+	{{ content }}
+</div>
 
 {% contentfor content_additional %}
     {% include sections/discover_loadshift_about.html %}

@@ -51,7 +51,7 @@ $gray-lightest:             #f7f7f9 !default;
 $brand-primary:             #003C71;
 $brand-secondary:           #1c5695;
 $brand-tertiary:            #2a83cd;
-$brand-quaternary:          #5cb85c;
+$brand-quaternary:          desaturate(#71c1b3, 10%); //#5cb85c;
 $brand-quinary:             #e8180d;
 
 // $brand-success:             #5cb85c !default;
