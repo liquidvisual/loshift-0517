@@ -10,6 +10,12 @@
 <loc>/cargo-categories/boat-transport/</loc>
 </url>
 <url>
+<loc>/cargo-categories/boat-transport/boat/</loc>
+</url>
+<url>
+<loc>/cargo-categories/boat-transport/boat-on-trailer/</loc>
+</url>
+<url>
 <loc>/cargo-categories/bulk-tipper-transport/bulk-material-tipper/</loc>
 </url>
 <url>
@@ -35,9 +41,6 @@
 </url>
 <url>
 <loc>/cargo-categories/heavy-haulage/earthmoving-equipment/</loc>
-</url>
-<url>
-<loc>/how-it-works/escrow-pay-service/</loc>
 </url>
 <url>
 <loc>/how-it-works/faq/</loc>
@@ -170,6 +173,9 @@
 </url>
 <url>
 <loc>/register/</loc>
+</url>
+<url>
+<loc>/how-it-works/secured-payment-service/</loc>
 </url>
 <url>
 <loc>/how-it-works/shippers/</loc>
