@@ -556,7 +556,7 @@
                                     <h1 class="mb-4">Access Loadshift
                                         <br>from Less Than
                                         <br>$2 per Day!</h1>
-                                    <a href="/register/" class="btn btn-primary">Register Now</a>
+                                    <a href="/register/" class="btn btn-primary">Register now</a>
                                     <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
                                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-login">Login</a>
                                     <div class="spacer mb-3"></div>
@@ -593,95 +593,245 @@
 
                     <!-- SUBSCRIPTION OPTIONS -->
                     <div class="col-lg-8 mx-auto text-center">
-                        <h2>Membership Pricing</h2>
-                        <p class="lead">Transport Carriers may obtain access to the LoadBoard
-                            <a href="/get-loads/">(Get Loads)</a>. The Truck Availability Register
-                            <a href="/find-trucks/">(Find Trucks)</a> &amp; other resources by purchasing one of the following.</p>
+                        <h2 class="mb-5">Which Customer Are You?</h2>
+
+                        <!-- TABS -->
+                        <ul class="list-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#carriers" role="tab">Carrier</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#shippers" role="tab">Shipper</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- PRICE TABLE -->
-            <section class="section has-image-bg has-no-tint has-fixed-bg" style="background-image: url(/assets/img/content/hero/blur-5.jpg)">
-                <div class="container">
-                    <ul class="list-cards block-grid-xs-1 block-grid-md-2 block-grid-lg-4">
-                        <li>
-                            <div class="card card-feature text-center">
-                                <div class="card-header">
-                                    <strong>1 Month</strong>
-                                </div>
-                                <div class="card-block py-4">
-                                    <h4 class="card-title display-2 price-font">66</h4>
-                                    <p class="card-text mb-4"></p>
-                                    <a href="/register/" class="btn btn-primary btn-success">Register</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card card-feature text-center">
-                                <div class="card-header">
-                                    <strong>3 Months</strong>
-                                </div>
-                                <div class="card-block py-4">
-                                    <h4 class="card-title display-2 price-font">191</h4>
-                                    <p class="card-text mb-4"></p>
-                                    <a href="/register/" class="btn btn-primary btn-success">Register</a>
-                                    <div class="card-corner">
-                                        <span class="text">SAVE 7.5%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card card-feature text-center">
-                                <div class="card-header">
-                                    <strong>6 Months</strong>
-                                </div>
-                                <div class="card-block py-4">
-                                    <h4 class="card-title display-2 price-font">352</h4>
-                                    <p class="card-text mb-3">
-                                        <span class="fa fa-fire mb-4"></span> Popular</p>
-                                    <a href="/register/" class="btn btn-primary btn-success">Register</a>
-                                    <div class="card-corner">
-                                        <span class="text">SAVE 15%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card card-feature text-center">
-                                <div class="card-header">
-                                    <strong>12 Months</strong>
-                                </div>
-                                <div class="card-block py-4">
-                                    <h4 class="card-title display-2 price-font">641</h4>
-                                    <p class="card-text mb-4"></p>
-                                    <a href="/register/" class="btn btn-primary btn-success">Register</a>
-                                    <div class="card-corner">
-                                        <span class="text">SAVE 22.5%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <!-- TAB PANES -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="carriers" role="tabpanel">
 
-            <!-- CARDS ACCEPTED -->
-            <section class="section">
-                <div class="container">
-                    <p>(Includes GST &amp; all SMS)
-                        <br>Payments are accepted over 256-bit SSL encryption.
-                        <br>Visa &amp; MasterCard Accepted.</p>
-                    <p>
-                        <img width="100" src="/assets/img/content/visa-mastercard.svg" alt="We Accept Visa and Mastercard">
-                    </p>
-                    <p>Please contact Loadshift if an alternative payment method is desired.
-                        <br>
-                        <i>(Sorry, no accounts)</i>
-                    </p>
+                    <!-- DESCRIPTION -->
+                    <section class="section pt-0">
+                        <div class="container container-condensed text-center">
+                            <p class="lead">Transport Carriers may obtain access to the Load Board
+                                <a href="/get-loads/">(Get Loads)</a>. The Truck Availability Register
+                                <a href="/find-trucks/">(Find Trucks)</a> and other resources by purchasing one of the following.</p>
+                        </div>
+                    </section>
+
+                    <!-- PRICING TABLE -->
+                    <section class="section has-image-bg has-no-tint has-fixed-bg" style="background-image: url(/assets/img/content/hero/blur-5.jpg)">
+                        <div class="container">
+                            <ul class="pricing-cards block-grid-xs-1 block-grid-sm-2 block-grid-lg-4">
+                                <li class="">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong>1 Month</strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">
+                                                <span class="dollar-sign">$</span>66</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-fire"></i>
+                                                <span class="text"></span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/register/" class="btn btn-primary btn-success">Register</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong>3 Months</strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">
+                                                <span class="dollar-sign">$</span>191</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-fire"></i>
+                                                <span class="text"></span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/register/" class="btn btn-primary btn-success">Register</a>
+                                            <div class="card-corner">
+                                                <span class="text">SAVE 7.5%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="is-popular">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong>6 Months</strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">
+                                                <span class="dollar-sign">$</span>352</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-fire"></i>
+                                                <span class="text">Popular</span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/register/" class="btn btn-primary btn-success">Register</a>
+                                            <div class="card-corner">
+                                                <span class="text">SAVE 15%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong>12 Months</strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">
+                                                <span class="dollar-sign">$</span>641</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-fire"></i>
+                                                <span class="text"></span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/register/" class="btn btn-primary btn-success">Register</a>
+                                            <div class="card-corner">
+                                                <span class="text">SAVE 22.5%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- CARDS ACCEPTED -->
+                    <section class="section">
+                        <div class="container">
+                            <p>(Includes GST &amp; all SMS)
+                                <br>Payments are accepted over 256-bit SSL encryption.
+                                <br>Visa &amp; MasterCard Accepted.</p>
+                            <p>
+                                <img width="100" src="/assets/img/content/visa-mastercard.svg" alt="We Accept Visa and Mastercard">
+                            </p>
+                            <p>Please contact Loadshift if an alternative payment method is desired.
+                                <br>
+                                <i>(Sorry, no accounts)</i>
+                            </p>
+                        </div>
+                    </section>
                 </div>
-            </section>
+                <div class="tab-pane fade" id="shippers" role="tabpanel">
+
+                    <!-- DESCRIPTION -->
+                    <section class="section pt-0">
+                        <div class="container container-condensed text-center">
+                            <p class="lead">Shippers request quotes from Carriers for FREE. Receive quotes for transport services by
+                                <a href="/get-quotes/">posting your request</a> or
+                                <a href="/find-trucks/">find trucks</a> on the location map.</p>
+                        </div>
+                    </section>
+
+                    <!-- PRICING TABLE -->
+                    <section class="section has-image-bg has-no-tint has-fixed-bg" style="background-image: url(/assets/img/content/hero/blur-5.jpg)">
+                        <div class="container">
+                            <ul class="pricing-cards block-grid-xs-1 block-grid-sm-2 block-grid-lg-4">
+                                <li class="">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong></strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+                                            <h3 class="h5 subheader mb-2 text-muted">
+                                                <i class="fa fa-clone"></i>&nbsp; Get Quotes</h3>
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">FREE</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-clone"></i>
+                                                <span class="text">Get Quotes</span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/get-quotes/" class="btn btn-primary btn-success">Get started</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="card card-feature text-center">
+
+                                        <!-- CARD HEADER -->
+                                        <div class="card-header">
+                                            <strong></strong>
+                                        </div>
+
+                                        <!-- CARD BLOCK -->
+                                        <div class="card-block py-4">
+                                            <h3 class="h5 subheader mb-2 text-muted">
+                                                <i class="fa fa-truck"></i>&nbsp; Find Trucks</h3>
+
+                                            <!-- CARD TITLE -->
+                                            <h4 class="card-title display-2 price-font">FREE</h4>
+
+                                            <!-- CARD TEXT -->
+                                            <p class="card-text">
+                                                <i class="fa fa-truck"></i>
+                                                <span class="text">Find Trucks</span>
+                                            </p>
+
+                                            <!-- BUTTON -->
+                                            <a href="/find-trucks/" class="btn btn-primary btn-success">Get started</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
             <!-- TESTIMONIALS -->
             <div class="section section-light">
