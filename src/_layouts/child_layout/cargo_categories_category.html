@@ -2,11 +2,15 @@
 layout: base__page
 ---
 
+{% capture transport %}
+	{% unless page.title contains 'Transport' %} Transport {% endunless %}
+{% endcapture %}
+
 {% contentfor hero_caption %}
 	<!-- HERO CAPTION -->
 	<div class="lv-hero-item-caption animated fadeInLeft">
 	    <h1>{{ page.title }} Quotes</h1>
-	    <p class="lead">Receive quotations for {{ page.title }} services</p>
+	    <p class="lead">Receive quotations for {{ page.title }} {{ transport }} Services</p>
 	    <a href="/get-quotes/" class="btn btn-primary">Try It Free</a>
 	</div>
 {% endcontentfor %}

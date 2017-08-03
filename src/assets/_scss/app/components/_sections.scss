@@ -52,6 +52,12 @@
 		.btn {
 			background-color: transparent;
 			border: 2px solid white;
+
+			&:hover {
+				@include media-breakpoint-up(xl) {
+				    background-color: rgba(white, 0.2);
+				}
+			}
 		}
 	}
 
@@ -104,6 +110,10 @@
 
 .section-light {
 	background-color: $gray-light;
+}
+
+.section-light-blue {
+	background-color: #e4ebf3; // checkpoint color
 }
 
 .section-lighter {

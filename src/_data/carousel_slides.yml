@@ -1,6 +1,6 @@
 - title: Australia's Leading Heavy Haulage Transport Marketplace
   body: Connecting Shippers & Carriers
-  image: /assets/img/content/hero/fullsize/9068906.jpg
+  image: /assets/img/content/hero/fullsize/18138110.jpg
   link:
     - title:
       url:
@@ -12,16 +12,9 @@
     - title: Get Quotes
       url: /get-quotes/
 
-#- title: Get Quotes & Find Trucks
-  # body: Find Australia wide Heavy Haulage transport fast. Get Quotes by posting a request or find trucks on the location map.
-  # image: /assets/img/content/hero/hero-5.jpg
-  # link:
-  #   - title: Get Quotes
-  #     url: /get-quotes/
-
 - title: Find Trucks
-  body: The Truck Availability Register is the place where Transport Providers list the future Location, Trailer Type and Date Available of their trucks.
-  image: /assets/img/content/hero/fullsize/18138110.jpg
+  body: The Truck Availability Register is the place where transport providers list the future location, trailer type and date available of their trucks.
+  image: /assets/img/content/hero/fullsize/9068906.jpg
   link:
     - title: Find out more
       url: /find-trucks/

@@ -56,7 +56,7 @@ layout: base__page_sidebar
 <!-- DEMO GRAPHICS -->
 <div class="row">
 	<div class="col-md-6">
-		<p class="text-center"><img class="animated bounceIn" width="100%" src="/assets/img/content/sms-alert@2x.png" alt="SMS Alert Example"></p>
+		<p class="text-center"><img class="animated bounceIn" width="100%" src="/assets/img/content/sms-alert.svg" alt="SMS Alert Example"></p>
 	</div>
 	<div class="col-md-5">
 		<p><img width="100%" src="/assets/img/content/load-board@2x.jpg" alt="Load Board"></p>
@@ -90,7 +90,7 @@ layout: base__page_sidebar
 
 	<!-- REQUESTED SERVICES -->
 	<section class="section section-light">
-		<div class="container text-center" style="max-width: 900px;">
+		<div class="container text-center container-condensed">
 			<h2 class="mb-4">Requested Services</h2>
 			<ul class="block-grid-xs-2 block-grid-md-3 block-grid-list">
 				{% for item in services %}
@@ -105,9 +105,8 @@ layout: base__page_sidebar
 	<!-- SIMPLE - TRANSPARENT - JOB LEADS -->
 	<section class="section">
 		<div class="container">
-			<p>Note: loadshift.com.au is an online business service that specialises in the heavy load transport industry. It simply delivers your quotation request into transport businesses. Loadshift DOES NOT participate in any quotation, nor does it receive commissions. You deal directly with the transport carriers at all times.</p>
-			<p>Carriers subscribe to this marketplace (on a monthly basis), to receive your quote request as a job lead into their businesses.</p>
-			<br>
+
+			<!-- CONDENSE -->
 			<div class="container">
 				<ul class="list-trio-strike-through">
 					<li><span class="h2">SIMPLE</span></li>
@@ -115,6 +114,13 @@ layout: base__page_sidebar
 					<li><span class="h2">JOB LEADS</span></li>
 				</ul>
 			</div>
+
+			<div class="spacer mb-5"></div>
+
+			<!-- FINE PRINT -->
+			<small>
+				<b>NOTE:</b> Loadshift.com.au is an online business service that specializes in the heavy road transport industry. It simply delivers prospective business into transport businesses. Loadshift <u>DOES NOT</u> participate in any quotation, <u>NOR</u> does it receive commissions. You deal directly with the customer at all times.
+			</small>
 		</div>
 	</section>
 

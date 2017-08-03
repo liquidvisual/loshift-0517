@@ -151,7 +151,7 @@
 		&:hover {
 			@include media-breakpoint-up(xl) {
 			    .btn-tile-overlay {
-			    	background: lighten(rgba($brand-primary, 0.92), 1%);
+			    	background: lighten(rgba($brand-primary, 0.9), 1%);
 			    }
 			}
 		}

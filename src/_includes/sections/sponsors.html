@@ -1,10 +1,12 @@
+{% assign sponsors = site.data.sponsors %}
+
 <!-- SPONSORS -->
 <section class="section has-image-bg has-fixed-bg section-light inverse" style="background-image: url(/assets/img/content/hero/blur-2.jpg);">
-    <div class="container text-center">
+    <div class="container text-center container-condensed">
         <h2>Our Sponsors</h2>
-        <ul class="block-grid-xs-3 block-grid-lg-6 list-sponsors">
-            {% for i in (1..6) %}
-                <li><a href="#" target="_blank" class="btn-sponsor"><img width="100%" src="/assets/img/content/sponsors/sponsor-{{i}}.jpg" alt="Sponsor"></a></li>
+        <ul class="block-grid-xs-3 block-grid-lg-5 list-sponsors">
+            {% for item in sponsors %}
+                <li><a href="{{ item.url }}" target="_blank" class="btn-sponsor"><img width="100%" src="{{ item.image }}" alt="{{ item.title }}"></a></li>
             {% endfor %}
         </ul>
     </div>

@@ -1,0 +1,129 @@
+---
+layout: base__page_sidebar
+---
+
+{% assign settings = site.data.settings %}
+{% assign office = settings.offices[0] %}
+
+<h2>Need more confidence to do business?</h2>
+
+<p class="lead mb-4">We have a Secured Payment solution for you</p>
+
+<p>As a <a href="/how-it-works/shippers/">Shipper</a> do you ever feel uneasy about handing over payment before your cargo has been delivered? Or as a <a href="/how-it-works/carriers/">Carrier</a> have you ever supplied your transport services and felt a little uncomfortable about possibly not being paid on time?  </p>
+
+<p>This secured payment service (escrow), powered by <a href="https://www.checkvault.com.au">Checkvault</a>, helps take the risk out of doing business.</p>
+
+<div class="spacer mb-4"></div>
+
+<!-- CTA -->
+<div class="text-center">
+	<div class="panel-light d-in mb-4">
+		<p>Ready to begin?</p>
+		<a class="btn btn-primary" href="#start-a-secured-payment-today">Start a Secured Payment</a>
+	</div>
+</div>
+
+<h3>How does it work?</h3>
+
+<!-- CHECKVAULT STEPS -->
+<ul class="block-grid-xs-1 block-grid-md-3 mb-4">
+	<li><img width="100%" src="/assets/img/content/checkvault-1.png" alt="Checkvault Step 1"></li>
+	<li><img width="100%" src="/assets/img/content/checkvault-2.png" alt="Checkvault Step 2"></li>
+	<li><img width="100%" src="/assets/img/content/checkvault-3.png" alt="Checkvault Step 3"></li>
+</ul>
+
+<p>This service simply works by...</p>
+
+<!-- HOW IT WORKS -->
+<ul class="mb-4">
+	<li class="mb-2">The Shipper making payment into Checkvault’s trust account, with the Carrier then being notified that their money is secure and allocated just for them.</li>
+	<li class="mb-2">The Carrier picks up and delivers the cargo.</li>
+	<li class="mb-2">Upon satisfied delivery, the Shipper and Carrier agree that the funds held in trust can be paid to the Carriers account.</li>
+</ul>
+
+{% contentfor content_additional %}
+	<!-- YOU CAN TRUST CHECKVAULT -->
+	<section class="section section-light-blue">
+		<div class="container">
+			<div class="row no-gutters ">
+            	<div class="col-lg-9 offset-lg-3">
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<h3>You can trust Checkvault</h3>
+							<p><strong>Built on a solid foundation...</strong></p>
+							Checkvault’s partner, Perpetual Corporate Trust has over 120 years of experience as a professional trustee. </p>
+							<br>
+							<p><strong>No anonymous payments...</strong></p>
+							<p>All accounts undergo a simple but robust identification check.</p>
+						</div>
+						<div class="col-sm-4 pl-md-4">
+							<img width="100%" src="/assets/img/content/checkvault-safety-tick.png" alt="Checkvault Safety Tick">
+						</div>
+					</div>
+            	</div>
+            </div>
+		</div>
+	</section>
+
+	<!-- VIDEO SECTION -->
+	<section class="section section-dark inverse">
+		<div class="container">
+			<div class="row align-items-center text-center">
+				<div class="col-md-5 col-lg-5">
+					<h2>See what Matt had to say...</h2>
+					<h3 class="subheader">Matt Walsh's Testimonial</h3>
+				</div>
+				<div class="col-md-7 col-lg-7 pl-lg-5">
+					<iframe class="video-embed" src="https://player.vimeo.com/video/115218471" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- PRICING -->
+	<section class="section">
+		<div class="container">
+			<div class="row no-gutters">
+            	<div class="col-lg-9 offset-lg-3">
+					<h3 class="mb-2">Pricing</h3>
+					<p>This secured payment service is provided via a low 1.95% fee calculated on the value of the transaction amount (with a minimum fee of $60 and a maximum of $350).</p>
+					<h4 class="subheader text-muted">Examples:</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<h5>#1.</h5>
+							<p>Freight Amount: $3,000<br>
+							1.95% = $58.50<br>
+							Charged Fee: $60<br>
+							<small>(Note: the minimum fee of $60 has been charged)</small></p>
+						</div>
+						<div class="col-md-6">
+							<h5>#2.</h5>
+							<p>Freight Amount: $3,950<br>
+							1.95% = $77.02<br>
+							Charged Fee: $77.02</p>
+						</div>
+					</div>
+            	</div>
+            </div>
+		</div>
+	</section>
+
+	<!-- START A SECURED PAYMENT NOW -->
+	<section class="section section-light">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center">
+					<h3 id="start-a-secured-payment-today">Start a Secured Payment Today</h3>
+					<p>Call or request a callback through email.</p>
+					<br>
+					<a href="tel:{{ office.phone }}" class="btn btn-primary"><i class="fa fa-phone"></i>&nbsp; {{ office.phone }}</a>
+					<strong class="d-block d-md-inline m-3">OR</strong>
+					<a href="/contact-us/" class="btn btn-primary"><i class="fa fa-envelope"></i>&nbsp; Contact us</a>
+					<div class="spacer mb-5"></div>
+					<div><small class="text-center"><b>Please Note:</b> This secured payment service is completely optional.</small></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+{% endcontentfor %}

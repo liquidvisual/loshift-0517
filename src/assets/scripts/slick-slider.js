@@ -28,8 +28,8 @@ $('.card-slider').slick({
 	arrow: true,
 	prevArrow: '[data-slider-controls] .lv-hero-carousel-prev-btn',
 	nextArrow: '[data-slider-controls] .lv-hero-carousel-next-btn',
-	speed: 1000,
-	pause: 2200,
+	speed: 1200,
+	pause: 5000,
 	responsive: [
 	{
 		breakpoint: 768,
@@ -40,7 +40,7 @@ $('.card-slider').slick({
 			centerMode: true,
 			centerPadding: '40px',
 			slidesToShow: 1,
-			speed: 1000,
+			speed: 1200,
 		}
 	},
 	{
@@ -51,7 +51,7 @@ $('.card-slider').slick({
 			centerMode: true,
 			centerPadding: '0',
 			slidesToShow: 1,
-			speed: 1000,
+			speed: 1200,
 			variableWidth: false,
 		}
 	}]

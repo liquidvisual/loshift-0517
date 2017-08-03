@@ -23,4 +23,4 @@ This interaction triggered the thought...
 
 Birthed during 2006, Loadshift officially went live early 2007.
 
-From Day One, Loadshift has strived to provide a fair transparent system... with ZERO Commission... and NO third party involvement. Just Cargo Owners and Transport Providers networking and doign business directly with each other.
+From Day One, Loadshift has strived to provide a fair transparent system... with ZERO Commission... and NO third party involvement. Just Cargo Owners and Transport Providers networking and doing business directly with each other.

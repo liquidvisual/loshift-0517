@@ -17,6 +17,8 @@
 	transition: transform 300ms ease;
 	overflow: hidden;
 
+	display: block;
+
 	.card-header {
 		border-bottom: 0;
 		background: darken(white, 4%);
