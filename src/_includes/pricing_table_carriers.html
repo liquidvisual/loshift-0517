@@ -1,0 +1,46 @@
+{% assign pricing_table = include.data | default: site.data.pricing_carriers %}
+
+<!-- PRICING TABLE -->
+<section class="section has-image-bg has-no-tint has-fixed-bg" style="background-image: url(/assets/img/content/hero/blur-5.jpg);">
+	<div class="container">
+		<ul class="pricing-cards block-grid-xs-1 block-grid-sm-2 block-grid-lg-4">
+			{% for item in pricing_table %}
+				<li class="{% if item.popular %}is-popular{% endif %}">
+					<div class="card card-feature text-center">
+
+						<!-- CARD HEADER -->
+						<div class="card-header">
+							<strong>{{ item.title }}</strong>
+						</div>
+
+						<!-- CARD BLOCK -->
+						<div class="card-block py-4">
+
+							{% unless item.title %}
+								<h3 class="h5 subheader mb-2 text-muted"><i class="{{ item.icon }}"></i>&nbsp; {{ item.icon_title }}</h3>
+							{% endunless %}
+
+							<!-- CARD TITLE -->
+							<h4 class="card-title display-2 price-font">
+								{% unless item.price == 'FREE' %}<span class="dollar-sign">$</span>{% endunless %}{{ item.price }}
+							</h4>
+
+							<!-- CARD TEXT -->
+							<p class="card-text">
+								<i class="{{ item.icon }}"></i>
+								<span class="text">{{ item.icon_title }}</span>
+							</p>
+
+							<!-- BUTTON -->
+							<a href="{{ item.url }}" class="btn btn-primary btn-success">{{ item.btn_title }}</a>
+
+							{% if item.savings %}
+								<div class="card-corner"><span class="text">SAVE {{ item.savings }}</span></div>
+							{% endif %}
+						</div>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

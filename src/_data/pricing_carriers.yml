@@ -1,0 +1,35 @@
+- title: 1 Month
+  url: /register/
+  price: 66
+  savings:
+  icon: fa fa-fire
+  icon_title:
+  popular: false
+  btn_title: Register
+
+- title: 3 Months
+  url: /register/
+  price: 191
+  savings: 7.5%
+  icon: fa fa-fire
+  icon_title:
+  popular: false
+  btn_title: Register
+
+- title: 6 Months
+  url: /register/
+  price: 352
+  savings: 15%
+  icon: fa fa-fire
+  icon_title: Popular
+  popular: true
+  btn_title: Register
+
+- title: 12 Months
+  url: /register/
+  price: 641
+  savings: 22.5%
+  icon: fa fa-fire
+  icon_title:
+  popular: false
+  btn_title: Register

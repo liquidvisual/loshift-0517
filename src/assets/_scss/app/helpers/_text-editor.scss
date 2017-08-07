@@ -11,13 +11,13 @@
 // IMAGE ALIGNMENT
 //-----------------------------------------------------------------
 
-.img-left,
-.img-right {
+.image-left,
+.image-right {
 	margin-bottom: $spacer;
 	width: 100%;
 }
 
-.img-left {
+.image-left {
 	@include media-breakpoint-up(md) {
 		width: auto;
 	    float: left;
@@ -25,7 +25,7 @@
 	}
 }
 
-.img-right {
+.image-right {
 	@include media-breakpoint-up(md) {
 		width: auto;
 	    float: right;

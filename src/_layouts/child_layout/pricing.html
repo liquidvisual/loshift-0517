@@ -6,7 +6,7 @@ layout: base__page
 	<!-- HERO CAPTION -->
 	<div class="lv-hero-item-caption animated fadeInLeft">
 	    <h1 class="mb-4">Access Loadshift<br> from Less Than<br> $2 per Day!</h1>
-	    <a href="/register/" class="btn btn-primary">Register Now</a>
+	    <a href="/register/" class="btn btn-primary">Register now</a>
 	    <span>&nbsp;&nbsp;OR&nbsp;&nbsp;</span>
 	    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-login">Login</a>
 	    <div class="spacer mb-3"></div>
@@ -16,27 +16,59 @@ layout: base__page
 
 <!-- SUBSCRIPTION OPTIONS -->
 <div class="col-lg-8 mx-auto text-center">
-	<h2>Membership Pricing</h2>
-	<p class="lead">Transport Carriers may obtain access to the LoadBoard <a href="/get-loads/">(Get Loads)</a>. The Truck Availability Register <a href="/find-trucks/">(Find Trucks)</a> &amp; other resources by purchasing one of the following.</p>
+	<h2 class="mb-5">Which Customer Are You?</h2>
+
+	<!-- TABS -->
+	<ul class="list-tabs" role="tablist">
+		<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#carriers" role="tab">Carrier</a></li>
+		<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#shippers" role="tab">Shipper</a></li>
+	</ul>
 </div>
 
 {% contentfor content_additional %}
-	{% include pricing_table_2.html %}
 
-	<!-- CARDS ACCEPTED -->
-	<section class="section">
-		<div class="container">
-			<p>(Includes GST &amp; all SMS)<br>
-			Payments are accepted over 256-bit SSL encryption.<br>
-			Visa &amp; MasterCard Accepted.</p>
-			<p><img width="100" src="/assets/img/content/visa-mastercard.svg" alt="We Accept Visa and Mastercard"></p>
-			<p>Please contact Loadshift if an alternative payment method is desired. <br> <i>(Sorry, no accounts)</i></p>
+	<!-- TAB PANES -->
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="carriers" role="tabpanel">
+
+			<!-- DESCRIPTION -->
+			<section class="section pt-0">
+				<div class="container container-condensed text-center">
+					<p class="lead">Transport Carriers may obtain access to the Load Board <a href="/get-loads/">(Get Loads)</a>. The Truck Availability Register <a href="/find-trucks/">(Find Trucks)</a> and other resources by purchasing one of the following.</p>
+				</div>
+			</section>
+
+			{% include pricing_table_carriers.html data=site.data.pricing_carriers %}
+
+			<!-- CARDS ACCEPTED -->
+			<section class="section">
+				<div class="container">
+					<p>(Includes GST &amp; all SMS)<br>
+					Payments are accepted over 256-bit SSL encryption.<br>
+					Visa &amp; MasterCard Accepted.</p>
+					<p><img width="100" src="/assets/img/content/visa-mastercard.svg" alt="We Accept Visa and Mastercard"></p>
+					<p>Please contact Loadshift if an alternative payment method is desired.<br><i>(Sorry, no accounts)</i></p>
+				</div>
+			</section>
+
+			{% include sections/testimonials.html %}
+
+			{% include sections/test_drive.html %}
 		</div>
-	</section>
+		<div class="tab-pane fade" id="shippers" role="tabpanel">
 
-	{% include sections/testimonials.html %}
+			<!-- DESCRIPTION -->
+			<section class="section pt-0">
+				<div class="container container-condensed text-center">
+					<p class="lead">Shippers request quotes from Carriers for FREE. Receive quotes for transport services by <a href="/get-quotes/">posting your request</a> or <a href="/find-trucks/">find trucks</a> on the location map.</p>
+				</div>
+			</section>
 
-	{% include sections/test_drive.html %}
+			{% include pricing_table_carriers.html data=site.data.pricing_shippers %}
+
+			{% include sections/testimonials.html %}
+		</div>
+	</div>
 
 	<!-- STATEMENT -->
 	<section class="section is-large has-image-bg has-fixed-bg section-light inverse" style="background-image: url(/assets/img/content/hero/blur-3.jpg);">

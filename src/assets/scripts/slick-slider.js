@@ -1,61 +1,85 @@
 /*
-    SLICK-SLIDER.JS - Last updated: 03.07.17
+    SLICK-SLIDER.JS - Last updated: 05.08.17
 */
 //-----------------------------------------------------------------
 // VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// TESTIMONIAL SLIDER
+// TAB SWITCHING - When TWO slicks are toggled
 //-----------------------------------------------------------------
 
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	$('.card-slider').slick('unslick'); // destroy all
+	launchSlider(); // run again
+})
+
 //==================================================
-// RANDOMIZE SLIDES
+// LAUNCH SLIDER
 //==================================================
 
-$('.card-slider').randomize('.testimonial-block');
+function launchSlider() {
+	$('.card-slider').each(function(){
 
-//==================================================
-//
-//==================================================
+		//==================================================
+		// VARS
+		//==================================================
 
-$('.card-slider').slick({
-	autoplay: true,
-	centerMode: true,
-	slidesToShow: 3,
-	variableWidth: true,
-	variableHeight: true,
-	slide: '.testimonial-block',
-	arrow: true,
-	prevArrow: '[data-slider-controls] .lv-hero-carousel-prev-btn',
-	nextArrow: '[data-slider-controls] .lv-hero-carousel-next-btn',
-	speed: 1200,
-	pause: 5000,
-	responsive: [
-	{
-		breakpoint: 768,
-		settings: {
-			arrows: false,
+		var $this = $(this);
+		var $prevArrow = $this.parent().find('[data-slider-controls] .lv-hero-carousel-prev-btn');
+		var $nextArrow = $this.parent().find('[data-slider-controls] .lv-hero-carousel-next-btn');
+
+		//==================================================
+		// RANDOMIZE SLIDES
+		//==================================================
+
+		$this.randomize('.testimonial-block');
+
+		//==================================================
+		// SLICK
+		//==================================================
+
+		$this.slick({
+			autoplay: true,
+			centerMode: true,
+			slidesToShow: 3,
 			variableWidth: true,
-			variableHeight: false,
-			centerMode: true,
-			centerPadding: '40px',
-			slidesToShow: 1,
+			variableHeight: true,
+			slide: '.testimonial-block',
+			arrow: true,
+			prevArrow: $prevArrow,
+			nextArrow: $nextArrow,
 			speed: 1200,
-		}
-	},
-	{
-		breakpoint: 490,
-		settings: {
-			autoplay: false,
-			arrows: false,
-			centerMode: true,
-			centerPadding: '0',
-			slidesToShow: 1,
-			speed: 1200,
-			variableWidth: false,
-		}
-	}]
-});
+			pause: 5000,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					variableWidth: true,
+					variableHeight: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1,
+					speed: 1200,
+				}
+			},
+			{
+				breakpoint: 490,
+				settings: {
+					autoplay: false,
+					arrows: false,
+					centerMode: true,
+					centerPadding: '0',
+					slidesToShow: 1,
+					speed: 1200,
+					variableWidth: false,
+				}
+			}]
+		})
+	});
+}
+
+launchSlider();
 
 //-----------------------------------------------------------------
 // RANDOMIZE

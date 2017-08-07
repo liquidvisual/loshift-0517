@@ -1,0 +1,68 @@
+/*
+    LIVE-FEED.CSS
+
+    - Last updated: 04.08.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.live-feed {
+	position: relative;
+	// top: -20px;
+	background: none;
+	margin-top: -$spacer;
+	// overflow: hidden;
+	z-index: 1;
+
+	> .container {
+		padding: 0 rem-calc(45);
+	}
+
+	.live-feed-container {
+		padding: $spacer;
+	}
+
+	.col {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: rem-calc(190);
+
+		box-shadow: 0 2px 12px -1px rgba(black, 0.2);
+		// display: flex;
+		// flex-grow: 1;
+
+		background: white;
+		text-align: center;
+		color: #333;
+	}
+
+	.col:nth-child(2) {
+		// display: none;
+		z-index: -1;
+		background: darken(white, 1%);
+	}
+
+	.live-feed-post {
+		margin-bottom: rem-calc(10);
+	}
+
+	.live-feed-location {
+		color: $brand-tertiary;
+		font-size: rem-calc(15);
+		// text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

@@ -230,6 +230,38 @@
     }
 }
 
+//-----------------------------------------------------------------
+// TABS
+//-----------------------------------------------------------------
+
+.list-tabs {
+	display: inline-flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0; // [RESET]
+	margin: 0; // [RESET]
+
+	$border-radius: $border-radius*1.5;
+
+	a {
+		background: lighten($gray-light, 2%);
+		padding: rem-calc(16 35);
+		border-radius: $border-radius 0 0 $border-radius;
+		font-size: rem-calc(20);
+		font-weight: 500;
+		color: darken($gray, 10%);
+	}
+
+	li:last-child a {
+		border-radius: 0 $border-radius $border-radius 0;
+	}
+
+	.active {
+		background: $brand-tertiary; //darken($gray-light, 5%);
+		color: white;
+	}
+}
+
 //=========================================
 //
 //=========================================

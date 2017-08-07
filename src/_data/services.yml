@@ -9,7 +9,7 @@
 - title: Extendable
 - title: Flat Top
 - title: Fridge Van
-# - title: Hotshot
+- title: Hotshot
 - title: Logging
 - title: Low Loader
 - title: Pilot
@@ -29,46 +29,34 @@
 - title: Walking Floor
 
 # New set
-- title: Boat
-- title: Boat (with trailer)
-- title: Bulk Material (tipper)
-- title: Car
-- title: Dangerous Goods
-- title: Earthmoving Equipment
-- title: Furniture Removal (full house)
-- title: Furniture Removal (part house)
-- title: Freight Contract Tender
-- title: General (full load)
-- title: General (less than a load)
-- title: General (small)
-- title: Grain (tipper)
-- title: Hay
-- title: Hotshot
-- title: Liquid (tanker)
-- title: Livestock
-- title: Machinery (mobile)
-- title: Machinery (stationary)
-- title: Motorbike
-- title: Pallets (full load)
-- title: Pallets (less than a load)
-- title: Pallet (1 only)
-- title: Portable Building
-- title: Refrigerated
-- title: Shipping Container
-- title: Trailer (to be carried)
-- title: Trailer (towed by truck)
-- title: Trailer (towed by car)
-- title: Trailer (caravan/camper)
-- title: Truck
-
-
-
-
-
-
-
-
-
-
-
-
+# - title: Boat
+# - title: Boat (with trailer)
+# - title: Bulk Material (tipper)
+# - title: Car
+# - title: Dangerous Goods
+# - title: Earthmoving Equipment
+# - title: Furniture Removal (full house)
+# - title: Furniture Removal (part house)
+# - title: Freight Contract Tender
+# - title: General (full load)
+# - title: General (less than a load)
+# - title: General (small)
+# - title: Grain (tipper)
+# - title: Hay
+# - title: Hotshot
+# - title: Liquid (tanker)
+# - title: Livestock
+# - title: Machinery (mobile)
+# - title: Machinery (stationary)
+# - title: Motorbike
+# - title: Pallets (full load)
+# - title: Pallets (less than a load)
+# - title: Pallet (1 only)
+# - title: Portable Building
+# - title: Refrigerated
+# - title: Shipping Container
+# - title: Trailer (to be carried)
+# - title: Trailer (towed by truck)
+# - title: Trailer (towed by car)
+# - title: Trailer (caravan/camper)
+# - title: Truck

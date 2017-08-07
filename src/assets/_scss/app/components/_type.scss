@@ -63,8 +63,7 @@ a {
 .price-font {
 	// font-family: 'Open Sans';
 
-	&:before {
-		content: "$";
+	.dollar-sign {
 		font-size: rem-calc(40);
 		font-weight: 400;
 	}

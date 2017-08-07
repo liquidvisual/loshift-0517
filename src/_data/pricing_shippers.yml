@@ -1,0 +1,17 @@
+- title:
+  url: /get-quotes/
+  price: FREE
+  savings:
+  icon: fa fa-clone
+  icon_title: Get Quotes
+  popular: false
+  btn_title: Get started
+
+- title:
+  url: /find-trucks/
+  price: FREE
+  savings:
+  icon: fa fa-truck
+  icon_title: Find Trucks
+  popular: false
+  btn_title: Get started

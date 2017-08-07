@@ -1,5 +1,5 @@
 /*
-    MAIN.JS - Last updated: 27.06.17
+    MAIN.JS - Last updated: 05.08.17
 */
 //-----------------------------------------------------------------
 // VARIABLES
@@ -19,17 +19,17 @@ $(window).on('load', function() {
 // SCROLL TO
 //-----------------------------------------------------------------
 
-$('a[href*="#"]:not([href="#"], [href="#sitemap"])').click(function() {
-    var id = $(this).attr('href');
-    var endPos = $(id);
+// $('a[href*="#"]:not([href="#"], [href="#sitemap"])').click(function() {
+//     var id = $(this).attr('href');
+//     var endPos = $(id);
 
-    if (endPos.length) {
-        // $.scrollTo(endPos.offset().top, 500);
-        // return false;
-    }
-});
+//     if (endPos.length) {
+//         // $.scrollTo(endPos.offset().top, 500);
+//         // return false;
+//     }
+// });
 
-$('a[href*="#"]:not([href="#"], [href="#sitemapo "])').click(function() {
+$('a[href*="#"]:not([href="#"], [href="#sitemap"], .nav-link, [data-toggle])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
