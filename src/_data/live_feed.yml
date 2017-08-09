@@ -1,0 +1,81 @@
+truck_register:
+  - title: Prime mover / Flat top extenable
+    id: #
+    url: /find-trucks/
+    date: 08/08/17
+    pickup_suburb: Melbourne
+    pickup_state: VIC
+
+  - title: Drop Deck With Ramps
+    id: #
+    url: /find-trucks/
+    date: 08/08/17
+    pickup_suburb: Port Macquarie
+    pickup_state: NSW
+
+  - title: Drop Deck
+    id: #
+    url: /find-trucks/
+    date: 08/08/17
+    pickup_suburb: Townsville
+    pickup_state: QLD
+
+  - title: Drop deck extendable with ramps
+    id: #
+    url: /find-trucks/
+    date: 16/10/17
+    pickup_suburb: Moranbah
+    pickup_state: QLD
+
+  - title: Tilt Trays --- F/Tops --- Drop Deck widener
+    id: #
+    url: /find-trucks/
+    date: 15/11/25
+    pickup_suburb: Newcastle, Sydney To Central Qld --- Owner Driver
+    pickup_state: NSW
+
+load_board:
+  - title: Folding Disc Machine - 5.5x4.7x2.5mtr
+    id: #
+    url: /get-loads/
+    date: #
+    pickup_suburb: Griffith
+    delivery_suburb: Barrengarry
+    pickup_state: NSW
+    delivery_state: NSW
+
+  - title: Mercedes 2644 Prime Mover Actross Low Roof Day Cab
+    id: #
+    url: /get-loads/
+    date: #
+    pickup_suburb: Pinkenba
+    delivery_suburb: Point Cook
+    pickup_state: QLD
+    delivery_state: VIC
+
+  - title: NEED...Hiab Rigid Truck 4 or 8tn (regular work)
+    id: #
+    url: /get-loads/
+    date: #
+    pickup_suburb: Warnervale
+    delivery_suburb: Sydney
+    pickup_state: NSW
+    delivery_state: NSW
+
+  - title: Stillages (20) - Scaffold, 2.4mtr Planks (500)
+    id: #
+    url: /get-loads/
+    date: #
+    pickup_suburb: Chelsea Heights
+    delivery_suburb: Tuross Head
+    pickup_state: VIC
+    delivery_state: NSW
+
+  - title: Empty Shipping Containers (ongoing work)
+    id: #
+    url: /get-loads/
+    date: #
+    pickup_suburb: Darra
+    delivery_suburb: Mackay Harbour
+    pickup_state: QLD
+    delivery_state: QLD

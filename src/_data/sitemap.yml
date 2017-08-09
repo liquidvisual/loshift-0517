@@ -193,12 +193,12 @@
   icon: fa fa-clone
   cta: is-cta-1
 
-- title: Find Trucks
-  url: /find-trucks/
-  icon: fa fa-truck
-  cta: is-cta-2
-
 - title: Get Loads
   url: /get-loads/
   icon: fa fa-road
+  cta: is-cta-2
+
+- title: Find Trucks
+  url: /find-trucks/
+  icon: fa fa-truck
   cta: is-cta-3

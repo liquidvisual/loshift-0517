@@ -17,7 +17,28 @@ var isTablet = $(window).width() < 1025; // no more touch
 
 $(function() {
     if ($('.lv-hero-item').length > 1) launchCarousel();
+    launchFeedCarousel();
 });
+
+//-----------------------------------------------------------------
+// LAUNCH FEED CAROUSEL
+//-----------------------------------------------------------------
+
+function launchFeedCarousel() {
+    $('[data-vertical-feed]').bxSlider({
+        auto: true,
+        responsive: true,
+        touchEnabled: false,
+        pause: 5000, // Slow timer
+        mode: 'vertical',
+        slideMargin: 0,
+        minSlides: 1,
+        controls: false,
+        infiniteLoop: true,
+        pager: false,
+        useCSS: true,
+    });
+}
 
 //-----------------------------------------------------------------
 // LAUNCH CAROUSEL
@@ -29,7 +50,7 @@ function launchCarousel() {
     // RANDOMIZE SLIDES
     //==================================================
 
-    $('.lv-hero').randomize('.lv-hero-item');
+    // $('.lv-hero').randomize('.lv-hero-item');
 
     //==================================================
     // BX SLIDER
@@ -42,6 +63,7 @@ function launchCarousel() {
         responsive: true,
         touchEnabled: true,
         oneToOneTouch: false,
+        randomStart: true,
         speed: 1000,
         pause: 6000,
         slideMargin: 0,

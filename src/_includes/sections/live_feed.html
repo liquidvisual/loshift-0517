@@ -1,49 +1,81 @@
 {% assign title = include.title %}
+{% assign truck_register = site.data.live_feed.truck_register %}
+{% assign load_board = site.data.live_feed.load_board %}
 
 <!-- LIVE FEED -->
-<section class="live-feed section-lighterX">
+<section class="live-feed section-lighter">
 	<div class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col-md-4 live-feed-col btn-tile">
+				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-find-trucks.jpg')"></span> -->
+
 				<div class="live-feed-container">
-					<p><strong>RECENT TRUCK</strong></p>
+					<p><strong><i class="fa fa-road" hidden></i>&nbsp; GET LOADS</strong></p>
 
-					<!-- POST -->
-					<div class="live-feed-post">
-						Drop deck with ramps
+					<!-- VERTICAL FEED -->
+					<div data-vertical-feed>
+						{% for item in load_board %}
+							<a class="live-feed-anchor" href="{{ item.url }}">
+								<div class="live-feed-content">
+
+									<!-- POST -->
+									<div class="live-feed-post">
+										{{ item.title }}
+									</div>
+
+									<!-- LOCATION -->
+									<div class="live-feed-location">
+										<i class="fa fa-map-marker mr-1"></i>
+										{{ item.pickup_suburb }} {{ item.pickup_state }} <b>to</b> {{ item.delivery_suburb }} {{ item.deliver_state }}
+									</div>
+								</div>
+							</a>
+						{% endfor %}
 					</div>
-
-					<!-- LOCATION -->
-					<div class="live-feed-location">
-						<i class="fa fa-map-marker mr-1"></i>
-						Sydney NSW
-					</div>
-
 				</div>
 			</div>
-			<div class="col">
+
+			<!-- CENTER COLUMN - NEED A QUOTE? -->
+			<div class="col-md-4 live-feed-col btn-tile">
+				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-get-quotes.jpg')"></span> -->
+
+				<a class="live-feed-anchor" href="/get-quotes/">
+					<div class="live-feed-container">
+						<p><strong>GET QUOTES</strong></p>
+						<div class="h2 mb-0 text-muted"><i class="fa fa-clone"></i></div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-md-4 live-feed-col btn-tile">
+				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-get-loads.jpg')"></span> -->
+
 				<div class="live-feed-container">
-					<p><strong>NEED A QUOTE?</strong></p>
-					<div class="h2 mb-0 text-muted"><i class="fa fa-clone"></i></div>
+					<p><strong><i class="fa fa-truck" hidden></i>&nbsp; FIND TRUCKS</strong></p>
+
+					<!-- VERTICAL FEED -->
+					<div data-vertical-feed>
+						{% for item in truck_register %}
+							<a class="live-feed-anchor" href="{{ item.url }}">
+								<div class="live-feed-content">
+
+									<!-- POST -->
+									<div class="live-feed-post">
+										{{ item.title }}
+									</div>
+
+									<!-- LOCATION -->
+									<div class="live-feed-location">
+										<i class="fa fa-map-marker mr-1"></i>
+										{{ item.pickup_suburb }} {{ item.pickup_state }}
+									</div>
+								</div>
+							</a>
+						{% endfor %}
+					</div>
 				</div>
 			</div>
-			<div class="col">
-				<div class="live-feed-container">
-					<p><strong>RECENT LOAD</strong></p>
 
-					<!-- POST -->
-					<div class="live-feed-post">
-						Assorted Caterpillar Parts (Estimate 10 Pallets and more)
-					</div>
-
-					<!-- LOCATION -->
-					<div class="live-feed-location">
-						<i class="fa fa-map-marker mr-1"></i>
-						Wetherill Park NSW <b>to</b> Bromelton (and Brendale) NSW
-					</div>
-
-				</div>
-			</div>
 		</div>
 	</div>
 </section>

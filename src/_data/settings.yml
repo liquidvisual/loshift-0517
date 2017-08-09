@@ -23,7 +23,7 @@ jekyll_version: 3.5.0
 offices:
   - title: Sydney
     address: "P.O. Box 349<br>Windsor NSW, 2756"
-    email: contact@loadshift.com.au
+    email: info@loadshift.com.au
     phone: 1300 562 374
     sms: 0409 623 596
     trading_hours: Monday to Friday<br>8.30am to 5pm (EST)

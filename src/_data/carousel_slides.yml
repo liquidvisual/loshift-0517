@@ -12,13 +12,6 @@
     - title: Get quotes
       url: /get-quotes/
 
-- title: Find Trucks
-  body: The Truck Availability Register is the place where transport providers list the future location, trailer type and date available of their trucks.
-  image: /assets/img/content/hero/fullsize/9068906.jpg
-  link:
-    - title: Find out more
-      url: /find-trucks/
-
 - title: Get Loads
   link_title:
   body: Loadshift delivers more business into your business.<br>Best of all ZERO commission.
@@ -26,6 +19,13 @@
   link:
     - title: Find out more
       url: /get-loads/
+
+- title: Find Trucks
+  body: The Truck Availability Register is the place where transport providers list the future location, trailer type and date available of their trucks.
+  image: /assets/img/content/hero/fullsize/9068906.jpg
+  link:
+    - title: Find out more
+      url: /find-trucks/
 
 - title: Celebrating a<br> Decade of Success
   link_title:
