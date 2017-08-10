@@ -1,14 +1,13 @@
 ---
 layout: base__page_sidebar
 title: Our Philosophy
+title_heading: The best way to be successful, is to build a respected reputation.
 permalink: /about-us/our-philosophy/
 hero: /assets/img/content/hero/fullsize/hero-2.jpg
 hero_classes:
 supporting_image: /assets/img/content/our-philosophy.jpg
 side_nav_id: 1
 ---
-
-## The best way to be successful, is to build a respected reputation.
 
 There is no more a reliable way to do this than by treating others in the same manner that you would like to be treated.
 

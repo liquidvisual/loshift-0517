@@ -4,6 +4,7 @@ layout: base
 
 {% assign hero = page.hero | default: "/assets/img/content/hero/hero-1-placeholder.png" %}
 {% assign supporting_image = page.supporting_image %}
+{% assign title_heading = page.title_heading %}
 
 {% include hero_secondary.html %}
 
@@ -17,6 +18,10 @@ layout: base
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-9 push-lg-3">
+                    {% if title_heading %}
+                        <h2>{{ title_heading }}</h2>
+                    {% endif %}
+
                     {{ content }}
                 </div>
                 <div class="col-lg-3 pull-lg-9">

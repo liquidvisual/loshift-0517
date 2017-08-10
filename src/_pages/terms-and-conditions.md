@@ -17,6 +17,7 @@ __Loadshift is not responsible for the actions of any Buyer (Shipper) or Seller 
 ---
 
 ## Usage &amp; Content
+
 The User agrees that it is solely responsible for ensuring that:
 
 1. No material provided by the User will infringe, contain or refer to any misleading, deceptive or fraudulent statements or offers;
@@ -44,6 +45,7 @@ Loadshift offers no endorsement for any User (Shipper or Carrier) of this site a
 Any illegal behaviour or actions should be immediately reported to the Police.
 
 ## Exclusion of Warranty
+
 Loadshift Transport System makes no warranty, promise or guarantee of continuous, uninterrupted access to our services and to this website. Loadshift Transport System provides this service "as is" and without any warranty or condition, express or implied.
 
 Loadshift Transport System expressly excludes (to the fullest extent permitted at law):
@@ -52,11 +54,13 @@ Loadshift Transport System expressly excludes (to the fullest extent permitted a
 2. All warranties that the services provided by us, including this website, will be timely, secure or error free.
 
 ## Payment
+
 Subscribers to the Transport Provider Membership Area, agree to the membership fee specified by Loadshift in Australian dollars.
 
 __NOTE: It is Obligation FREE to "post" a transport request listing on Loadshift.__
 
 ## Refund Policy
+
 In the event of a customer requesting their current membership be terminated, the following will apply...
 
 1. Written confirmation of the termination will be required from the customer (email is acceptable).
@@ -64,6 +68,7 @@ In the event of a customer requesting their current membership be terminated, th
 Loadshift will refund __50% of the value of any whole months remaining.__
 
 ## Denial of Access
+
 If Loadshift has found that a User has broken any of these Terms and Conditions, their access will be immediately terminated and any membership subscription forfeited, with no refund given.
 
 Additionally, Loadshift reserves the absolute right to deny usage or terminate current usage for any reason or no reason without notice to you.
@@ -71,13 +76,17 @@ Additionally, Loadshift reserves the absolute right to deny usage or terminate c
 Loadshift does not permit the use of its service by competitor “Efreight” systems or websites. Any competitor usage (directly or by an alias) will be immediately terminated without notice and any membership subscription forfeited.
 
 ## Limitation of Liability
+
 Loadshift Transport System will not be liable for any lost profit or any direct, indirect, punitive, incidental, special or consequential damages (including but not limited to economic damages) which may be suffered or incurred by you as a result of any negligent act or omission by us or arising out of or otherwise in connection with use of this website or our services.
 
 ## Indemnity
+
 The User releases and indemnifies Loadshift Transport System, its employees and agents against all actions, claims and demands (including the cost of defending or settling any actions, claims and demands) which may be instituted against Loadshift Transport System, arising out of any breach of this agreement by the User. Including any wilful, unlawful or negligent act by the User.
 
 ## No Partnership
+
 You agree that no joint venture, partnership, employment, or agency relationship exists between you and Loadshift Transport System as a result of this agreement or use of this website.
 
 ## Governing Law
+
 This site is operated from the State of New South Wales, Australia. These terms and conditions (and your use of this website) are governed by the law.

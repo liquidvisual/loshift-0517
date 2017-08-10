@@ -1,14 +1,13 @@
 ---
 layout: base__page_sidebar
 title: History
+title_heading: Loadshift traces its origins back to the earthmoving industry.
 permalink: /about-us/history/
 hero: /assets/img/content/hero/fullsize/11752432.jpg
 hero_classes:
 supporting_image: /assets/img/content/history.jpg
 side_nav_id: 1
 ---
-
-## Loadshift traces its origins back to the earthmoving industry.
 
 Founder of Loadshift __Philip Callaghan__ spent many years buying and selling earthmoving parts & equipment around Australia.
 

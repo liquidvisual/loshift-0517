@@ -2,6 +2,7 @@
 layout: child_layout/about_us__news_item
 title: That's Pie Country. They Do a Lot of Baking Up There.
 title_override: News
+title_heading:
 permalink: /about-us/news/news-item/
 back_breadcrumb: /news/
 hero: /assets/img/content/hero/fullsize/11752432.jpg

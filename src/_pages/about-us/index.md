@@ -1,14 +1,13 @@
 ---
 layout: child_layout/about_us
 title: About Us
+title_heading: Loadshift... The Australia wide Online Heavy Haulage Transport Marketplace for connecting Shippers and Carriers.
 permalink: /about-us/
 hero: /assets/img/content/hero/fullsize/pipe.jpg
 hero_classes:
 supporting_image: /assets/img/content/stamp-10-years.jpg
 side_nav_id: 1
 ---
-
-## Loadshift... The Australia wide Online Heavy Haulage Transport Marketplace for connecting Shippers and Carriers.
 
 As a marketplace Loadshift is simply a communicational hub for individuals and businesses seeking to buy and sell the services of road transport.
 
