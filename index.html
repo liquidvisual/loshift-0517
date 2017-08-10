@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY CDN -->
+    <!-- PRIORITY CDN (v3.1.1) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body class="">
@@ -29,7 +29,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2.5+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2500);
@@ -49,8 +49,8 @@
                                 <span class="text hidden-sm-down">1300 562 374</span>
                             </a>
                             <span class="spacer mr-3 hidden-sm-down"></span>
-                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
-                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                            <a class="hidden-sm-down" href="mailto:info@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; info@loadshift.com.au</a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#search" data-search-trigger>
@@ -466,15 +466,15 @@
                                 </a>
                             </li>
                             <li class="is-cta-2">
-                                <a class="top-parent-anchor" href="/find-trucks/">
-                                    <i class="fa fa-truck mr-1"></i>
-                                    <span class="text">Find Trucks</span>
-                                </a>
-                            </li>
-                            <li class="is-cta-3">
                                 <a class="top-parent-anchor" href="/get-loads/">
                                     <i class="fa fa-road mr-1"></i>
                                     <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
                                 </a>
                             </li>
 
@@ -495,12 +495,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="">
+                                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="youtube" href="">
+                                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                             <i class="fa fa-youtube"></i>
                                         </a>
                                     </li>
@@ -579,21 +579,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/fullsize/9068906.jpg')">
-
-                    <!-- HERO ITEM CAPTION -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-lg-7 col-xl-6">
-                                <div class="lv-hero-item-caption">
-                                    <h1>Find Trucks</h1>
-                                    <p>The Truck Availability Register is the place where transport providers list the future location, trailer type and date available of their trucks.</p>
-                                    <a class="btn btn-primary" href="/find-trucks/">Find out more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/fullsize/32547428.jpg')">
 
                     <!-- HERO ITEM CAPTION -->
@@ -605,6 +590,21 @@
                                     <p>Loadshift delivers more business into your business.
                                         <br>Best of all ZERO commission.</p>
                                     <a class="btn btn-primary" href="/get-loads/">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/fullsize/9068906.jpg')">
+
+                    <!-- HERO ITEM CAPTION -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-7 col-xl-6">
+                                <div class="lv-hero-item-caption">
+                                    <h1>Find Trucks</h1>
+                                    <p>The Truck Availability Register is the place where transport providers list the future location, trailer type and date available of their trucks.</p>
+                                    <a class="btn btn-primary" href="/find-trucks/">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -646,96 +646,17 @@
 
         <!-- /.lv-hero-wrapper -->
         
-<!-- LIVE FEED --><section class="live-feed">
+<!-- LIVE FEED --><section class="live-feed section-lighter">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 live-feed-col">
                         <div class="live-feed-container">
                             <p>
-                                <strong>RECENT TRUCK</strong>
+                                <strong>
+                                    <i class="fa fa-road" hidden></i>&nbsp; GET LOADS</strong>
                             </p>
 
-                            <!-- VERTICAL FEED -->
-                            <div data-vertical-feed>
-                                <a class="live-feed-anchor" href="/find-trucks/">
-                                    <div class="live-feed-content">
-
-                                        <!-- POST -->
-                                        <div class="live-feed-post">Prime mover / Flat top extenable</div>
-
-                                        <!-- LOCATION -->
-                                        <div class="live-feed-location">
-                                            <i class="fa fa-map-marker mr-1"></i> Melbourne VIC</div>
-                                    </div>
-                                </a>
-                                <a class="live-feed-anchor" href="/find-trucks/">
-                                    <div class="live-feed-content">
-
-                                        <!-- POST -->
-                                        <div class="live-feed-post">Drop Deck With Ramps</div>
-
-                                        <!-- LOCATION -->
-                                        <div class="live-feed-location">
-                                            <i class="fa fa-map-marker mr-1"></i> Port Macquarie NSW</div>
-                                    </div>
-                                </a>
-                                <a class="live-feed-anchor" href="/find-trucks/">
-                                    <div class="live-feed-content">
-
-                                        <!-- POST -->
-                                        <div class="live-feed-post">Drop Deck</div>
-
-                                        <!-- LOCATION -->
-                                        <div class="live-feed-location">
-                                            <i class="fa fa-map-marker mr-1"></i> Townsville QLD</div>
-                                    </div>
-                                </a>
-                                <a class="live-feed-anchor" href="/find-trucks/">
-                                    <div class="live-feed-content">
-
-                                        <!-- POST -->
-                                        <div class="live-feed-post">Drop deck extendable with ramps</div>
-
-                                        <!-- LOCATION -->
-                                        <div class="live-feed-location">
-                                            <i class="fa fa-map-marker mr-1"></i> Moranbah QLD</div>
-                                    </div>
-                                </a>
-                                <a class="live-feed-anchor" href="/find-trucks/">
-                                    <div class="live-feed-content">
-
-                                        <!-- POST -->
-                                        <div class="live-feed-post">Tilt Trays --- F/Tops --- Drop Deck widener</div>
-
-                                        <!-- LOCATION -->
-                                        <div class="live-feed-location">
-                                            <i class="fa fa-map-marker mr-1"></i> Newcastle, Sydney To Central Qld --- Owner Driver NSW</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CENTER COLUMN - NEED A QUOTE? -->
-                    <div class="col-md-4 live-feed-col">
-                        <a class="live-feed-anchor" href="/get-quotes/">
-                            <div class="live-feed-container">
-                                <p>
-                                    <strong>NEED A QUOTE?</strong>
-                                </p>
-                                <div class="h2 mb-0 text-muted">
-                                    <i class="fa fa-clone"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 live-feed-col">
-                        <div class="live-feed-container">
-                            <p>
-                                <strong>RECENT LOAD</strong>
-                            </p>
-
-                            <!-- VERTICAL FEED -->
+                            <!-- LOAD BOARD FEED -->
                             <div data-vertical-feed>
                                 <a class="live-feed-anchor" href="/get-loads/">
                                     <div class="live-feed-content">
@@ -800,12 +721,93 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- CENTER COLUMN - NEED A QUOTE? -->
+                    <div class="col-md-4 live-feed-col">
+                        <a class="live-feed-anchor" href="/get-quotes/">
+                            <div class="live-feed-container">
+                                <p>
+                                    <strong>GET QUOTES</strong>
+                                </p>
+                                <div class="h2 mb-0 text-muted">
+                                    <i class="fa fa-clone"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 live-feed-col">
+                        <div class="live-feed-container">
+                            <p>
+                                <strong>
+                                    <i class="fa fa-truck" hidden></i>&nbsp; FIND TRUCKS</strong>
+                            </p>
+
+                            <!-- TRUCK REGISTER FEED -->
+                            <div data-vertical-feed>
+                                <a class="live-feed-anchor" href="/find-trucks/">
+                                    <div class="live-feed-content">
+
+                                        <!-- POST -->
+                                        <div class="live-feed-post">Prime mover / Flat top extenable</div>
+
+                                        <!-- LOCATION -->
+                                        <div class="live-feed-location">
+                                            <i class="fa fa-map-marker mr-1"></i> Melbourne VIC</div>
+                                    </div>
+                                </a>
+                                <a class="live-feed-anchor" href="/find-trucks/">
+                                    <div class="live-feed-content">
+
+                                        <!-- POST -->
+                                        <div class="live-feed-post">Drop Deck With Ramps</div>
+
+                                        <!-- LOCATION -->
+                                        <div class="live-feed-location">
+                                            <i class="fa fa-map-marker mr-1"></i> Port Macquarie NSW</div>
+                                    </div>
+                                </a>
+                                <a class="live-feed-anchor" href="/find-trucks/">
+                                    <div class="live-feed-content">
+
+                                        <!-- POST -->
+                                        <div class="live-feed-post">Drop Deck</div>
+
+                                        <!-- LOCATION -->
+                                        <div class="live-feed-location">
+                                            <i class="fa fa-map-marker mr-1"></i> Townsville QLD</div>
+                                    </div>
+                                </a>
+                                <a class="live-feed-anchor" href="/find-trucks/">
+                                    <div class="live-feed-content">
+
+                                        <!-- POST -->
+                                        <div class="live-feed-post">Drop deck extendable with ramps</div>
+
+                                        <!-- LOCATION -->
+                                        <div class="live-feed-location">
+                                            <i class="fa fa-map-marker mr-1"></i> Moranbah QLD</div>
+                                    </div>
+                                </a>
+                                <a class="live-feed-anchor" href="/find-trucks/">
+                                    <div class="live-feed-content">
+
+                                        <!-- POST -->
+                                        <div class="live-feed-post">Tilt Trays --- F/Tops --- Drop Deck widener</div>
+
+                                        <!-- LOCATION -->
+                                        <div class="live-feed-location">
+                                            <i class="fa fa-map-marker mr-1"></i> Newcastle, Sydney To Central Qld --- Owner Driver NSW</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- FEATURE ICONS -->
-        <section class="section">
+        <section class="section section-lighter">
             <div class="container">
                 <ul class="list-feature-icons block-grid-xs-3 block-grid-sm-5 text-center">
                     <li>
@@ -866,11 +868,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Life changing service. it’s 100% of my work and I get call backs.”</p>
                                 </div>
                             </div>
@@ -887,11 +887,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Congratulations on a truly helpful service, we use it everyday.”</p>
                                 </div>
                             </div>
@@ -908,11 +906,9 @@
                                     <strong>Shipper</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Most reliable service and upfront out of all of them.”</p>
                                 </div>
                             </div>
@@ -929,11 +925,9 @@
                                     <strong></strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Brilliant service! Have used it for a couple of years now. Always refer it to others. So easy to use.”</p>
                                 </div>
                             </div>
@@ -951,11 +945,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>Mudgeeraba to Grafton</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“A driver rang me quite quickly. He was nearby… So he’s loading it right now. Pretty good eh!”</p>
                                 </div>
                             </div>
@@ -972,11 +964,9 @@
                                     <strong>Shipper</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“We spend $40,000 to $50,000 per year on transport through Loadshift. It’s easy to use.”</p>
                                 </div>
                             </div>
@@ -993,11 +983,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Pretty much made all my money from Loadshift. Joined 6 months ago when things were quiet.”</p>
                                 </div>
                             </div>
@@ -1014,11 +1002,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Can’t go without my Loadshift. Doing 2 jobs this weekend.”</p>
                                 </div>
                             </div>
@@ -1036,11 +1022,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>Deniliquin to Mackay</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Brilliant concept. I’ve been told to use it by a few people. Everyone is talking about it.”</p>
                                 </div>
                             </div>
@@ -1058,11 +1042,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>Lowood to Keilor Park</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Found Transport within 3 minutes of listing.”</p>
                                 </div>
                             </div>
@@ -1080,11 +1062,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>VIC to VIC</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“We would be stuffed without Loadshift. Have secured a half dozen repeat customers. Loadshift is a special tool to us.”</p>
                                 </div>
                             </div>
@@ -1101,11 +1081,9 @@
                                     <strong>Carrrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Great system… It evens out the playing field between us little guys &amp; the bigger transport companys. We are getting access to job...</p>
                                 </div>
                             </div>
@@ -1123,11 +1101,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>QLD to NSW</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Amazing system. Had been trying to find transport for the pass month. Listed a request and found transport in 5 minutes.”</p>
                                 </div>
                             </div>
@@ -1145,11 +1121,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>QLD to VIC</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Never seen anything like this before. Very pleased. You’re the best.”</p>
                                 </div>
                             </div>
@@ -1166,11 +1140,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“A friend needed a Pilot. I looked on the Truck Availability Register &amp; found one. We rang him and the Pilot was only 5 minutes ar...</p>
                                 </div>
                             </div>
@@ -1188,11 +1160,9 @@
                                     <i class="fa fa-angle-right"></i>&nbsp;
                                     <strong>QLD to QLD</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“I’ll be keeping your phone number handy. I had been looking for transport for 3 weeks. After posting a listing on Loadshift, I immedi...</p>
                                 </div>
                             </div>
@@ -1209,11 +1179,9 @@
                                     <strong>Backhoe</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Your site is amazing. I was receiving quotes after 10 minutes of posting a listing.”</p>
                                 </div>
                             </div>
@@ -1230,11 +1198,9 @@
                                     <strong></strong>
                                     <strong>VIC</strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“I love this Loadshift! Works bloody fantastic.”</p>
                                 </div>
                             </div>
@@ -1251,11 +1217,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Loadshift has made the difference between surviving &amp; not. Particularly when it’s quiet.”</p>
                                 </div>
                             </div>
@@ -1272,11 +1236,9 @@
                                     <strong>Carrier</strong>
                                     <strong></strong>
                                 </p>
-
-                                <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                 <div class="text">
 
-                                    <!-- TRUNCATE: 140 CHARS -->
+                                    <!-- BODY (TRUNCATE: 140 chars) -->
                                     <p>“Great system… I would not normally join something like this, but I made the change.”</p>
                                 </div>
                             </div>
@@ -1391,18 +1353,6 @@
                     </li>
                     <li>
 
-                        <!-- FIND TRUCKS -->
-                        <a class="btn-tile is-slim is-brand-primary-tinted-2" href="/cargo-categories/cargo-item/">
-                            <img width="100%" src="/assets/img/content/feature-find-trucks.jpg" alt="Find Trucks">
-                            <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-find-trucks.jpg')"></span>
-                            <div class="btn-tile-overlay">
-                                <h4 class="btn-tile-header mb-0">
-                                    <i class="fa fa-truck"></i>&nbsp; Find Trucks</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-
                         <!-- GET LOADS -->
                         <a class="btn-tile is-slim is-brand-primary-tinted-3" href="/cargo-categories/cargo-item/">
                             <img width="100%" src="/assets/img/content/feature-get-loads.jpg" alt="Get Loads">
@@ -1410,6 +1360,18 @@
                             <div class="btn-tile-overlay">
                                 <h4 class="btn-tile-header mb-0">
                                     <i class="fa fa-road"></i>&nbsp; Get Loads</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+
+                        <!-- FIND TRUCKS -->
+                        <a class="btn-tile is-slim is-brand-primary-tinted-2" href="/cargo-categories/cargo-item/">
+                            <img width="100%" src="/assets/img/content/feature-find-trucks.jpg" alt="Find Trucks">
+                            <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-find-trucks.jpg')"></span>
+                            <div class="btn-tile-overlay">
+                                <h4 class="btn-tile-header mb-0">
+                                    <i class="fa fa-truck"></i>&nbsp; Find Trucks</h4>
                             </div>
                         </a>
                     </li>
@@ -1426,7 +1388,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            <!-- ** Hardcoded Links ** -->
+                            <!-- HARDCODED QUICK LINKS -->
                             <h4 class="mb-4">Quick Links</h4>
                             <ul class="block-grid-xs-1">
                                 <li>
@@ -1519,12 +1481,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="">
+                                    <a class="twitter" href="https://twitter.com/loadshifttrans">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="youtube" href="">
+                                    <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
@@ -1625,13 +1587,13 @@
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/find-trucks/">Find Trucks</a>
+                                <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/get-loads/">Get Loads</a>
+                                <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
@@ -2204,15 +2166,15 @@
                 </a>
             </li>
             <li class="is-cta-2">
-                <a class="top-parent-anchor" href="/find-trucks/">
-                    <i class="fa fa-truck mr-1"></i>
-                    <span class="text">Find Trucks</span>
-                </a>
-            </li>
-            <li class="is-cta-3">
                 <a class="top-parent-anchor" href="/get-loads/">
                     <i class="fa fa-road mr-1"></i>
                     <span class="text">Get Loads</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
                 </a>
             </li>
 
@@ -2233,12 +2195,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="twitter" href="">
+                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube" href="">
+                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
@@ -2314,7 +2276,7 @@
 
                     <!--  -->
                     <div class="login-panel text-center animated fadeInDown p-3">
-                        <form data-toggle="validatorX" class="modal-login">
+                        <form data-toggle="validatorX" class="modal-login" name="Members Login">
 
                             <!-- NAME -->
                             <fieldset class="form-group">

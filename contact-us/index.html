@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY CDN -->
+    <!-- PRIORITY CDN (v3.1.1) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body class="">
@@ -29,7 +29,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2.5+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2500);
@@ -49,8 +49,8 @@
                                 <span class="text hidden-sm-down">1300 562 374</span>
                             </a>
                             <span class="spacer mr-3 hidden-sm-down"></span>
-                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
-                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                            <a class="hidden-sm-down" href="mailto:info@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; info@loadshift.com.au</a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#search" data-search-trigger>
@@ -462,15 +462,15 @@
                                 </a>
                             </li>
                             <li class="is-cta-2">
-                                <a class="top-parent-anchor" href="/find-trucks/">
-                                    <i class="fa fa-truck mr-1"></i>
-                                    <span class="text">Find Trucks</span>
-                                </a>
-                            </li>
-                            <li class="is-cta-3">
                                 <a class="top-parent-anchor" href="/get-loads/">
                                     <i class="fa fa-road mr-1"></i>
                                     <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
                                 </a>
                             </li>
 
@@ -491,12 +491,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="">
+                                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="youtube" href="">
+                                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                             <i class="fa fa-youtube"></i>
                                         </a>
                                     </li>
@@ -598,34 +598,34 @@
                                 <h4>Oops!</h4>
                                 <p>Something went wrong. Please check your details.</p>
                             </div>
-                            <form class="form-quote form-quote-outlined" data-toggle="validator">
+                            <form class="form-quote form-quote-outlined" name="Contact Form" data-toggle="validator">
                                 <fieldset class="p-4">
 
                                     <!-- FULL NAME -->
                                     <div class="form-group">
                                         <label for="name">Full Name*</label>
-                                        <input class="form-control" id="name" name="Full Name" type="text" placeholder="Name" required>
+                                        <input id="name" class="form-control" name="Full Name" type="text" placeholder="Name" required>
                                         <small class="error">Your name is required.</small>
                                     </div>
 
                                     <!-- EMAIL -->
                                     <div class="form-group">
                                         <label for="email">Email*</label>
-                                        <input class="form-control" id="email" name="Email" type="email" placeholder="Email" required>
+                                        <input id="email" class="form-control" name="Email" type="email" placeholder="Email" required>
                                         <small class="error">A valid email is required.</small>
                                     </div>
 
                                     <!-- PHONE -->
                                     <div class="form-group">
                                         <label for="phone">Phone</label>
-                                        <input class="form-control" id="phone" name="Phone" type="text" placeholder="Phone">
+                                        <input id="phone" class="form-control" name="Phone" type="text" placeholder="Phone">
                                         <small class="error">A valid phone number is required.</small>
                                     </div>
 
                                     <!-- STATE -->
                                     <div class="form-group">
                                         <label for="state" class="form-control-label">State</label>
-                                        <select class="form-control custom-select" name="State" id="state">
+                                        <select id="state" class="form-control custom-select" name="State">
                                             <option selected disabled>Please Select</option>
                                             <option>ACT</option>
                                             <option>NSW</option>
@@ -640,13 +640,13 @@
                                     <!-- MESSAGE -->
                                     <div class="form-group">
                                         <label for="message">Your Message *</label>
-                                        <textarea class="form-control" id="message" name="Message" rows="6" placeholder="Message" required></textarea>
+                                        <textarea id="message" class="form-control" name="Message" rows="6" placeholder="Message" required></textarea>
                                         <small class="error">A message is required.</small>
                                     </div>
 
                                     <!-- SUBMIT -->
                                     <div class="text-right">
-                                        <button type="submit" class="btn btn-primary">Send</button>
+                                        <button type="submit" class="btn btn-primary">Send message</button>
                                     </div>
                                 </fieldset>
                             </form>
@@ -693,7 +693,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            <!-- ** Hardcoded Links ** -->
+                            <!-- HARDCODED QUICK LINKS -->
                             <h4 class="mb-4">Quick Links</h4>
                             <ul class="block-grid-xs-1">
                                 <li>
@@ -786,12 +786,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="">
+                                    <a class="twitter" href="https://twitter.com/loadshifttrans">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="youtube" href="">
+                                    <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
@@ -892,13 +892,13 @@
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/find-trucks/">Find Trucks</a>
+                                <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/get-loads/">Get Loads</a>
+                                <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
@@ -1471,15 +1471,15 @@
                 </a>
             </li>
             <li class="is-cta-2">
-                <a class="top-parent-anchor" href="/find-trucks/">
-                    <i class="fa fa-truck mr-1"></i>
-                    <span class="text">Find Trucks</span>
-                </a>
-            </li>
-            <li class="is-cta-3">
                 <a class="top-parent-anchor" href="/get-loads/">
                     <i class="fa fa-road mr-1"></i>
                     <span class="text">Get Loads</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
                 </a>
             </li>
 
@@ -1500,12 +1500,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="twitter" href="">
+                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube" href="">
+                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
@@ -1581,7 +1581,7 @@
 
                     <!--  -->
                     <div class="login-panel text-center animated fadeInDown p-3">
-                        <form data-toggle="validatorX" class="modal-login">
+                        <form data-toggle="validatorX" class="modal-login" name="Members Login">
 
                             <!-- NAME -->
                             <fieldset class="form-group">

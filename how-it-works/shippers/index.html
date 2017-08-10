@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY CDN -->
+    <!-- PRIORITY CDN (v3.1.1) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body class="">
@@ -29,7 +29,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2.5+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2500);
@@ -49,8 +49,8 @@
                                 <span class="text hidden-sm-down">1300 562 374</span>
                             </a>
                             <span class="spacer mr-3 hidden-sm-down"></span>
-                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
-                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                            <a class="hidden-sm-down" href="mailto:info@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; info@loadshift.com.au</a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#search" data-search-trigger>
@@ -462,15 +462,15 @@
                                 </a>
                             </li>
                             <li class="is-cta-2">
-                                <a class="top-parent-anchor" href="/find-trucks/">
-                                    <i class="fa fa-truck mr-1"></i>
-                                    <span class="text">Find Trucks</span>
-                                </a>
-                            </li>
-                            <li class="is-cta-3">
                                 <a class="top-parent-anchor" href="/get-loads/">
                                     <i class="fa fa-road mr-1"></i>
                                     <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
                                 </a>
                             </li>
 
@@ -491,12 +491,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="">
+                                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="youtube" href="">
+                                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                             <i class="fa fa-youtube"></i>
                                         </a>
                                     </li>
@@ -622,21 +622,21 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <h2>Shippers</h2>
-                                    <p>Receive quotations for transport services by posting your request for quotation.</p>
+                                    <p>Receive quotes for transport services by posting your request below.</p>
                                     <p>It's as easy as:</p>
                                     <p class="h4">
                                         <span class="number-bullet">1</span>&nbsp; Phoning
-                                        <a href="tel:1300562374">1300 56 23 74</a>
+                                        <a href="tel:1300 562 374">1300 562 374</a>
                                     </p>
                                     <p class="h4 ml-4">
                                         <b>OR</b>
                                     </p>
                                     <p class="h4">
-                                        <span class="number-bullet">2</span>&nbsp; Completing our simple online form</p>
+                                        <span class="number-bullet">2</span>&nbsp; Completing our form</p>
                                     <br>
-                                    <p>Once your quote request has been posted, It is added to the
-                                        <a href="/get-loads/">Load Board</a> and then alerted to the loadshift community.</p>
-                                    <p>Those carriers that may be of assistance respond directly to you with quotation (Varying price &amp; Avaliability).</p>
+                                    <p>Once your quote request has been posted, it's then added to the
+                                        <a href="/get-loads/">Load Board</a> and alerted to the Loadshift community.</p>
+                                    <p>Those carriers that may be of assistance will respond directly to you with quotation (varying price &amp; avaliability).</p>
                                     <br>
                                     <h3 class="text-center text-lg-left">You deal with whomever you choose.</h3>
                                 </div>
@@ -657,19 +657,19 @@
                                         <h4>Oops!</h4>
                                         <p>Something went wrong. Please check your details.</p>
                                     </div>
-                                    <form class="form-quote form-quote-outlined" data-toggle="validator">
+                                    <form class="form-quote form-quote-outlined" name="Quote Request" data-toggle="validator">
                                         <fieldset>
 
                                             <!-- PICKUP SUBURB -->
                                             <div class="form-group row">
                                                 <label for="pickup-suburb" class="col-lg-4 form-control-label">Pickup Suburb</label>
                                                 <div class="col-lg-5">
-                                                    <input class="form-control" id="pickup-suburb" name="pickup-suburb" type="text" placeholder="" required>
+                                                    <input id="pickup-suburb" class="form-control" name="pickup-suburb" type="text" placeholder="" required>
                                                 </div>
 
                                                 <!-- STATE -->
                                                 <div class="col-lg-3 end">
-                                                    <select class="form-control custom-select" name="pickup-state" id="pickup-state">
+                                                    <select id="pickup-state" class="form-control custom-select" name="pickup-state">
                                                         <option selected>ACT</option>
                                                         <option>NSW</option>
                                                         <option>QLD</option>
@@ -686,12 +686,12 @@
                                             <div class="form-group row">
                                                 <label for="delivery-suburb" class="col-lg-4 form-control-label">Delivery Suburb</label>
                                                 <div class="col-lg-5">
-                                                    <input class="form-control" id="delivery-suburb" name="delivery-suburb" type="text" placeholder="" required>
+                                                    <input id="delivery-suburb" class="form-control" name="delivery-suburb" type="text" placeholder="" required>
                                                 </div>
 
                                                 <!-- STATE -->
                                                 <div class="col-lg-3 end">
-                                                    <select class="form-control custom-select" id="delivery-state" name="delivery-state">
+                                                    <select id="delivery-state" class="form-control custom-select" name="delivery-state">
                                                         <option selected>ACT</option>
                                                         <option>NSW</option>
                                                         <option>QLD</option>
@@ -708,7 +708,7 @@
                                             <div class="form-group row">
                                                 <label for="cargo-desc" class="col-lg-5 form-control-label">Cargo Description*</label>
                                                 <div class="col-lg-7">
-                                                    <input class="form-control" id="cargo-desc" name="cargo-desc" type="text" placeholder="" required>
+                                                    <input id="cargo-desc" class="form-control" name="cargo-desc" type="text" placeholder="" required>
                                                 </div>
                                                 <small class="error">Your cargo description is required.</small>
                                             </div>
@@ -717,7 +717,7 @@
                                             <div class="form-group row">
                                                 <label for="cargo-category" class="col-lg-5 form-control-label">Cargo Category*</label>
                                                 <div class="col-lg-7">
-                                                    <select class="form-control custom-select" id="cargo-category" name="cargo-category">
+                                                    <select id="cargo-category" class="form-control custom-select" name="cargo-category">
                                                         <option disabled selected>Please Select</option>
                                                         <option value="1">Machinery / Equipment</option>
                                                         <option value="32">Vehicles</option>
@@ -741,7 +741,7 @@
                                             <div class="form-group row">
                                                 <label for="name" class="col-lg-4 form-control-label">Name*</label>
                                                 <div class="col-lg-8">
-                                                    <input class="form-control" id="name" name="name" type="text" placeholder="" required>
+                                                    <input id="name" class="form-control" name="name" type="text" placeholder="" required>
                                                 </div>
                                                 <small class="error">Your name is required.</small>
                                             </div>
@@ -750,7 +750,7 @@
                                             <div class="form-group row">
                                                 <label for="email" class="col-lg-4 form-control-label">Email*</label>
                                                 <div class="col-lg-8">
-                                                    <input class="form-control" id="email" name="email" type="email" placeholder="" required>
+                                                    <input id="email" class="form-control" name="email" type="email" placeholder="" required>
                                                 </div>
                                                 <small class="error">A valid email is required.</small>
                                             </div>
@@ -759,14 +759,14 @@
                                             <div class="form-group row">
                                                 <label for="phone" class="col-lg-4 form-control-label">Phone*</label>
                                                 <div class="col-lg-8">
-                                                    <input class="form-control" id="phone" name="phone" type="text" placeholder="" required>
+                                                    <input id="phone" class="form-control" name="phone" type="text" placeholder="" required>
                                                 </div>
                                                 <small class="error">A valid phone number is required.</small>
                                             </div>
 
                                             <!-- SUBMIT -->
                                             <div class="text-right">
-                                                <button type="submit" class="btn btn-primary">Submit Request</button>
+                                                <button type="submit" class="btn btn-primary">Request quote</button>
                                             </div>
                                         </fieldset>
                                     </form>
@@ -807,13 +807,13 @@
 
             <!-- FIND TRUCKS -->
             <section class="section section-light">
-                <div class="container" style="max-width: 1000px">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
+                <div class="container container-condensed">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-6 push-md-6">
                             <h2>Find Trucks</h2>
                             <p class="lead">Click on a map listing to obtain the current or future location of a carrier. Use the nominated contact details to deal directly.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 pr-lg-5 pull-md-6">
                             <p>
                                 <img width="100%" src="/assets/img/content/truck-register@2x.jpg" alt="Truck Availability Register">
                             </p>
@@ -877,7 +877,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            <!-- ** Hardcoded Links ** -->
+                            <!-- HARDCODED QUICK LINKS -->
                             <h4 class="mb-4">Quick Links</h4>
                             <ul class="block-grid-xs-1">
                                 <li>
@@ -970,12 +970,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="">
+                                    <a class="twitter" href="https://twitter.com/loadshifttrans">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="youtube" href="">
+                                    <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
@@ -1076,13 +1076,13 @@
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/find-trucks/">Find Trucks</a>
+                                <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/get-loads/">Get Loads</a>
+                                <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
@@ -1655,15 +1655,15 @@
                 </a>
             </li>
             <li class="is-cta-2">
-                <a class="top-parent-anchor" href="/find-trucks/">
-                    <i class="fa fa-truck mr-1"></i>
-                    <span class="text">Find Trucks</span>
-                </a>
-            </li>
-            <li class="is-cta-3">
                 <a class="top-parent-anchor" href="/get-loads/">
                     <i class="fa fa-road mr-1"></i>
                     <span class="text">Get Loads</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
                 </a>
             </li>
 
@@ -1684,12 +1684,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="twitter" href="">
+                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube" href="">
+                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
@@ -1765,7 +1765,7 @@
 
                     <!--  -->
                     <div class="login-panel text-center animated fadeInDown p-3">
-                        <form data-toggle="validatorX" class="modal-login">
+                        <form data-toggle="validatorX" class="modal-login" name="Members Login">
 
                             <!-- NAME -->
                             <fieldset class="form-group">

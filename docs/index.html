@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY CDN -->
+    <!-- PRIORITY CDN (v3.1.1) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body class="">
@@ -29,7 +29,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2.5+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2500);
@@ -49,8 +49,8 @@
                                 <span class="text hidden-sm-down">1300 562 374</span>
                             </a>
                             <span class="spacer mr-3 hidden-sm-down"></span>
-                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
-                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                            <a class="hidden-sm-down" href="mailto:info@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; info@loadshift.com.au</a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#search" data-search-trigger>
@@ -462,15 +462,15 @@
                                 </a>
                             </li>
                             <li class="is-cta-2">
-                                <a class="top-parent-anchor" href="/find-trucks/">
-                                    <i class="fa fa-truck mr-1"></i>
-                                    <span class="text">Find Trucks</span>
-                                </a>
-                            </li>
-                            <li class="is-cta-3">
                                 <a class="top-parent-anchor" href="/get-loads/">
                                     <i class="fa fa-road mr-1"></i>
                                     <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
                                 </a>
                             </li>
 
@@ -491,12 +491,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="">
+                                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="youtube" href="">
+                                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                             <i class="fa fa-youtube"></i>
                                         </a>
                                     </li>
@@ -637,6 +637,7 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="spacer mb-4"></div>
                             <h2 id="typography">Typography</h2>
                             <hr>
                             <h1 id="h1-this-is-a-header-one">H1. This is a Header One</h1>
@@ -645,23 +646,7 @@
                             <h4 id="h4-this-is-a-header-four">H4. This is a Header Four</h4>
                             <h5 id="h5-this-is-a-header-five">H5. This is a Header Five</h5>
                             <h6 id="h6-this-is-a-header-six">H6. This is a Header Six</h6>
-                            <p>
-                                <br>
-                            </p>
-                            <h2 id="pages-loadshift">Pages Loadshift</h2>
-                            <hr>
-
-                            <!-- { % include snippets/navigation.html %} -->
-                            <p>
-                                <br>
-                            </p>
-                            <h2 id="component-library">Component Library</h2>
-                            <p>Use this page as a reference when tweaking values. This will prevent things breaking across components.</p>
-                            <p>
-                                <a class="btn btn-primary btn-text" href="/docs/component-library/">Access Component Library
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </p>
+                            <div class="spacer mb-4"></div>
                             <h2 id="bootstrap-4">Bootstrap 4</h2>
                             <p>This codebase is running Bootstrap 4 (Alpha v6). Despite being an alpha, it’s thoroughly tested and solid for this site.</p>
                             <p>
@@ -669,25 +654,34 @@
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </p>
+                            <div class="spacer mb-4"></div>
                             <h2 id="utility-classes">Utility Classes</h2>
-                            <p>You will likely see lots of weird classes around the place. Eg. <code>.mb-0</code> - these are utility classes from Bootstrap which allow us to set arbitrary spacing between elements without having to hard code those values separately.</p>
+                            <p>You will likely see lots of weird classes around the place. Eg. <code>.mb-0</code> and <code>.px-4</code> - these are utility classes from Bootstrap that allow us to set arbitrary spacing (margins and padding) between elements without having to bake them into a CSS module.</p>
                             <p>
                                 <b>
-                                    <a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">Visit utilities here</a>
+                                    <a href="http://v4-alpha.getbootstrap.com/utilities/spacing/" target="_blank">Visit utilities here</a>
                                 </b>
                             </p>
-                            <p>
-                                <br>
-                            </p>
-                            <h2 id="breakpoints-pxs">Breakpoints (pxs)</h2>
+                            <div class="spacer mb-4"></div>
+                            <h2 id="breakpoints">Breakpoints</h2>
                             <div data-js="lv-responsive-table"></div>
-                            <p>
-                                <br>
-                            </p>
+                            <div class="spacer mb-4"></div>
                             <h2 id="font-icons">Font Icons</h2>
-                            <p>This site uses font icons in some places including the side nav, you can change the icons by using classes shown here:</p>
+                            <p>This site uses fonts from the ‘Font Awesome’ library:</p>
                             <p>
                                 <a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a>
+                            </p>
+                            <div class="spacer mb-4"></div>
+                            <h2 id="cargo-pages-overview">Cargo Pages Overview</h2>
+                            <p>This page was created to display all of the cargo page heroes in one place. Also it lists all of the site images.</p>
+                            <p>
+                                <a href="/cargo-pages/">/cargo-pages/</a>
+                            </p>
+                            <div class="spacer mb-4"></div>
+                            <h2 id="text-page-example">Text Page Example</h2>
+                            <p>Simple use of basic styles.</p>
+                            <p>
+                                <a href="/text-page/">/text-page/</a>
                             </p>
                         </div>
                     </div>
@@ -704,7 +698,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            <!-- ** Hardcoded Links ** -->
+                            <!-- HARDCODED QUICK LINKS -->
                             <h4 class="mb-4">Quick Links</h4>
                             <ul class="block-grid-xs-1">
                                 <li>
@@ -797,12 +791,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="">
+                                    <a class="twitter" href="https://twitter.com/loadshifttrans">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="youtube" href="">
+                                    <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
@@ -903,13 +897,13 @@
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/find-trucks/">Find Trucks</a>
+                                <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/get-loads/">Get Loads</a>
+                                <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
@@ -1482,15 +1476,15 @@
                 </a>
             </li>
             <li class="is-cta-2">
-                <a class="top-parent-anchor" href="/find-trucks/">
-                    <i class="fa fa-truck mr-1"></i>
-                    <span class="text">Find Trucks</span>
-                </a>
-            </li>
-            <li class="is-cta-3">
                 <a class="top-parent-anchor" href="/get-loads/">
                     <i class="fa fa-road mr-1"></i>
                     <span class="text">Get Loads</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
                 </a>
             </li>
 
@@ -1511,12 +1505,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="twitter" href="">
+                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube" href="">
+                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
@@ -1592,7 +1586,7 @@
 
                     <!--  -->
                     <div class="login-panel text-center animated fadeInDown p-3">
-                        <form data-toggle="validatorX" class="modal-login">
+                        <form data-toggle="validatorX" class="modal-login" name="Members Login">
 
                             <!-- NAME -->
                             <fieldset class="form-group">

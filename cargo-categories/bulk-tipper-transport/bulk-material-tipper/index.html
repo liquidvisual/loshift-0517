@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900">
     <link rel="stylesheet" href="/assets/css/minified.css">
 
-    <!-- PRIORITY CDN -->
+    <!-- PRIORITY CDN (v3.1.1) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body class="">
@@ -29,7 +29,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2.5+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2500);
@@ -49,8 +49,8 @@
                                 <span class="text hidden-sm-down">1300 562 374</span>
                             </a>
                             <span class="spacer mr-3 hidden-sm-down"></span>
-                            <a class="hidden-sm-down" href="mailto:contact@loadshift.com.au">
-                                <i class="fa fa-envelope"></i>&nbsp; contact@loadshift.com.au</a>
+                            <a class="hidden-sm-down" href="mailto:info@loadshift.com.au">
+                                <i class="fa fa-envelope"></i>&nbsp; info@loadshift.com.au</a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#search" data-search-trigger>
@@ -462,15 +462,15 @@
                                 </a>
                             </li>
                             <li class="is-cta-2">
-                                <a class="top-parent-anchor" href="/find-trucks/">
-                                    <i class="fa fa-truck mr-1"></i>
-                                    <span class="text">Find Trucks</span>
-                                </a>
-                            </li>
-                            <li class="is-cta-3">
                                 <a class="top-parent-anchor" href="/get-loads/">
                                     <i class="fa fa-road mr-1"></i>
                                     <span class="text">Get Loads</span>
+                                </a>
+                            </li>
+                            <li class="is-cta-3">
+                                <a class="top-parent-anchor" href="/find-trucks/">
+                                    <i class="fa fa-truck mr-1"></i>
+                                    <span class="text">Find Trucks</span>
                                 </a>
                             </li>
 
@@ -491,12 +491,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="twitter" href="">
+                                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="youtube" href="">
+                                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                             <i class="fa fa-youtube"></i>
                                         </a>
                                     </li>
@@ -612,21 +612,21 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <h2>Get Quotes</h2>
-                            <p>Receive quotations for transport services by posting your request for quotation.</p>
+                            <p>Receive quotes for transport services by posting your request below.</p>
                             <p>It's as easy as:</p>
                             <p class="h4">
                                 <span class="number-bullet">1</span>&nbsp; Phoning
-                                <a href="tel:1300562374">1300 56 23 74</a>
+                                <a href="tel:1300 562 374">1300 562 374</a>
                             </p>
                             <p class="h4 ml-4">
                                 <b>OR</b>
                             </p>
                             <p class="h4">
-                                <span class="number-bullet">2</span>&nbsp; Completing our simple online form</p>
+                                <span class="number-bullet">2</span>&nbsp; Completing our form</p>
                             <br>
-                            <p>Once your quote request has been posted, It is added to the
-                                <a href="/get-loads/">Load Board</a> and then alerted to the loadshift community.</p>
-                            <p>Those carriers that may be of assistance respond directly to you with quotation (Varying price &amp; Avaliability).</p>
+                            <p>Once your quote request has been posted, it's then added to the
+                                <a href="/get-loads/">Load Board</a> and alerted to the Loadshift community.</p>
+                            <p>Those carriers that may be of assistance will respond directly to you with quotation (varying price &amp; avaliability).</p>
                             <br>
                             <h3 class="text-center text-lg-left">You deal with whomever you choose.</h3>
                         </div>
@@ -647,19 +647,19 @@
                                 <h4>Oops!</h4>
                                 <p>Something went wrong. Please check your details.</p>
                             </div>
-                            <form class="form-quote form-quote-outlined" data-toggle="validator">
+                            <form class="form-quote form-quote-outlined" name="Quote Request" data-toggle="validator">
                                 <fieldset>
 
                                     <!-- PICKUP SUBURB -->
                                     <div class="form-group row">
                                         <label for="pickup-suburb" class="col-lg-4 form-control-label">Pickup Suburb</label>
                                         <div class="col-lg-5">
-                                            <input class="form-control" id="pickup-suburb" name="pickup-suburb" type="text" placeholder="" required>
+                                            <input id="pickup-suburb" class="form-control" name="pickup-suburb" type="text" placeholder="" required>
                                         </div>
 
                                         <!-- STATE -->
                                         <div class="col-lg-3 end">
-                                            <select class="form-control custom-select" name="pickup-state" id="pickup-state">
+                                            <select id="pickup-state" class="form-control custom-select" name="pickup-state">
                                                 <option selected>ACT</option>
                                                 <option>NSW</option>
                                                 <option>QLD</option>
@@ -676,12 +676,12 @@
                                     <div class="form-group row">
                                         <label for="delivery-suburb" class="col-lg-4 form-control-label">Delivery Suburb</label>
                                         <div class="col-lg-5">
-                                            <input class="form-control" id="delivery-suburb" name="delivery-suburb" type="text" placeholder="" required>
+                                            <input id="delivery-suburb" class="form-control" name="delivery-suburb" type="text" placeholder="" required>
                                         </div>
 
                                         <!-- STATE -->
                                         <div class="col-lg-3 end">
-                                            <select class="form-control custom-select" id="delivery-state" name="delivery-state">
+                                            <select id="delivery-state" class="form-control custom-select" name="delivery-state">
                                                 <option selected>ACT</option>
                                                 <option>NSW</option>
                                                 <option>QLD</option>
@@ -698,7 +698,7 @@
                                     <div class="form-group row">
                                         <label for="cargo-desc" class="col-lg-5 form-control-label">Cargo Description*</label>
                                         <div class="col-lg-7">
-                                            <input class="form-control" id="cargo-desc" name="cargo-desc" type="text" placeholder="" required>
+                                            <input id="cargo-desc" class="form-control" name="cargo-desc" type="text" placeholder="" required>
                                         </div>
                                         <small class="error">Your cargo description is required.</small>
                                     </div>
@@ -707,7 +707,7 @@
                                     <div class="form-group row">
                                         <label for="cargo-category" class="col-lg-5 form-control-label">Cargo Category*</label>
                                         <div class="col-lg-7">
-                                            <select class="form-control custom-select" id="cargo-category" name="cargo-category">
+                                            <select id="cargo-category" class="form-control custom-select" name="cargo-category">
                                                 <option disabled selected>Please Select</option>
                                                 <option value="1">Machinery / Equipment</option>
                                                 <option value="32">Vehicles</option>
@@ -731,7 +731,7 @@
                                     <div class="form-group row">
                                         <label for="name" class="col-lg-4 form-control-label">Name*</label>
                                         <div class="col-lg-8">
-                                            <input class="form-control" id="name" name="name" type="text" placeholder="" required>
+                                            <input id="name" class="form-control" name="name" type="text" placeholder="" required>
                                         </div>
                                         <small class="error">Your name is required.</small>
                                     </div>
@@ -740,7 +740,7 @@
                                     <div class="form-group row">
                                         <label for="email" class="col-lg-4 form-control-label">Email*</label>
                                         <div class="col-lg-8">
-                                            <input class="form-control" id="email" name="email" type="email" placeholder="" required>
+                                            <input id="email" class="form-control" name="email" type="email" placeholder="" required>
                                         </div>
                                         <small class="error">A valid email is required.</small>
                                     </div>
@@ -749,14 +749,14 @@
                                     <div class="form-group row">
                                         <label for="phone" class="col-lg-4 form-control-label">Phone*</label>
                                         <div class="col-lg-8">
-                                            <input class="form-control" id="phone" name="phone" type="text" placeholder="" required>
+                                            <input id="phone" class="form-control" name="phone" type="text" placeholder="" required>
                                         </div>
                                         <small class="error">A valid phone number is required.</small>
                                     </div>
 
                                     <!-- SUBMIT -->
                                     <div class="text-right">
-                                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                                        <button type="submit" class="btn btn-primary">Request quote</button>
                                     </div>
                                 </fieldset>
                             </form>
@@ -778,6 +778,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- INFOGRAPHIC -->
             <section class="section">
                 <div class="container">
                     <ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-4 list-infographic">
@@ -851,11 +853,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Life changing service. it’s 100% of my work and I get call backs.”</p>
                                     </div>
                                 </div>
@@ -872,11 +872,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Congratulations on a truly helpful service, we use it everyday.”</p>
                                     </div>
                                 </div>
@@ -893,11 +891,9 @@
                                         <strong>Shipper</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Most reliable service and upfront out of all of them.”</p>
                                     </div>
                                 </div>
@@ -914,11 +910,9 @@
                                         <strong></strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Brilliant service! Have used it for a couple of years now. Always refer it to others. So easy to use.”</p>
                                     </div>
                                 </div>
@@ -936,11 +930,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>Mudgeeraba to Grafton</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“A driver rang me quite quickly. He was nearby… So he’s loading it right now. Pretty good eh!”</p>
                                     </div>
                                 </div>
@@ -957,11 +949,9 @@
                                         <strong>Shipper</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“We spend $40,000 to $50,000 per year on transport through Loadshift. It’s easy to use.”</p>
                                     </div>
                                 </div>
@@ -978,11 +968,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Pretty much made all my money from Loadshift. Joined 6 months ago when things were quiet.”</p>
                                     </div>
                                 </div>
@@ -999,11 +987,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Can’t go without my Loadshift. Doing 2 jobs this weekend.”</p>
                                     </div>
                                 </div>
@@ -1021,11 +1007,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>Deniliquin to Mackay</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Brilliant concept. I’ve been told to use it by a few people. Everyone is talking about it.”</p>
                                     </div>
                                 </div>
@@ -1043,11 +1027,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>Lowood to Keilor Park</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Found Transport within 3 minutes of listing.”</p>
                                     </div>
                                 </div>
@@ -1065,11 +1047,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>VIC to VIC</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“We would be stuffed without Loadshift. Have secured a half dozen repeat customers. Loadshift is a special tool to us.”</p>
                                     </div>
                                 </div>
@@ -1086,11 +1066,9 @@
                                         <strong>Carrrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Great system… It evens out the playing field between us little guys &amp; the bigger transport companys. We are getting access to job...</p>
                                     </div>
                                 </div>
@@ -1108,11 +1086,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>QLD to NSW</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Amazing system. Had been trying to find transport for the pass month. Listed a request and found transport in 5 minutes.”</p>
                                     </div>
                                 </div>
@@ -1130,11 +1106,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>QLD to VIC</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Never seen anything like this before. Very pleased. You’re the best.”</p>
                                     </div>
                                 </div>
@@ -1151,11 +1125,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“A friend needed a Pilot. I looked on the Truck Availability Register &amp; found one. We rang him and the Pilot was only 5 minutes ar...</p>
                                     </div>
                                 </div>
@@ -1173,11 +1145,9 @@
                                         <i class="fa fa-angle-right"></i>&nbsp;
                                         <strong>QLD to QLD</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“I’ll be keeping your phone number handy. I had been looking for transport for 3 weeks. After posting a listing on Loadshift, I immedi...</p>
                                     </div>
                                 </div>
@@ -1194,11 +1164,9 @@
                                         <strong>Backhoe</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Your site is amazing. I was receiving quotes after 10 minutes of posting a listing.”</p>
                                     </div>
                                 </div>
@@ -1215,11 +1183,9 @@
                                         <strong></strong>
                                         <strong>VIC</strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“I love this Loadshift! Works bloody fantastic.”</p>
                                     </div>
                                 </div>
@@ -1236,11 +1202,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Loadshift has made the difference between surviving &amp; not. Particularly when it’s quiet.”</p>
                                     </div>
                                 </div>
@@ -1257,11 +1221,9 @@
                                         <strong>Carrier</strong>
                                         <strong></strong>
                                     </p>
-
-                                    <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                                     <div class="text">
 
-                                        <!-- TRUNCATE: 140 CHARS -->
+                                        <!-- BODY (TRUNCATE: 140 chars) -->
                                         <p>“Great system… I would not normally join something like this, but I made the change.”</p>
                                     </div>
                                 </div>
@@ -1315,7 +1277,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            <!-- ** Hardcoded Links ** -->
+                            <!-- HARDCODED QUICK LINKS -->
                             <h4 class="mb-4">Quick Links</h4>
                             <ul class="block-grid-xs-1">
                                 <li>
@@ -1408,12 +1370,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="twitter" href="">
+                                    <a class="twitter" href="https://twitter.com/loadshifttrans">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="youtube" href="">
+                                    <a class="youtube" href="https://www.youtube.com/user/terex4066">
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
@@ -1514,13 +1476,13 @@
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/find-trucks/">Find Trucks</a>
+                                <a href="/get-loads/">Get Loads</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
                         <li>
                             <h5 class="mb-4">
-                                <a href="/get-loads/">Get Loads</a>
+                                <a href="/find-trucks/">Find Trucks</a>
                             </h5>
                             <ul class="list-unstyled"></ul>
                         </li>
@@ -2093,15 +2055,15 @@
                 </a>
             </li>
             <li class="is-cta-2">
-                <a class="top-parent-anchor" href="/find-trucks/">
-                    <i class="fa fa-truck mr-1"></i>
-                    <span class="text">Find Trucks</span>
-                </a>
-            </li>
-            <li class="is-cta-3">
                 <a class="top-parent-anchor" href="/get-loads/">
                     <i class="fa fa-road mr-1"></i>
                     <span class="text">Get Loads</span>
+                </a>
+            </li>
+            <li class="is-cta-3">
+                <a class="top-parent-anchor" href="/find-trucks/">
+                    <i class="fa fa-truck mr-1"></i>
+                    <span class="text">Find Trucks</span>
                 </a>
             </li>
 
@@ -2122,12 +2084,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="twitter" href="">
+                        <a class="twitter" href="https://twitter.com/loadshifttrans">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube" href="">
+                        <a class="youtube" href="https://www.youtube.com/user/terex4066">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
@@ -2203,7 +2165,7 @@
 
                     <!--  -->
                     <div class="login-panel text-center animated fadeInDown p-3">
-                        <form data-toggle="validatorX" class="modal-login">
+                        <form data-toggle="validatorX" class="modal-login" name="Members Login">
 
                             <!-- NAME -->
                             <fieldset class="form-group">
