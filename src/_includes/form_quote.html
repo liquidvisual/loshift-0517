@@ -13,7 +13,7 @@
     <p>Something went wrong. Please check your details.</p>
 </div>
 
-<form class="form-quote form-quote-outlined" data-toggle="validator">
+<form class="form-quote form-quote-outlined" name="Quote Request" data-toggle="validator">
     <fieldset>
 
         <!-- PICKUP SUBURB -->
@@ -21,12 +21,12 @@
             <label for="pickup-suburb" class="col-lg-4 form-control-label">Pickup Suburb</label>
 
             <div class="col-lg-5">
-                <input class="form-control" id="pickup-suburb" name="pickup-suburb" type="text" placeholder="" required>
+                <input id="pickup-suburb" class="form-control" name="pickup-suburb" type="text" placeholder="" required>
             </div>
 
             <!-- STATE -->
             <div class="col-lg-3 end">
-                <select class="form-control custom-select" name="pickup-state" id="pickup-state">
+                <select id="pickup-state" class="form-control custom-select" name="pickup-state" >
                     <option selected>ACT</option>
                     <option>NSW</option>
                     <option>QLD</option>
@@ -44,12 +44,12 @@
             <label for="delivery-suburb" class="col-lg-4 form-control-label">Delivery Suburb</label>
 
             <div class="col-lg-5">
-                <input class="form-control" id="delivery-suburb" name="delivery-suburb" type="text" placeholder="" required>
+                <input id="delivery-suburb" class="form-control" name="delivery-suburb" type="text" placeholder="" required>
             </div>
 
             <!-- STATE -->
             <div class="col-lg-3 end">
-                <select class="form-control custom-select" id="delivery-state" name="delivery-state">
+                <select id="delivery-state" class="form-control custom-select" name="delivery-state">
                     <option selected>ACT</option>
                     <option>NSW</option>
                     <option>QLD</option>
@@ -66,7 +66,7 @@
         <div class="form-group row">
             <label for="cargo-desc" class="col-lg-5 form-control-label">Cargo Description*</label>
             <div class="col-lg-7">
-                <input class="form-control" id="cargo-desc" name="cargo-desc" type="text" placeholder="" required>
+                <input id="cargo-desc" class="form-control" name="cargo-desc" type="text" placeholder="" required>
             </div>
             <small class="error">Your cargo description is required.</small>
         </div>
@@ -75,7 +75,7 @@
         <div class="form-group row">
             <label for="cargo-category" class="col-lg-5 form-control-label">Cargo Category*</label>
             <div class="col-lg-7">
-                <select class="form-control custom-select" id="cargo-category" name="cargo-category">
+                <select id="cargo-category" class="form-control custom-select" name="cargo-category">
                     <option disabled selected>Please Select</option>
                         <option value="1">Machinery / Equipment</option>
                         <option value="32">Vehicles</option>
@@ -99,7 +99,7 @@
         <div class="form-group row">
             <label for="name" class="col-lg-4 form-control-label">Name*</label>
             <div class="col-lg-8">
-                <input class="form-control" id="name" name="name" type="text" placeholder="" required>
+                <input id="name" class="form-control" name="name" type="text" placeholder="" required>
             </div>
             <small class="error">Your name is required.</small>
         </div>
@@ -108,7 +108,7 @@
         <div class="form-group row">
             <label for="email" class="col-lg-4 form-control-label">Email*</label>
             <div class="col-lg-8">
-                <input class="form-control" id="email" name="email" type="email" placeholder="" required>
+                <input id="email" class="form-control" name="email" type="email" placeholder="" required>
             </div>
             <small class="error">A valid email is required.</small>
         </div>
@@ -117,14 +117,14 @@
         <div class="form-group row">
             <label for="phone" class="col-lg-4 form-control-label">Phone*</label>
             <div class="col-lg-8">
-                <input class="form-control" id="phone" name="phone" type="text" placeholder="" required>
+                <input id="phone" class="form-control" name="phone" type="text" placeholder="" required>
             </div>
             <small class="error">A valid phone number is required.</small>
         </div>
 
         <!-- SUBMIT -->
         <div class="text-right">
-            <button type="submit" class="btn btn-primary">Submit Request</button>
+            <button type="submit" class="btn btn-primary">Request quote</button>
         </div>
 
     </fieldset>

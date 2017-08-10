@@ -1,15 +1,18 @@
+{% assign settings = site.data.settings %}
+{% assign title = include.title | default: 'Get Quotes' %}
+
 <!-- GET QUOTES -->
 <div class="row">
     <div class="col-lg-6">
-        <h2>{{ include.title | default: 'Get Quotes' }}</h2>
-        <p>Receive quotations for transport services by posting your request for quotation.</p>
+        <h2>{{ title }}</h2>
+        <p>Receive quotes for transport services by posting your request below.</p>
         <p>It's as easy as:</p>
-        <p class="h4"><span class="number-bullet">1</span>&nbsp; Phoning <a href="tel:1300562374">1300 56 23 74</a></p>
+        <p class="h4"><span class="number-bullet">1</span>&nbsp; Phoning <a href="tel:{{ settings.offices[0].phone }}">{{ settings.offices[0].phone }}</a></p>
         <p class="h4 ml-4"><b>OR</b></p>
-        <p class="h4"><span class="number-bullet">2</span>&nbsp; Completing our simple online form</p>
+        <p class="h4"><span class="number-bullet">2</span>&nbsp; Completing our form</p>
         <br>
-        <p>Once your quote request has been posted, It is added to the <a href="/get-loads/">Load Board</a> and then alerted to the loadshift community.</p>
-        <p>Those carriers that may be of assistance respond directly to you with quotation (Varying price &amp; Avaliability).</p>
+        <p>Once your quote request has been posted, it's then added to the <a href="/get-loads/">Load Board</a> and alerted to the Loadshift community.</p>
+        <p>Those carriers that may be of assistance will respond directly to you with quotation (varying price &amp; avaliability).</p>
         <br>
         <h3 class="text-center text-lg-left">You deal with whomever you choose.</h3>
     </div>
