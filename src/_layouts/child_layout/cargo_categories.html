@@ -2,9 +2,12 @@
 layout: base__page
 ---
 
-{% assign sitemap = site.data.sitemap %}
-<!-- { % assign cargo_categories = sitemap[3].children %} -->
+{% comment %}
+    NOTE: Using server-side image resizing on this page (width:300, quality: 60)
+    REFERENCE: //images.weserv.nl/?url=/path/to/image.jpg&w=300&q=60
+{% endcomment %}
 
+{% assign sitemap = site.data.sitemap %}
 {% assign cargo_categories = site.pages | where: "content_type", 'cargo_category' %}
 
 <ul class="block-grid-xs-1 block-grid-md-3 block-grid-condensed">
@@ -22,21 +25,3 @@ layout: base__page
         </li>
     {% endfor %}
 </ul>
-
-{% comment %}
-<ul class="block-grid-xs-1 block-grid-md-3 block-grid-condensed">
-	{% for item in cargo_categories %}
-        <li>
-            <a class="btn-tile" href="{{ item.url }}">
-                <img width="100%" src="/assets/img/content/hero/fullsize/hero-2.jpg" alt="{{ item.title }}">
-                <span class="btn-tile-bg" style="background-image: url(/assets/img/content/hero/fullsize/hero-2.jpg)"></span>
-                <div class="btn-tile-overlay">
-                    <h2 class="h3 btn-tile-header mb-0">{{ item.title }}</h2>
-                </div>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-{% endcomment %}
-
-<!-- //images.weserv.nl/?url=liquidvisual.net/theweddingwarren.com/gallery/photo-5.jpg&w=300&q=60 -->

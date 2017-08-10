@@ -3,12 +3,13 @@ layout: base__page_sidebar
 ---
 
 {% assign news = site.data.lorem_ipsum %}
+{% assign main_image = page.main_image | default: "http://placehold.it/350x260" %}
 
 <article class="mb-3">
     <h1 class="h2 mb-3">{{ page.title }}</h1>
     <p><date>12 AUGUST 2015</date></p>
     <br>
-    <p class="img-right"><img width="100%" src="http://placehold.it/350x260" alt="..."></p>
+    <p class="img-right"><img width="100%" src="{{ main_image }}" alt="Main Image"></p>
     {{ content }}
 </article>
 

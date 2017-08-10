@@ -28,12 +28,10 @@
                                 {% endif %}
                                 <strong>{{ item.destination }}</strong>
                             </p>
-                            <!-- <h5 class="h6 mb-2 text-muted"><i class="fa fa-clock-o"></i> { { item.date }}</h5> -->
                             <div class="text">
-                                <!-- TRUNCATE: 140 CHARS -->
+                                <!-- BODY (TRUNCATE: 140 chars) -->
                                 {{ item.body | prepend: '"' | append: '"' | markdownify | truncate: 140 }}
                             </div>
-
                         </div>
                     </div>
                 </div>

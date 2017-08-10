@@ -6,13 +6,11 @@
 <section class="live-feed section-lighter">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 live-feed-col btn-tileX">
-				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-find-trucks.jpg')"></span> -->
-
+			<div class="col-md-4 live-feed-col">
 				<div class="live-feed-container">
 					<p><strong><i class="fa fa-road" hidden></i>&nbsp; GET LOADS</strong></p>
 
-					<!-- VERTICAL FEED -->
+					<!-- LOAD BOARD FEED -->
 					<div data-vertical-feed>
 						{% for item in load_board %}
 							<a class="live-feed-anchor" href="{{ item.url }}">
@@ -36,9 +34,7 @@
 			</div>
 
 			<!-- CENTER COLUMN - NEED A QUOTE? -->
-			<div class="col-md-4 live-feed-col btn-tileX">
-				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-get-quotes.jpg')"></span> -->
-
+			<div class="col-md-4 live-feed-col">
 				<a class="live-feed-anchor" href="/get-quotes/">
 					<div class="live-feed-container">
 						<p><strong>GET QUOTES</strong></p>
@@ -47,13 +43,11 @@
 				</a>
 			</div>
 
-			<div class="col-md-4 live-feed-col btn-tileX">
-				<!-- <span class="btn-tile-bg" style="background-image: url('/assets/img/content/feature-get-loads.jpg')"></span> -->
-
+			<div class="col-md-4 live-feed-col">
 				<div class="live-feed-container">
 					<p><strong><i class="fa fa-truck" hidden></i>&nbsp; FIND TRUCKS</strong></p>
 
-					<!-- VERTICAL FEED -->
+					<!-- TRUCK REGISTER FEED -->
 					<div data-vertical-feed>
 						{% for item in truck_register %}
 							<a class="live-feed-anchor" href="{{ item.url }}">
