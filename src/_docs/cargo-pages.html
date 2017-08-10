@@ -6,6 +6,12 @@ hero:
 ---
 
 {% assign static_files = site.static_files | sort: 'path' %}
+{% assign sitemap = site.data.sitemap %}
+{% assign side_nav_id = page.side_nav_id | default: 3 %}
+{% assign include_top_level = include.exclude_top_level | default: true %}
+{% assign top_level = sitemap[3] %}
+{% assign cargo_categories = site.pages | where: "content_type", 'cargo_category' %}
+{% assign cargo_item = site.pages | where: "content_type", 'cargo_item' %}
 
 <style>
     .icon-font {
@@ -41,16 +47,6 @@ hero:
         background-size: cover;
     }
 </style>
-
-
-
-
-{% assign sitemap = site.data.sitemap %}
-{% assign side_nav_id = page.side_nav_id | default: 3 %}
-{% assign include_top_level = include.exclude_top_level | default: true %}
-{% assign top_level = sitemap[3] %}
-{% assign cargo_categories = site.pages | where: "content_type", 'cargo_category' %}
-{% assign cargo_item = site.pages | where: "content_type", 'cargo_item' %}
 
 <h2>Cargo Category Pages</h2>
 <p>These cargo category pages have had their hero pages assigned based on inference. Please let me know if any do not suit.</p>

@@ -88,6 +88,8 @@ hero: /assets/img/content/hero/hero-1-placeholder.png
 	</li>
 </ul>
 
+<div class="spacer mb-4"></div>
+
 ## Typography
 ---
 
@@ -98,21 +100,15 @@ hero: /assets/img/content/hero/hero-1-placeholder.png
 ##### H5. This is a Header Five
 ###### H6. This is a Header Six
 
-<br>
-
-## Pages {{ site.data.settings.title }}
+{% comment %}
+## All Pages
 
 ---
 
-<!-- { % include snippets/navigation.html %} -->
+{% include snippets/navigation.html %}
+{% endcomment %}
 
-<br>
-
-## Component Library
-
-Use this page as a reference when tweaking values. This will prevent things breaking across components.
-
-<p><a class="btn btn-primary btn-text" href="/docs/component-library/">Access Component Library <i class="fa fa-angle-right"></i></a></p>
+<div class="spacer mb-4"></div>
 
 ## Bootstrap 4
 
@@ -120,23 +116,33 @@ This codebase is running Bootstrap 4 (Alpha v6). Despite being an alpha, it's th
 
 <p><a class="btn btn-warning btn-text" href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank">Access Bootstrap Docs <i class="fa fa-angle-right"></i></a></p>
 
+<div class="spacer mb-4"></div>
+
 ## Utility Classes
 
-You will likely see lots of weird classes around the place. Eg. <code>.mb-0</code> - these are utility classes from Bootstrap which allow us to set arbitrary spacing between elements without having to hard code those values separately.
+You will likely see lots of weird classes around the place. Eg. <code>.mb-0</code> and <code>.px-4</code> - these are utility classes from Bootstrap that allow us to set arbitrary spacing (margins and padding) between elements without having to bake them into a CSS module.
 
-<b><a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">Visit utilities here</a></b>
+<b><a href="http://v4-alpha.getbootstrap.com/utilities/spacing/" target="_blank">Visit utilities here</a></b>
 
-<br>
+<div class="spacer mb-4"></div>
 
-## Breakpoints (pxs)
+## Breakpoints
 
 <div data-js="lv-responsive-table"></div>
 
-<br>
+<div class="spacer mb-4"></div>
 
 ## Font Icons
 
-This site uses font icons in some places including the side nav, you can change the icons by using classes shown here:
+This site uses fonts from the 'Font Awesome' library:
 
 <p><a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a></p>
+
+<div class="spacer mb-4"></div>
+
+## Cargo Pages Overview
+
+This page was created to display all of the cargo page heroes in one place. Also it lists all of the site images.
+
+<p><a href="/cargo-pages/">/cargo-pages/</a></p>
 
