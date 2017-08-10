@@ -5,6 +5,7 @@ title_override: News
 permalink: /about-us/news/news-item/
 back_breadcrumb: /news/
 hero: /assets/img/content/hero/fullsize/11752432.jpg
+hero_classes:
 side_nav_id: 1
 ---
 

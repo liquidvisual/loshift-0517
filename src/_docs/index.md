@@ -146,3 +146,10 @@ This page was created to display all of the cargo page heroes in one place. Also
 
 <p><a href="/cargo-pages/">/cargo-pages/</a></p>
 
+<div class="spacer mb-4"></div>
+
+## Text Page Example
+
+Simple use of basic styles.
+
+<p><a href="/text-page/">/text-page/</a></p>

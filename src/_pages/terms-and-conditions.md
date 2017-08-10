@@ -3,6 +3,7 @@ layout: child_layout/text_page
 title: Terms & Conditions
 permalink: /terms-and-conditions/
 hero: /assets/img/content/hero/hero-1-placeholder.png
+hero_classes:
 ---
 
 ## Disclaimer

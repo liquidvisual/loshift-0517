@@ -3,6 +3,7 @@ layout: child_layout/text_page
 title: Privacy Policy
 permalink: /privacy-policy/
 hero: /assets/img/content/hero/hero-1-placeholder.png
+hero_classes:
 ---
 
 Loadshift Transport System (Loadshift) is committed to providing you with the best possible customer service experience. Loadshift is bound by the Privacy Act 1988 (Crh), which sets out a number of principles concerning the privacy of individuals.

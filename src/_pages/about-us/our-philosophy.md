@@ -3,6 +3,7 @@ layout: base__page_sidebar
 title: Our Philosophy
 permalink: /about-us/our-philosophy/
 hero: /assets/img/content/hero/fullsize/hero-2.jpg
+hero_classes:
 supporting_image: /assets/img/content/our-philosophy.jpg
 side_nav_id: 1
 ---

@@ -3,6 +3,7 @@ layout: base__page_sidebar
 title: History
 permalink: /about-us/history/
 hero: /assets/img/content/hero/fullsize/11752432.jpg
+hero_classes:
 supporting_image: /assets/img/content/history.jpg
 side_nav_id: 1
 ---

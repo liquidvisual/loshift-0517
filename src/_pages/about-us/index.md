@@ -3,6 +3,7 @@ layout: child_layout/about_us
 title: About Us
 permalink: /about-us/
 hero: /assets/img/content/hero/fullsize/pipe.jpg
+hero_classes:
 supporting_image: /assets/img/content/stamp-10-years.jpg
 side_nav_id: 1
 ---
