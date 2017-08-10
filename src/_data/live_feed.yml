@@ -1,3 +1,5 @@
+# TRUCK REGISTRY (DUMMY DATA)
+
 truck_register:
   - title: Prime mover / Flat top extenable
     id: #
@@ -33,6 +35,8 @@ truck_register:
     date: 15/11/25
     pickup_suburb: Newcastle, Sydney To Central Qld --- Owner Driver
     pickup_state: NSW
+
+# LOAD BOARD (DUMMY DATA)
 
 load_board:
   - title: Folding Disc Machine - 5.5x4.7x2.5mtr
