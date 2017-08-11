@@ -10,7 +10,7 @@
 // VARIABLES
 //-----------------------------------------------------------------
 
-$hero-sm-height:            rem-calc(440); // IMPORTANT: if carousel slides, you need a fixed height
+$hero-sm-height:            rem-calc(460); // IMPORTANT: if carousel slides, you need a fixed height
 $hero-md-height:            rem-calc(500);
 $hero-lg-height:            rem-calc(540);
 $hero-xl-height:            rem-calc(540); //
@@ -76,6 +76,12 @@ $hero-lg-height-preset-1:   rem-calc(300);
             height: calc(100vh - #{$header-top-lg-height + $header-body-lg-height + $header-bottom-lg-height});
         }
     }
+
+    // &.is-default {
+    //     @include media-breakpoint-down(sm) {
+    //         // height: auto;
+    //     }
+    // }
 }
 
 //-----------------------------------------------------------------
@@ -174,6 +180,10 @@ $hero-lg-height-preset-1:   rem-calc(300);
         padding: $spacer*10 0;
     }
 
+    @include media-breakpoint-up(lg) {
+        padding: $spacer*5 0;
+    }
+
     @include media-breakpoint-up(xl) {
         padding: 0;
     }
@@ -181,6 +191,23 @@ $hero-lg-height-preset-1:   rem-calc(300);
     .lv-hero-item-caption {
         @include media-breakpoint-up(xl) {
             margin-bottom: rem-calc(200); // magic - rebalance center with new absolute addon
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// IS DEFAULT
+// Used to override the main 'slim' hero on inner pages
+// Used primarily by pricing page
+// Is same as homepage hero - but no carousel controls
+//-----------------------------------------------------------------
+
+.is-default .lv-hero-item {
+    padding-bottom: 0; // no carousel controls
+
+    .lv-hero-item-caption {
+        @include media-breakpoint-up(xl) {
+            margin-bottom: $spacer*2; // rebalance center up a bit
         }
     }
 }
@@ -259,6 +286,7 @@ $hero-lg-height-preset-1:   rem-calc(300);
 
 .hero-addition {
     background: $gray-lightest;
+    padding: $spacer*1.5 0;
 
     @include media-breakpoint-up(xl) {
         display: flex;
@@ -266,7 +294,8 @@ $hero-lg-height-preset-1:   rem-calc(300);
         position: absolute;
         bottom: 0;
         width: 100%;
-        min-height: $header-body-lg-height + $header-bottom-lg-height;
+        // min-height: $header-body-lg-height + $header-bottom-lg-height;
+        // padding: 0;
         // -webkit-backdrop-filter: blur(5px);
         // backdrop-filter: blur(5px);
     }

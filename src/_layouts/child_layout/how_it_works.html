@@ -14,7 +14,7 @@ layout: base__page_sidebar
 		<h3>Find Trucks – Availability Register</h3>
 		<p>This is the venue to “post” (advertise) your current or future truck/trailer location and availability. Let Shippers know in advance, the next destination that you will be available to load out of.</p>
 		<p><img width="100%" src="/assets/img/content/truck-register@2x.jpg" alt="Truck Availability Register"></p>
-		<div class="spacer m-b-2"></div>
+		<div class="spacer mb-4 hidden-lg-up"></div>
 	</div>
 	<div class="col-md-6">
 		<h3>Get Loads - Load Board</h3>
@@ -27,42 +27,7 @@ layout: base__page_sidebar
 </div>
 
 {% contentfor content_additional %}
-	<!-- WHICH ARE YOU? -->
-	<section class="section section-light">
-		<div class="container container-condensed">
-			<h2 class="text-center mb-4">Which Are You?</h2>
-			<div class="row">
-				<div class="col-md-6">
-
-					<!-- CARRIER -->
-					<a href="/how-it-works/carriers/">
-						<div class="card card-feature">
-							<img class="card-img-top" width="100%" src="/assets/img/content/carrier-i.jpg" alt="Carrier">
-							<div class="card-block text-center">
-								<h3 class="h2 card-title mb-0">Carrier</h3>
-								<p class="card-text lead">Get Loads.</p>
-								<span class="btn btn-primary">Learn more</span>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6">
-
-					<!-- SHIPPER -->
-					<a href="/how-it-works/shippers/">
-						<div class="card card-feature">
-							<img class="card-img-top" width="100%" src="/assets/img/content/shipper-i.jpg" alt="Shipper">
-							<div class="card-block text-center">
-								<h3 class="h2 card-title mb-0">Shipper</h3>
-								<p class="card-text lead">Get quotes &amp; find trucks.</p>
-								<span class="btn btn-primary">Learn more</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% include sections/discover_loadshift_how_it_works.html %}
 
 	<!-- REGISTER -->
 	<section class="section">

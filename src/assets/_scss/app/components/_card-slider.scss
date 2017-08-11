@@ -36,8 +36,8 @@
 //=========================================
 
 .testimonial-block {
-	display: inline-block; // help css masonry
-	// min-width: 95%;
+	display: inline-block; // help css masonry top glitch
+	// min-width: 95%; // IE fix
 	padding: $spacer*2;
 	margin: rem-calc(10); // looks best on mobile
 	background: white;
